@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreApp", "NetCoreApp\NetCoreApp.csproj", "{01F03D14-836D-4F85-801D-8DBE1BC50991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApp.Infarstructure", "CoreApp.Infarstructure\CoreApp.Infarstructure.csproj", "{5FA66935-2FFC-446C-A19A-90C88DA924DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApp.Infrastructure", "CoreApp.Infarstructure\CoreApp.Infrastructure.csproj", "{5FA66935-2FFC-446C-A19A-90C88DA924DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApp.Utilities", "CoreApp.Utilities\CoreApp.Utilities.csproj", "{C9E9BFE0-4492-4530-9D6D-4E3CA48B1C78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApp.Utilities", "CoreApp.Utilities\CoreApp.Utilities.csproj", "{C9E9BFE0-4492-4530-9D6D-4E3CA48B1C78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApp.Data", "CoreApp.Data\CoreApp.Data.csproj", "{D3DD5D58-CC58-4081-AC55-B210BE6CAD9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApp.Data", "CoreApp.Data\CoreApp.Data.csproj", "{D3DD5D58-CC58-4081-AC55-B210BE6CAD9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApp.Data.EF", "CoreApp.Data.EF\CoreApp.Data.EF.csproj", "{BF3638C5-9C28-46A4-883E-87D9DA06C44E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApp.Data.EF", "CoreApp.Data.EF\CoreApp.Data.EF.csproj", "{BF3638C5-9C28-46A4-883E-87D9DA06C44E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApp.Application", "CoreApp.Application\CoreApp.Application.csproj", "{22E7FB0F-C71B-4766-A337-C497F4D93DD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApp.Application", "CoreApp.Application\CoreApp.Application.csproj", "{22E7FB0F-C71B-4766-A337-C497F4D93DD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{014C0DDC-495B-4D28-B9E7-0B8AE5E1BF6D}"
 EndProject

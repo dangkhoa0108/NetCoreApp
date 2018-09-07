@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ShareKernel\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Enums\" />
   </ItemGroup>

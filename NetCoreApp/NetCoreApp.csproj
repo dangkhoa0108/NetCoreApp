@@ -22,7 +22,7 @@
     <ProjectReference Include="..\CoreApp.Application\CoreApp.Application.csproj" />
     <ProjectReference Include="..\CoreApp.Data.EF\CoreApp.Data.EF.csproj" />
     <ProjectReference Include="..\CoreApp.Data\CoreApp.Data.csproj" />
-    <ProjectReference Include="..\CoreApp.Infarstructure\CoreApp.Infarstructure.csproj" />
+    <ProjectReference Include="..\CoreApp.Infarstructure\CoreApp.Infrastructure.csproj" />
     <ProjectReference Include="..\CoreApp.Utilities\CoreApp.Utilities.csproj" />
   </ItemGroup>
 

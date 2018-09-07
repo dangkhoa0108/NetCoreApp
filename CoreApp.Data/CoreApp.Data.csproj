@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Entities\" />
+    <ProjectReference Include="..\CoreApp.Infarstructure\CoreApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
