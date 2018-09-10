@@ -4,12 +4,12 @@ using CoreApp.Infrastructure.ShareKernel;
 
 namespace CoreApp.Data.Entities
 {
-    [Table("Tags")]
-    public class Tag: DomainEntity<string>
+    [Table("Colors")]
+    public class Color:DomainEntity<int>
     {
-        [Required]
-        [MaxLength(50)]
+        [StringLength(250)]
         public string Name { get; set; }
-        public string Type { get; set; }
+        [StringLength(250)]
+        public string ColorCode { get; set; }
     }
 }

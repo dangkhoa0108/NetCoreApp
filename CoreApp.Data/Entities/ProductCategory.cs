@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using CoreApp.Data.Enums;
 using CoreApp.Data.Interfaces;
 using CoreApp.Infrastructure.ShareKernel;
 
 namespace CoreApp.Data.Entities
 {
+    [Table("ProductCategories")]
     public class ProductCategory:DomainEntity<int>, IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
     {
         public ProductCategory()

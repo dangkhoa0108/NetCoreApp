@@ -4,12 +4,10 @@ using CoreApp.Infrastructure.ShareKernel;
 
 namespace CoreApp.Data.Entities
 {
-    [Table("Tags")]
-    public class Tag: DomainEntity<string>
+    [Table("Footers")]
+    public class Footer:DomainEntity<string>
     {
         [Required]
-        [MaxLength(50)]
-        public string Name { get; set; }
-        public string Type { get; set; }
+        public string Content { get; set; }
     }
 }

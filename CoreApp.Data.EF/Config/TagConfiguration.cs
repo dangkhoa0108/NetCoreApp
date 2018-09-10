@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CoreApp.Data.EF.Config
 {
-    public class TagConfig: ModelBuilderExtensions.DbEntityConfiguration<Tag>
+    public class TagConfiguration : ModelBuilderExtensions.DbEntityConfiguration<Tag>
     {
         /// <summary>
         /// Vì ID của Tag là kiểu string kế thừa abstract class nên không thể cấu hình độ dài và kiểu dữ liệu
