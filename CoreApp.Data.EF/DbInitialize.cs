@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CoreApp.Data.Entities;
@@ -52,6 +53,8 @@ namespace CoreApp.Data.EF
                     UserName = "admin",
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
+                    DateCreated = DateTime.Now,
+                    DateModified = DateTime.Now,
                     Balance = 0,
                 }, "123654$");
                 var user = await _userManager.FindByNameAsync("admin");

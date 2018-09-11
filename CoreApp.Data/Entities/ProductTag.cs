@@ -8,8 +8,9 @@ namespace CoreApp.Data.Entities
     public class ProductTag:DomainEntity<int>
     {
         public int ProductId { get; set; }
+
         [StringLength(50)]
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "varchar")]
         public string TagId { get; set; }
 
         [ForeignKey("ProductId")]

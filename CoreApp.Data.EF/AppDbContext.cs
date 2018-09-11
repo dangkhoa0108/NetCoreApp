@@ -63,11 +63,11 @@ namespace CoreApp.Data.EF
             #region Identity Config
             //Rename default table name in Identity
 
-            builder.Entity<IdentityUserClaim<string>>().ToTable("AppUserClaims").HasKey(x => x.Id);
-            builder.Entity<IdentityRoleClaim<string>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
-            builder.Entity<IdentityUserLogin<string>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
-            builder.Entity<IdentityUserRole<string>>().ToTable("AppUserRoles").HasKey(x => new {x.RoleId, x.UserId});
-            builder.Entity<IdentityUserToken<string>>().ToTable("AppUserTokens").HasKey(x => new {x.UserId});
+            builder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims").HasKey(x => x.Id);
+            builder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
+            builder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+            builder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new {x.RoleId, x.UserId});
+            builder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => new {x.UserId});
 
             #endregion
 
@@ -79,7 +79,7 @@ namespace CoreApp.Data.EF
             builder.AddConfiguration(new ProductTagConfiguration());
             builder.AddConfiguration(new SystemConfigConfiguration());
             builder.AddConfiguration(new AdvertisementPositionConfiguration());
-            base.OnModelCreating(builder);
+            //base.OnModelCreating(builder);
         }
 
         public override int SaveChanges()
