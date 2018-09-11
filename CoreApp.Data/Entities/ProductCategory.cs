@@ -8,12 +8,32 @@ using CoreApp.Infrastructure.ShareKernel;
 namespace CoreApp.Data.Entities
 {
     [Table("ProductCategories")]
-    public class ProductCategory:DomainEntity<int>, IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
+    public class ProductCategory : DomainEntity<int>, IHasSeoMetaData, ISwitchable, ISortable, IDateTracking
     {
+        //Constructor
         public ProductCategory()
         {
             Products = new List<Product>();
         }
+
+        public ProductCategory(string name, string description, int? parentId, int? homeOrder,
+            string image, bool? homeFlag, int sortOrder, Status status, string seoPageTitle, string seoAlias,
+            string seoKeywords, string seoDescription)
+        {
+            Name = name;
+            Description = description;
+            ParentId = parentId;
+            HomeOrder = homeOrder;
+            Image = image;
+            HomeFlag = homeFlag;
+            SortOrder = sortOrder;
+            Status = status;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoKeywords = seoKeywords;
+            SeoDescription = seoDescription;
+        }
+
         /// <summary>
         /// Implement interface
         /// </summary>
@@ -35,6 +55,6 @@ namespace CoreApp.Data.Entities
         public int? HomeOrder { get; set; }
         public string Image { get; set; }
         public bool? HomeFlag { get; set; }
-        public virtual ICollection<Product>  Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

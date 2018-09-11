@@ -1,5 +1,10 @@
-﻿using CoreApp.Data.EF;
+﻿using AutoMapper;
+using CoreApp.Application.Implementation;
+using CoreApp.Application.Interfaces;
+using CoreApp.Data.EF;
+using CoreApp.Data.EF.Repositories;
 using CoreApp.Data.Entities;
+using CoreApp.Data.IRepositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreApp.Services;
+using IConfigurationProvider = AutoMapper.IConfigurationProvider;
 
 namespace NetCoreApp
 {
@@ -35,6 +41,13 @@ namespace NetCoreApp
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<DbInitialize>();
+
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(
+                sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc();
         }
