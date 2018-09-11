@@ -25,7 +25,7 @@ namespace CoreApp.Data.Entities
         [StringLength(250)]
         public string Content { get; set; }
         [StringLength(450)]
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }

@@ -7,13 +7,12 @@ using CoreApp.Infrastructure.ShareKernel;
 namespace CoreApp.Data.Entities
 {
     [Table("Functions")]
-    public class Function:DomainEntity<string>, ISwitchable, ISortable
+    public class Function : DomainEntity<string>, ISwitchable, ISortable
     {
         public Function()
         {
 
         }
-
         public Function(string name,string url,string parentId,string iconCss,int sortOrder)
         {
             Name = name;
@@ -25,14 +24,18 @@ namespace CoreApp.Data.Entities
         }
         [Required]
         [StringLength(128)]
-        public string Name { get; set; }
+        public string Name { set; get; }
+
         [Required]
         [StringLength(250)]
-        public string Url { get; set; }
+        public string Url { set; get; }
+
+
         [StringLength(128)]
-        public string ParentId { get; set; }
+        public string ParentId { set; get; }
+
         public string IconCss { get; set; }
-        public Status Status { get; set; }
-        public int SortOrder { get; set; }
+        public int SortOrder { set; get; }
+        public Status Status { set; get; }
     }
 }

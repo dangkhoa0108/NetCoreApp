@@ -18,7 +18,7 @@ namespace CoreApp.Data.Entities
         }
 
         public Bill(string customerName, string customerAddress, string customerMobile, string customerMessage,
-            BillStatus billStatus, PaymentMethod paymentMethod, Status status, string customerId)
+            BillStatus billStatus, PaymentMethod paymentMethod, Status status, Guid customerId)
         {
             CustomerName = customerName;
             CustomerAddress = customerAddress;
@@ -30,7 +30,7 @@ namespace CoreApp.Data.Entities
             CustomerId = customerId;
         }
         public Bill(int id, string customerName, string customerAddress, string customerMobile, string customerMessage,
-            BillStatus billStatus, PaymentMethod paymentMethod, Status status, string customerId)
+            BillStatus billStatus, PaymentMethod paymentMethod, Status status, Guid customerId)
         {
             Id = id;
             CustomerName = customerName;
@@ -58,8 +58,7 @@ namespace CoreApp.Data.Entities
         public PaymentMethod PaymentMethod { get; set; }
         public BillStatus BillStatus { get; set; }
 
-        [StringLength(450)]
-        public string CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         [DefaultValue(Status.Active)]
         public Status Status { get; set; } = Status.Active;
         public DateTime DateCreated { get; set; }
