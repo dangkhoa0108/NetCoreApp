@@ -1,6 +1,7 @@
 ﻿/// <binding Clean='clean' />
 "use strict";
 var gulp = require("gulp");
+var runSequence = require("run-sequence");
 // Dependency Dirs
 //Node Module
 var nodeLibs = {
@@ -49,6 +50,12 @@ var nodeLibs = {
     },
     "moment": {
         "min/**/*":""
+    },
+    "notifyjs": {
+        "dist/*":""
+    },
+    "bootbox": {
+        "*.js":""
     }
 };
 var templates = {
@@ -81,4 +88,11 @@ gulp.task("CopyForTemplates", function() {
                 .pipe(gulp.dest("wwwroot/vendor/" + template + "/" +  templates[template][itemTemplate])));
         }
     }
+});
+
+gulp.task("default", function (callback) {
+    return runSequence(
+        "CopyForTemplates",
+        "CopyLibrary",
+        callback);
 });
