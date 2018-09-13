@@ -1,26 +1,39 @@
 @using Microsoft.AspNetCore.Identity
+@using NetCoreApp.Extensions
 @using NetCoreApp.Models
 
 @inject SignInManager<AppUser> SignInManager
 @inject UserManager<AppUser> UserManager
 
-@if (SignInManager.IsSignedIn(User))
-{
-    <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <img src="~/vendor/gentelella/production/img.jpg" alt="">@User.GetSpecificClaim("FullName")
+    <span class=" fa fa-angle-down"></span>
+</a>
+
+<ul class="dropdown-menu dropdown-usermenu pull-right">
+    <li><a href="javascript:;"> Profile</a></li>
+    <li>
+        <a href="javascript:;">
+            <span class="badge bg-red pull-right">50%</span>
+            <span>Settings</span>
+        </a>
+    </li>
+    <li><a href="javascript:;">Help</a></li>
+    <li>
+        <form asp-area="Admin" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+            <button><i class="fa fa-sign-out pull-right"></i> Log Out</button>
+        </form>
+    </li>
+</ul>
+
+@*@if (SignInManager.IsSignedIn(User))
+    {
+
+    }
+    else
+    {
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            </li>
-            <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
-            </li>
+            <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
+            <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
         </ul>
-    </form>
-}
-else
-{
-    <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-        <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
-    </ul>
-}
+    }*@

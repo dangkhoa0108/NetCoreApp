@@ -61,20 +61,26 @@ namespace NetCoreApp
             services.AddAutoMapper();
 
             // Add application services.
+            //System
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<DbInitialize>();
+            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
 
+            //Auto Mapper
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
 
+            //Repository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+
+            //Service
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
-
-            services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
-
-            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
+            services.AddTransient<IFunctionService, FunctionService>();
+  
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -104,7 +110,7 @@ namespace NetCoreApp
                     template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name : "areas",
-                    template : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    template : "{area:exists}/{controller=Admin}/{action=Index}/{id?}"
                 );
             });
         }
