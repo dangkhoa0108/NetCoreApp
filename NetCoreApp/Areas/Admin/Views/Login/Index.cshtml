@@ -30,14 +30,14 @@
         <div class="login_wrapper">
             <div class="animate form login_form">
                 <section class="login_content">
-                    <form>
+                    <form id="frmLogin">
                         @Html.AntiForgeryToken()
                         <h1>Login Form</h1>
                         <div>
-                            <input type="text" class="form-control" placeholder="Username" required="" name="userName" id="txtUserName"/>
+                            <input type="text" class="form-control" placeholder="Username" required="" name="userName" id="txtUserName" />
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="Password" required="" name="password" id="txtPassword"/>
+                            <input type="password" class="form-control" placeholder="Password" required="" name="password" id="txtPassword" />
                         </div>
                         <div>
                             <a class="btn btn-default submit" href="#" id="btnLogin">Log in</a>
@@ -51,6 +51,9 @@
         </div>
     </div>
     <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/vendor/jquery-validation/jquery.validate.js"></script>
+    <script src="~/vendor/jquery-validation/additional-methods.js"></script>
+    <script src="~/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script src="~/vendor/notifyjs/notify.js"></script>
     <script src="~/app/shared/app.js"></script>
     <script src="~/app/controllers/login/index.js"></script>

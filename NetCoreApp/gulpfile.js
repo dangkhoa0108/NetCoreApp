@@ -51,14 +51,20 @@ var nodeLibs = {
     "moment": {
         "min/**/*":""
     },
-    "notifyjs": {
-        "dist/*":""
-    },
+    //"notifyjs": {
+    //    "dist/*":""
+    //},
     "bootbox": {
         "*.js":""
     },
     "animate.css": {
         "*.css":""
+    },
+    "jquery-validation": {
+        "dist/**/*":""
+    },
+    "jquery-validation-unobtrusive": {
+        "dist/*":""
     }
 };
 var templates = {

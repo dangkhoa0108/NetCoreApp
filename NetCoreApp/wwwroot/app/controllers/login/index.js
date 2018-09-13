@@ -3,12 +3,26 @@
         registerEvent();
     };
     var registerEvent = function() {
+        $('#frmLogin').validate({
+            errorClass: 'red',
+            ignore:[],
+            rule: {
+                userName: {
+                    required:true
+                },
+                password: {
+                    required:true
+                }
+            }
+        });
         $('#btnLogin').on('click',
             function(e) {
-                e.preventDefault();
-                var user = $('#txtUserName').val();
-                var password = $('#txtPassword').val();
-                login(user, password);
+                if ($('#frmLogin').valid()) {
+                    e.preventDefault();
+                    var user = $('#txtUserName').val();
+                    var password = $('#txtPassword').val();
+                    login(user, password);
+                }
             });
     };
     var login = function(user, pass) {
