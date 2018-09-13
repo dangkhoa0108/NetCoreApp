@@ -3072,3 +3072,922 @@ WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
 2018-09-13T12:11:06.5741485+07:00 0HLGP6SQ5AJ1D:00000004 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
 2018-09-13T12:11:06.6055481+07:00 0HLGP6SQ5AJ1C:00000005 [INF] Request finished in 53.6106ms 304 application/javascript (791a596a)
 2018-09-13T12:11:06.6155640+07:00 0HLGP6SQ5AJ1D:00000004 [INF] Request finished in 78.3968ms 304 application/javascript (791a596a)
+2018-09-13T14:39:28.1565156+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T14:39:28.5407780+07:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:28.7016684+07:00  [INF] Executed DbCommand ("56"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T14:39:28.9007080+07:00  [INF] Executed DbCommand ("57"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2018-09-13T14:39:29.0022663+07:00  [INF] Executed DbCommand ("77"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T14:39:29.0891367+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2018-09-13T14:39:29.1351143+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T14:39:29.2115912+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 250), @p3='?' (Size = 4000), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppRoles] ([Id], [ConcurrencyStamp], [Description], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2018-09-13T14:39:29.2824562+07:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:29.3853742+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T14:39:29.4530874+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-09-13T14:39:29.5587743+07:00  [INF] Executed DbCommand ("52"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?', @p7='?', @p8='?' (Size = 4000), @p9='?', @p10='?' (Size = 4000), @p11='?', @p12='?', @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?', @p18='?' (Size = 4000), @p19='?', @p20='?', @p21='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUsers] ([Id], [AccessFailedCount], [Avatar], [Balance], [Birthday], [ConcurrencyStamp], [DateCreated], [DateModified], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [Status], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21);" (0723d8ff)
+2018-09-13T14:39:29.6651594+07:00  [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T14:39:29.7578933+07:00  [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-09-13T14:39:29.8241767+07:00  [INF] Executed DbCommand ("46"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[RoleId], [e].[UserId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[RoleId] = @__get_Item_0) AND ([e].[UserId] = @__get_Item_1)" (0723d8ff)
+2018-09-13T14:39:29.8752350+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-09-13T14:39:29.9475464+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T14:39:29.9908206+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-09-13T14:39:30.0493592+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=["@p0='?', @p1='?', @p23='?', @p2='?', @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?', @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?' (Size = 4000), @p12='?', @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?', @p21='?', @p22='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AppUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AppUsers] SET [AccessFailedCount] = @p2, [Avatar] = @p3, [Balance] = @p4, [Birthday] = @p5, [ConcurrencyStamp] = @p6, [DateCreated] = @p7, [DateModified] = @p8, [Email] = @p9, [EmailConfirmed] = @p10, [FullName] = @p11, [LockoutEnabled] = @p12, [LockoutEnd] = @p13, [NormalizedEmail] = @p14, [NormalizedUserName] = @p15, [PasswordHash] = @p16, [PhoneNumber] = @p17, [PhoneNumberConfirmed] = @p18, [SecurityStamp] = @p19, [Status] = @p20, [TwoFactorEnabled] = @p21, [UserName] = @p22
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-09-13T14:39:30.1319072+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.2055049+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-13T14:39:30.2819323+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 128), @p5='?' (Size = 128), @p6='?', @p7='?', @p8='?' (Size = 250), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (Size = 128), @p12='?' (Size = 128), @p13='?', @p14='?', @p15='?' (Size = 250), @p16='?' (Size = 450), @p17='?' (Size = 4000), @p18='?' (Size = 128), @p19='?' (Size = 128), @p20='?', @p21='?', @p22='?' (Size = 250), @p23='?' (Size = 450), @p24='?' (Size = 4000), @p25='?' (Size = 128), @p26='?' (Size = 128), @p27='?', @p28='?', @p29='?' (Size = 250), @p30='?' (Size = 450), @p31='?' (Size = 4000), @p32='?' (Size = 128), @p33='?' (Size = 128), @p34='?', @p35='?', @p36='?' (Size = 250), @p37='?' (Size = 450), @p38='?' (Size = 4000), @p39='?' (Size = 128), @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?' (Size = 250), @p44='?' (Size = 450), @p45='?' (Size = 4000), @p46='?' (Size = 128), @p47='?' (Size = 128), @p48='?', @p49='?', @p50='?' (Size = 250), @p51='?' (Size = 450), @p52='?' (Size = 4000), @p53='?' (Size = 128), @p54='?' (Size = 128), @p55='?', @p56='?', @p57='?' (Size = 250), @p58='?' (Size = 450), @p59='?' (Size = 4000), @p60='?' (Size = 128), @p61='?' (Size = 128), @p62='?', @p63='?', @p64='?' (Size = 250), @p65='?' (Size = 450), @p66='?' (Size = 4000), @p67='?' (Size = 128), @p68='?' (Size = 128), @p69='?', @p70='?', @p71='?' (Size = 250), @p72='?' (Size = 450), @p73='?' (Size = 4000), @p74='?' (Size = 128), @p75='?' (Size = 128), @p76='?', @p77='?', @p78='?' (Size = 250), @p79='?' (Size = 450), @p80='?' (Size = 4000), @p81='?' (Size = 128), @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?' (Size = 250), @p86='?' (Size = 450), @p87='?' (Size = 4000), @p88='?' (Size = 128), @p89='?' (Size = 128), @p90='?', @p91='?', @p92='?' (Size = 250), @p93='?' (Size = 450), @p94='?' (Size = 4000), @p95='?' (Size = 128), @p96='?' (Size = 128), @p97='?', @p98='?', @p99='?' (Size = 250), @p100='?' (Size = 450), @p101='?' (Size = 4000), @p102='?' (Size = 128), @p103='?' (Size = 128), @p104='?', @p105='?', @p106='?' (Size = 250), @p107='?' (Size = 450), @p108='?' (Size = 4000), @p109='?' (Size = 128), @p110='?' (Size = 128), @p111='?', @p112='?', @p113='?' (Size = 250), @p114='?' (Size = 450), @p115='?' (Size = 4000), @p116='?' (Size = 128), @p117='?' (Size = 128), @p118='?', @p119='?', @p120='?' (Size = 250), @p121='?' (Size = 450), @p122='?' (Size = 4000), @p123='?' (Size = 128), @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?' (Size = 250), @p128='?' (Size = 450), @p129='?' (Size = 4000), @p130='?' (Size = 128), @p131='?' (Size = 128), @p132='?', @p133='?', @p134='?' (Size = 250), @p135='?' (Size = 450), @p136='?' (Size = 4000), @p137='?' (Size = 128), @p138='?' (Size = 128), @p139='?', @p140='?', @p141='?' (Size = 250), @p142='?' (Size = 450), @p143='?' (Size = 4000), @p144='?' (Size = 128), @p145='?' (Size = 128), @p146='?', @p147='?', @p148='?' (Size = 250), @p149='?' (Size = 450), @p150='?' (Size = 4000), @p151='?' (Size = 128), @p152='?' (Size = 128), @p153='?', @p154='?', @p155='?' (Size = 250), @p156='?' (Size = 450), @p157='?' (Size = 4000), @p158='?' (Size = 128), @p159='?' (Size = 128), @p160='?', @p161='?', @p162='?' (Size = 250), @p163='?' (Size = 450), @p164='?' (Size = 4000), @p165='?' (Size = 128), @p166='?' (Size = 128), @p167='?', @p168='?', @p169='?' (Size = 250)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Footers] ([Id], [Content])
+VALUES (@p0, @p1);
+INSERT INTO [Functions] ([Id], [IconCss], [Name], [ParentId], [SortOrder], [Status], [Url])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8),
+(@p9, @p10, @p11, @p12, @p13, @p14, @p15),
+(@p16, @p17, @p18, @p19, @p20, @p21, @p22),
+(@p23, @p24, @p25, @p26, @p27, @p28, @p29),
+(@p30, @p31, @p32, @p33, @p34, @p35, @p36),
+(@p37, @p38, @p39, @p40, @p41, @p42, @p43),
+(@p44, @p45, @p46, @p47, @p48, @p49, @p50),
+(@p51, @p52, @p53, @p54, @p55, @p56, @p57),
+(@p58, @p59, @p60, @p61, @p62, @p63, @p64),
+(@p65, @p66, @p67, @p68, @p69, @p70, @p71),
+(@p72, @p73, @p74, @p75, @p76, @p77, @p78),
+(@p79, @p80, @p81, @p82, @p83, @p84, @p85),
+(@p86, @p87, @p88, @p89, @p90, @p91, @p92),
+(@p93, @p94, @p95, @p96, @p97, @p98, @p99),
+(@p100, @p101, @p102, @p103, @p104, @p105, @p106),
+(@p107, @p108, @p109, @p110, @p111, @p112, @p113),
+(@p114, @p115, @p116, @p117, @p118, @p119, @p120),
+(@p121, @p122, @p123, @p124, @p125, @p126, @p127),
+(@p128, @p129, @p130, @p131, @p132, @p133, @p134),
+(@p135, @p136, @p137, @p138, @p139, @p140, @p141),
+(@p142, @p143, @p144, @p145, @p146, @p147, @p148),
+(@p149, @p150, @p151, @p152, @p153, @p154, @p155),
+(@p156, @p157, @p158, @p159, @p160, @p161, @p162),
+(@p163, @p164, @p165, @p166, @p167, @p168, @p169);" (0723d8ff)
+2018-09-13T14:39:30.3400419+07:00  [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.4201218+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.5074329+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.5632695+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.6169033+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.7128012+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.7824514+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:30.8386145+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T14:39:31.3180673+07:00 0HLGP9G5FBV2E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-09-13T14:39:31.3180673+07:00 0HLGP9G5FBV2D:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:13748/  0 (ca22a1cb)
+2018-09-13T14:39:31.3746471+07:00 0HLGP9G5FBV2D:00000001 [INF] Request finished in 94.6664ms 200  (791a596a)
+2018-09-13T14:39:31.4054144+07:00 0HLGP9G5FBV2E:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T14:39:31.4704553+07:00 0HLGP9G5FBV2E:00000001 [INF] Executed DbCommand ("48"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-13T14:39:31.4990217+07:00 0HLGP9G5FBV2E:00000001 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-09-13T14:39:31.5253135+07:00 0HLGP9G5FBV2E:00000001 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-09-13T14:39:31.5512990+07:00 0HLGP9G5FBV2E:00000001 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-09-13T14:39:31.5780924+07:00 0HLGP9G5FBV2E:00000001 [INF] "Identity.Application" was not authenticated. Failure message: "No principal." (48071232)
+2018-09-13T14:39:32.0363195+07:00 0HLGP9G5FBV2E:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:39:35.6673223+07:00 0HLGP9G5FBV2E:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-13T14:39:36.5410774+07:00 0HLGP9G5FBV2E:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 4552.5976ms (afa2e885)
+2018-09-13T14:39:36.6012161+07:00 0HLGP9G5FBV2E:00000001 [INF] Request finished in 5298.1676ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T14:39:44.2990283+07:00 0HLGP9G5FBV2D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T14:39:44.3555867+07:00 0HLGP9G5FBV2D:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:39:44.5766587+07:00 0HLGP9G5FBV2D:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T14:39:44.6096680+07:00 0HLGP9G5FBV2D:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 299.9353ms (afa2e885)
+2018-09-13T14:39:44.6145085+07:00 0HLGP9G5FBV2D:00000002 [INF] Request finished in 345.6987ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T14:39:44.6521728+07:00 0HLGP9G5FBV2E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-13T14:39:44.6790148+07:00 0HLGP9G5FBV2E:00000002 [INF] The file "/vendor/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-09-13T14:39:44.6850603+07:00 0HLGP9G5FBV2E:00000002 [INF] Request finished in 51.6315ms 304 text/css (791a596a)
+2018-09-13T14:39:45.4108663+07:00 0HLGP9G5FBV2D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T14:39:45.4674490+07:00 0HLGP9G5FBV2D:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:39:45.4918744+07:00 0HLGP9G5FBV2D:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T14:39:45.5021048+07:00 0HLGP9G5FBV2D:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 81.6025ms (afa2e885)
+2018-09-13T14:39:45.5731886+07:00 0HLGP9G5FBV2D:00000003 [INF] Request finished in 98.1624ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T14:39:45.6676419+07:00 0HLGP9G5FBV2F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-09-13T14:39:45.7101363+07:00 0HLGP9G5FBV2G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-09-13T14:39:45.8168116+07:00 0HLGP9G5FBV2I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-09-13T14:39:45.8588900+07:00 0HLGP9G5FBV2J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js   (ca22a1cb)
+2018-09-13T14:39:45.8788480+07:00 0HLGP9G5FBV2H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-13T14:39:45.9073800+07:00 0HLGP9G5FBV2L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/login/index.js   (ca22a1cb)
+2018-09-13T14:39:45.9200025+07:00 0HLGP9G5FBV2G:00000001 [INF] The file "/vendor/jquery-validation/additional-methods.js" was not modified (f1f8d725)
+2018-09-13T14:39:45.9428785+07:00 0HLGP9G5FBV2E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-09-13T14:39:45.9521765+07:00 0HLGP9G5FBV2F:00000001 [INF] The file "/vendor/gentelella/build/css/custom.css" was not modified (f1f8d725)
+2018-09-13T14:39:45.9680487+07:00 0HLGP9G5FBV2I:00000001 [INF] The file "/vendor/jquery-validation/jquery.validate.js" was not modified (f1f8d725)
+2018-09-13T14:39:45.9840615+07:00 0HLGP9G5FBV2K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-09-13T14:39:46.0036936+07:00 0HLGP9G5FBV2J:00000001 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-09-13T14:39:46.0538247+07:00 0HLGP9G5FBV2D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-09-13T14:39:46.0643636+07:00 0HLGP9G5FBV2H:00000001 [INF] The file "/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-09-13T14:39:46.0846403+07:00 0HLGP9G5FBV2L:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-09-13T14:39:46.1214139+07:00 0HLGP9G5FBV2G:00000001 [INF] Request finished in 349.5762ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.1415624+07:00 0HLGP9G5FBV2I:00000001 [INF] Request finished in 302.8733ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.1612943+07:00 0HLGP9G5FBV2L:00000001 [INF] Request finished in 346.9832ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.1707168+07:00 0HLGP9G5FBV2J:00000001 [INF] Request finished in 326.7202ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.1756266+07:00 0HLGP9G5FBV2F:00000001 [INF] Request finished in 381.4714ms 304 text/css (791a596a)
+2018-09-13T14:39:46.1803571+07:00 0HLGP9G5FBV2E:00000003 [INF] The file "/vendor/animate.css/animate.min.css" was not modified (f1f8d725)
+2018-09-13T14:39:46.1962691+07:00 0HLGP9G5FBV2K:00000001 [INF] The file "/vendor/notifyjs/notify.js" was not modified (f1f8d725)
+2018-09-13T14:39:46.2058011+07:00 0HLGP9G5FBV2H:00000001 [INF] Request finished in 386.3969ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.2191167+07:00 0HLGP9G5FBV2D:00000004 [INF] The file "/vendor/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-09-13T14:39:46.2795192+07:00 0HLGP9G5FBV2K:00000001 [INF] Request finished in 524.8858ms 304 application/javascript (791a596a)
+2018-09-13T14:39:46.3072321+07:00 0HLGP9G5FBV2D:00000004 [INF] Request finished in 465.2641ms 304 text/css (791a596a)
+2018-09-13T14:39:46.3098865+07:00 0HLGP9G5FBV2E:00000003 [INF] Request finished in 641.6334ms 304 text/css (791a596a)
+2018-09-13T14:39:51.1585304+07:00 0HLGP9G5FBV2G:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T14:39:51.2905779+07:00 0HLGP9G5FBV2G:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:39:51.3235846+07:00 0HLGP9G5FBV2G:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T14:39:51.3781560+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T14:39:51.4954121+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed DbCommand ("41"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-13T14:39:51.5665412+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T14:39:51.6105865+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed DbCommand ("33"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T14:39:51.6781099+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-13T14:39:51.7054137+07:00 0HLGP9G5FBV2G:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-13T14:39:51.7102499+07:00 0HLGP9G5FBV2G:00000002 [INF] User logged in. (fdce0db4)
+2018-09-13T14:39:51.7195355+07:00 0HLGP9G5FBV2G:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T14:39:51.7943065+07:00 0HLGP9G5FBV2G:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 561.6922ms (afa2e885)
+2018-09-13T14:39:51.8232466+07:00 0HLGP9G5FBV2G:00000002 [INF] Request finished in 643.3605ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T14:40:10.8646131+07:00 0HLGP9G5FBV2F:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T14:40:10.8689722+07:00 0HLGP9G5FBV2F:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T14:40:10.9069146+07:00 0HLGP9G5FBV2F:00000002 [INF] Antiforgery token validation failed. "The provided antiforgery token was meant for a different claims-based user than the current user." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-09-13T14:40:10.9139797+07:00 0HLGP9G5FBV2F:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-09-13T14:40:10.9425213+07:00 0HLGP9G5FBV2F:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-09-13T14:40:10.9516249+07:00 0HLGP9G5FBV2F:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 72.8907ms (afa2e885)
+2018-09-13T14:40:10.9612891+07:00 0HLGP9G5FBV2F:00000002 [INF] Request finished in 112.0272ms 400  (791a596a)
+2018-09-13T14:40:14.3664171+07:00 0HLGP9G5FBV2I:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T14:40:14.3901036+07:00 0HLGP9G5FBV2I:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T14:40:14.3965885+07:00 0HLGP9G5FBV2I:00000002 [INF] Antiforgery token validation failed. "The provided antiforgery token was meant for a different claims-based user than the current user." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-09-13T14:40:14.4020799+07:00 0HLGP9G5FBV2I:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-09-13T14:40:14.4064020+07:00 0HLGP9G5FBV2I:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-09-13T14:40:14.4104389+07:00 0HLGP9G5FBV2I:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 16.0837ms (afa2e885)
+2018-09-13T14:40:14.4164428+07:00 0HLGP9G5FBV2I:00000002 [INF] Request finished in 68.2293ms 400  (791a596a)
+2018-09-13T14:40:20.8737571+07:00 0HLGP9G5FBV2J:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T14:40:20.9002473+07:00 0HLGP9G5FBV2J:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T14:40:20.9088126+07:00 0HLGP9G5FBV2J:00000002 [INF] Antiforgery token validation failed. "The provided antiforgery token was meant for a different claims-based user than the current user." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-09-13T14:40:20.9143673+07:00 0HLGP9G5FBV2J:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-09-13T14:40:20.9186279+07:00 0HLGP9G5FBV2J:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-09-13T14:40:20.9439447+07:00 0HLGP9G5FBV2J:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 18.1935ms (afa2e885)
+2018-09-13T14:40:20.9504698+07:00 0HLGP9G5FBV2J:00000002 [INF] Request finished in 74.8536ms 400  (791a596a)
+2018-09-13T14:42:21.2525435+07:00 0HLGP9G5FBV2M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T14:42:21.2784175+07:00 0HLGP9G5FBV2M:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T14:42:21.3045441+07:00 0HLGP9G5FBV2M:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:42:21.3347552+07:00 0HLGP9G5FBV2M:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T14:42:21.4195572+07:00 0HLGP9G5FBV2M:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 56.7816ms (afa2e885)
+2018-09-13T14:42:21.5090408+07:00 0HLGP9G5FBV2O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-09-13T14:42:21.5188165+07:00 0HLGP9G5FBV2N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-13T14:42:21.9385012+07:00 0HLGP9G5FBV2N:00000001 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-13T14:42:21.9409148+07:00 0HLGP9G5FBV2M:00000001 [INF] Request finished in 182.9289ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T14:42:21.9680283+07:00 0HLGP9G5FBV2O:00000001 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-09-13T14:42:21.9772788+07:00 0HLGP9G5FBV2T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/login/index.js   (ca22a1cb)
+2018-09-13T14:42:21.9834948+07:00 0HLGP9G5FBV2S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-13T14:42:21.9882080+07:00 0HLGP9G5FBV2P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-09-13T14:42:22.0296056+07:00 0HLGP9G5FBV2R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-13T14:42:22.1021275+07:00 0HLGP9G5FBV2V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-09-13T14:42:22.1115636+07:00 0HLGP9G5FBV30:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-09-13T14:42:22.1201826+07:00 0HLGP9G5FBV2U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-09-13T14:42:22.1531593+07:00 0HLGP9G5FBV2O:00000001 [INF] Request finished in 552.5353ms 200 text/css (791a596a)
+2018-09-13T14:42:22.2092351+07:00 0HLGP9G5FBV2T:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-09-13T14:42:22.2177419+07:00 0HLGP9G5FBV2S:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-09-13T14:42:22.2336701+07:00 0HLGP9G5FBV2P:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation/jquery.validate.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\jquery.validate.js"' (27b0a520)
+2018-09-13T14:42:22.2429435+07:00 0HLGP9G5FBV2R:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-09-13T14:42:22.3636522+07:00 0HLGP9G5FBV2Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-13T14:42:22.4417009+07:00 0HLGP9G5FBV2V:00000001 [INF] Sending file. Request path: '"/vendor/gentelella/build/css/custom.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\css\custom.css"' (27b0a520)
+2018-09-13T14:42:22.4533384+07:00 0HLGP9G5FBV30:00000001 [INF] Sending file. Request path: '"/vendor/animate.css/animate.min.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.min.css"' (27b0a520)
+2018-09-13T14:42:22.4677561+07:00 0HLGP9G5FBV2U:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-09-13T14:42:22.4934607+07:00 0HLGP9G5FBV2T:00000001 [INF] Request finished in 730.1825ms 200 application/javascript (791a596a)
+2018-09-13T14:42:22.5218665+07:00 0HLGP9G5FBV2P:00000001 [INF] Request finished in 758.1414ms 200 application/javascript (791a596a)
+2018-09-13T14:42:22.5656178+07:00 0HLGP9G5FBV2R:00000001 [INF] Request finished in 899.3827ms 200 application/javascript (791a596a)
+2018-09-13T14:42:22.5779518+07:00 0HLGP9G5FBV2S:00000001 [INF] Request finished in 817.1359ms 200 application/javascript (791a596a)
+2018-09-13T14:42:22.6196815+07:00 0HLGP9G5FBV2U:00000001 [INF] Request finished in 853.0725ms 200 application/javascript (791a596a)
+2018-09-13T14:42:22.6381876+07:00 0HLGP9G5FBV2Q:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-13T14:42:22.6463424+07:00 0HLGP9G5FBV30:00000001 [INF] Request finished in 853.007ms 200 text/css (791a596a)
+2018-09-13T14:42:22.6539684+07:00 0HLGP9G5FBV32:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js   (ca22a1cb)
+2018-09-13T14:42:22.7357231+07:00 0HLGP9G5FBV2V:00000001 [INF] Request finished in 888.9116ms 200 text/css (791a596a)
+2018-09-13T14:42:22.8279526+07:00 0HLGP9G5FBV2N:00000001 [INF] Request finished in 633.2773ms 200 text/css (791a596a)
+2018-09-13T14:42:22.8588354+07:00 0HLGP9G5FBV31:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-09-13T14:42:22.9038551+07:00 0HLGP9G5FBV2Q:00000001 [INF] Request finished in 1086.604ms 200 text/css (791a596a)
+2018-09-13T14:42:22.9237880+07:00 0HLGP9G5FBV32:00000001 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-09-13T14:42:23.0291399+07:00 0HLGP9G5FBV31:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation/additional-methods.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\additional-methods.js"' (27b0a520)
+2018-09-13T14:42:23.1407009+07:00 0HLGP9G5FBV32:00000001 [INF] Request finished in 1355.0045ms 200 application/javascript (791a596a)
+2018-09-13T14:42:23.1699095+07:00 0HLGP9G5FBV31:00000001 [INF] Request finished in 1415.7861ms 200 application/javascript (791a596a)
+2018-09-13T14:42:24.4794575+07:00 0HLGP9G5FBV2M:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T14:42:24.5084526+07:00 0HLGP9G5FBV2M:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T14:42:24.5714175+07:00 0HLGP9G5FBV2M:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T14:42:24.5987781+07:00 0HLGP9G5FBV2M:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T14:42:24.6519532+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed DbCommand ("45"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T14:42:24.7366940+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed DbCommand ("68"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-13T14:42:24.8009669+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed DbCommand ("57"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T14:42:24.8484708+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T14:42:24.9208992+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed DbCommand ("64"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-13T14:42:24.9259854+07:00 0HLGP9G5FBV2M:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-13T14:42:24.9316067+07:00 0HLGP9G5FBV2M:00000002 [INF] User logged in. (fdce0db4)
+2018-09-13T14:42:24.9359228+07:00 0HLGP9G5FBV2M:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T14:42:24.9416847+07:00 0HLGP9G5FBV2M:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 427.6089ms (afa2e885)
+2018-09-13T14:42:24.9522382+07:00 0HLGP9G5FBV2M:00000002 [INF] Request finished in 486.2658ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T15:23:13.0354703+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T15:23:13.3575582+07:00  [INF] Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.4067819+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.4446530+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.4830181+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-13T15:23:13.5041475+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.5703302+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.6265025+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.6542032+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.7000887+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.7501154+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.7899741+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:13.8275298+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:23:14.0944491+07:00 0HLGPA8J473B5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-09-13T15:23:14.0943525+07:00 0HLGPA8J473B6:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:13748/  0 (ca22a1cb)
+2018-09-13T15:23:14.1434950+07:00 0HLGPA8J473B6:00000001 [INF] Request finished in 95.1551ms 200  (791a596a)
+2018-09-13T15:23:14.1851541+07:00 0HLGPA8J473B5:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T15:23:14.2975125+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("72"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-13T15:23:14.4384739+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("62"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-13T15:23:14.5167546+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T15:23:14.6095952+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T15:23:14.6868599+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("46"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-13T15:23:14.7524243+07:00 0HLGPA8J473B5:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T15:23:14.7800809+07:00 0HLGPA8J473B5:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:23:15.0415595+07:00 0HLGPA8J473B5:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:23:17.7746395+07:00 0HLGPA8J473B5:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-13T15:23:18.3655018+07:00 0HLGPA8J473B5:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 3386.7861ms (afa2e885)
+2018-09-13T15:23:18.3751345+07:00 0HLGPA8J473B5:00000001 [INF] Request finished in 4348.1724ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:23:21.5630826+07:00 0HLGPA8J473B6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T15:23:21.5702194+07:00 0HLGPA8J473B6:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:23:21.6256951+07:00 0HLGPA8J473B6:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:23:40.7924068+07:00 0HLGPA8J473B5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T15:23:40.8017354+07:00 0HLGPA8J473B5:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:23:40.8349669+07:00 0HLGPA8J473B5:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:24:07.9508676+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T15:24:08.2110472+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.2596789+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.2954278+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.3271612+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-13T15:24:08.3452226+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.4090392+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.4500900+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.4707733+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.4956678+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.5391993+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.5579132+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:08.5730441+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:24:09.6139757+07:00 0HLGPA93H2PRO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/   (ca22a1cb)
+2018-09-13T15:24:09.9965746+07:00 0HLGPA93H2PRO:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:24:13.0166915+07:00 0HLGPA93H2PRO:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-13T15:24:13.7534010+07:00 0HLGPA93H2PRR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/images/banner1.svg   (ca22a1cb)
+2018-09-13T15:24:13.7924628+07:00 0HLGPA93H2PRN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-13T15:24:13.8018624+07:00 0HLGPA93H2PRQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/images/banner2.svg   (ca22a1cb)
+2018-09-13T15:24:13.8153934+07:00 0HLGPA93H2PRP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/css/site.css   (ca22a1cb)
+2018-09-13T15:24:13.8545592+07:00 0HLGPA93H2PRP:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-09-13T15:24:13.9861019+07:00 0HLGPA93H2PRN:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-13T15:24:14.0925351+07:00 0HLGPA93H2PRO:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 3663.5326ms (afa2e885)
+2018-09-13T15:24:14.1062604+07:00 0HLGPA93H2PRR:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-09-13T15:24:14.1855205+07:00 0HLGPA93H2PRP:00000001 [INF] Request finished in 320.6218ms 200 text/css (791a596a)
+2018-09-13T15:24:14.2179461+07:00 0HLGPA93H2PRQ:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-09-13T15:24:14.2400827+07:00 0HLGPA93H2PRN:00000001 [INF] Request finished in 435.7443ms 200 text/css (791a596a)
+2018-09-13T15:24:14.3057123+07:00 0HLGPA93H2PRO:00000001 [INF] Request finished in 4540.5486ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:24:14.3658049+07:00 0HLGPA93H2PRS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:13747/images/banner3.svg   (ca22a1cb)
+2018-09-13T15:24:14.4018720+07:00 0HLGPA93H2PRN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-09-13T15:24:14.4246497+07:00 0HLGPA93H2PRN:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-09-13T15:24:14.4546670+07:00 0HLGPA93H2PRP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-09-13T15:24:14.4600423+07:00 0HLGPA93H2PRS:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-09-13T15:24:14.4721538+07:00 0HLGPA93H2PRR:00000001 [INF] Request finished in 552.0283ms 200 image/svg+xml (791a596a)
+2018-09-13T15:24:14.4869262+07:00 0HLGPA93H2PRS:00000001 [INF] Request finished in 279.7977ms 200 image/svg+xml (791a596a)
+2018-09-13T15:24:14.5148961+07:00 0HLGPA93H2PRQ:00000001 [INF] Request finished in 792.6972ms 200 image/svg+xml (791a596a)
+2018-09-13T15:24:14.5540422+07:00 0HLGPA93H2PRP:00000002 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-09-13T15:24:14.5621473+07:00 0HLGPA93H2PRQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/images/banner4.svg   (ca22a1cb)
+2018-09-13T15:24:14.6341970+07:00 0HLGPA93H2PRO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-13T15:24:14.6503376+07:00 0HLGPA93H2PRQ:00000002 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-09-13T15:24:14.6931544+07:00 0HLGPA93H2PRR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-09-13T15:24:14.7209115+07:00 0HLGPA93H2PRP:00000002 [INF] Request finished in 189.5516ms 200 application/javascript (791a596a)
+2018-09-13T15:24:14.7396231+07:00 0HLGPA93H2PRN:00000002 [INF] Request finished in 171.6154ms 200 application/javascript (791a596a)
+2018-09-13T15:24:14.7557819+07:00 0HLGPA93H2PRQ:00000002 [INF] Request finished in 133.6767ms 200 image/svg+xml (791a596a)
+2018-09-13T15:24:14.7832861+07:00 0HLGPA93H2PRR:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-09-13T15:24:14.8139868+07:00 0HLGPA93H2PRO:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-09-13T15:24:14.8424273+07:00 0HLGPA93H2PRR:00000002 [INF] Request finished in 295.1169ms 200 font/woff2 (791a596a)
+2018-09-13T15:24:14.8803563+07:00 0HLGPA93H2PRO:00000002 [INF] Request finished in 418.4523ms 200 application/javascript (791a596a)
+2018-09-13T15:24:15.0341759+07:00 0HLGPA93H2PRO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/favicon.ico   (ca22a1cb)
+2018-09-13T15:24:15.0590138+07:00 0HLGPA93H2PRO:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-13T15:24:15.0701121+07:00 0HLGPA93H2PRO:00000003 [INF] Request finished in 53.1965ms 200 image/x-icon (791a596a)
+2018-09-13T15:24:22.6735377+07:00 0HLGPA93H2PRO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:13747/admin/login   (ca22a1cb)
+2018-09-13T15:24:22.7630562+07:00 0HLGPA93H2PRO:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:24:29.4433377+07:00 0HLGPA93H2PRO:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T15:24:29.4854844+07:00 0HLGPA93H2PRO:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 6771.2497ms (afa2e885)
+2018-09-13T15:24:29.4925205+07:00 0HLGPA93H2PRO:00000004 [INF] Request finished in 6821.7259ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:24:29.6170930+07:00 0HLGPA93H2PRO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-13T15:24:29.6397510+07:00 0HLGPA93H2PRQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-09-13T15:24:29.7170758+07:00 0HLGPA93H2PRS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-09-13T15:24:29.7246855+07:00 0HLGPA93H2PRO:00000005 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-13T15:24:29.7354166+07:00 0HLGPA93H2PRQ:00000003 [INF] Sending file. Request path: '"/vendor/animate.css/animate.min.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.min.css"' (27b0a520)
+2018-09-13T15:24:29.7734747+07:00 0HLGPA93H2PRR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-09-13T15:24:29.8144284+07:00 0HLGPA93H2PRQ:00000003 [INF] Request finished in 224.8636ms 200 text/css (791a596a)
+2018-09-13T15:24:29.8219431+07:00 0HLGPA93H2PRO:00000005 [INF] Request finished in 153.7651ms 200 text/css (791a596a)
+2018-09-13T15:24:29.8506342+07:00 0HLGPA93H2PRS:00000002 [INF] Sending file. Request path: '"/vendor/jquery-validation/additional-methods.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\additional-methods.js"' (27b0a520)
+2018-09-13T15:24:29.8687138+07:00 0HLGPA93H2PRR:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-09-13T15:24:29.8909081+07:00 0HLGPA93H2PRS:00000002 [INF] Request finished in 320.4634ms 200 application/javascript (791a596a)
+2018-09-13T15:24:29.9184211+07:00 0HLGPA93H2PRR:00000003 [INF] Request finished in 336.4254ms 200 text/css (791a596a)
+2018-09-13T15:24:29.9204270+07:00 0HLGPA93H2PRO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-13T15:24:29.9996005+07:00 0HLGPA93H2PRR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:13747/app/controllers/login/index.js   (ca22a1cb)
+2018-09-13T15:24:30.0092460+07:00 0HLGPA93H2PRQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-09-13T15:24:30.0450459+07:00 0HLGPA93H2PRQ:00000004 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-09-13T15:24:30.0529311+07:00 0HLGPA93H2PRR:00000004 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-09-13T15:24:30.0865728+07:00 0HLGPA93H2PRP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-09-13T15:24:30.1020170+07:00 0HLGPA93H2PRQ:00000004 [INF] Request finished in 171.7298ms 200 application/javascript (791a596a)
+2018-09-13T15:24:30.1069431+07:00 0HLGPA93H2PRS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/app/shared/app.js   (ca22a1cb)
+2018-09-13T15:24:30.1174215+07:00 0HLGPA93H2PRO:00000006 [INF] Sending file. Request path: '"/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-09-13T15:24:30.1243712+07:00 0HLGPA93H2PRO:00000006 [INF] Request finished in 290.9078ms 200 application/javascript (791a596a)
+2018-09-13T15:24:30.1388535+07:00 0HLGPA93H2PRS:00000003 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-09-13T15:24:30.1538284+07:00 0HLGPA93H2PRS:00000003 [INF] Request finished in 168.2262ms 200 application/javascript (791a596a)
+2018-09-13T15:24:30.1672822+07:00 0HLGPA93H2PRP:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/build/css/custom.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\css\custom.css"' (27b0a520)
+2018-09-13T15:24:30.1709042+07:00 0HLGPA93H2PRR:00000004 [INF] Request finished in 212.4905ms 200 application/javascript (791a596a)
+2018-09-13T15:24:30.2027382+07:00 0HLGPA93H2PRP:00000003 [INF] Request finished in 118.3814ms 200 text/css (791a596a)
+2018-09-13T15:24:30.2361574+07:00 0HLGPA93H2PRN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:13747/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-09-13T15:24:30.2660803+07:00 0HLGPA93H2PRN:00000003 [INF] Sending file. Request path: '"/vendor/jquery-validation/jquery.validate.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\jquery.validate.js"' (27b0a520)
+2018-09-13T15:24:30.2733040+07:00 0HLGPA93H2PRN:00000003 [INF] Request finished in 136.0179ms 200 application/javascript (791a596a)
+2018-09-13T15:24:49.2692779+07:00 0HLGPA93H2PRN:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:13747/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T15:24:49.3417467+07:00 0HLGPA93H2PRN:00000004 [INF] Antiforgery token validation failed. "The required antiforgery cookie \".AspNetCore.Antiforgery.mF3asZQcmWY\" is not present." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.mF3asZQcmWY" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-09-13T15:24:49.3496659+07:00 0HLGPA93H2PRN:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-09-13T15:24:49.3557002+07:00 0HLGPA93H2PRN:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-09-13T15:24:49.3793516+07:00 0HLGPA93H2PRN:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 46.3623ms (afa2e885)
+2018-09-13T15:24:49.3885917+07:00 0HLGPA93H2PRN:00000004 [INF] Request finished in 116.7666ms 400  (791a596a)
+2018-09-13T15:24:56.4515359+07:00 0HLGPA93H2PRN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:13747/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-09-13T15:24:56.4599929+07:00 0HLGPA93H2PRN:00000005 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-09-13T15:24:56.5053830+07:00 0HLGPA93H2PRN:00000005 [INF] Request finished in 57.2855ms 200 text/plain (791a596a)
+2018-09-13T15:35:24.4338869+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T15:35:24.8676665+07:00  [INF] Executed DbCommand ("95"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:24.9450541+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:24.9718060+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.0234532+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-13T15:35:25.0509646+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.1211307+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.1902405+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.2232383+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.2742736+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.4080292+07:00  [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.4522421+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.4868113+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T15:35:25.9860362+07:00 0HLGPAFD7B909:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:13748/  0 (ca22a1cb)
+2018-09-13T15:35:25.9998877+07:00 0HLGPAFD7B90A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-09-13T15:35:26.0222031+07:00 0HLGPAFD7B909:00000001 [INF] Request finished in 100.8033ms 200  (791a596a)
+2018-09-13T15:35:26.0663763+07:00 0HLGPAFD7B90A:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:35:26.3662635+07:00 0HLGPAFD7B90A:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:35:29.7830647+07:00 0HLGPAFD7B90A:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-09-13T15:35:30.5338034+07:00 0HLGPAFD7B90A:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 4231.0013ms (afa2e885)
+2018-09-13T15:35:30.5470198+07:00 0HLGPAFD7B90A:00000001 [INF] Request finished in 4631.1921ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:35:37.0680566+07:00 0HLGPAFD7B909:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T15:35:37.0975054+07:00 0HLGPAFD7B909:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:35:37.1580595+07:00 0HLGPAFD7B909:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:35:37.4999987+07:00 0HLGPAFD7B909:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T15:35:37.5652343+07:00 0HLGPAFD7B909:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 452.488ms (afa2e885)
+2018-09-13T15:35:37.6315175+07:00 0HLGPAFD7B90A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-13T15:35:37.6540375+07:00 0HLGPAFD7B909:00000002 [INF] Request finished in 524.1895ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:35:37.6897024+07:00 0HLGPAFD7B90A:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:35:37.7144686+07:00 0HLGPAFD7B909:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-13T15:35:37.7536080+07:00 0HLGPAFD7B90A:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:35:37.7583124+07:00 0HLGPAFD7B90A:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-13T15:35:37.8908004+07:00 0HLGPAFD7B909:00000003 [INF] The file "/vendor/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2018-09-13T15:35:37.9203490+07:00 0HLGPAFD7B90D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-09-13T15:35:37.9528696+07:00 0HLGPAFD7B90B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-09-13T15:35:37.9895344+07:00 0HLGPAFD7B90C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-09-13T15:35:38.0039773+07:00 0HLGPAFD7B90A:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 43.6866ms (afa2e885)
+2018-09-13T15:35:38.0234234+07:00 0HLGPAFD7B90D:00000001 [INF] The file "/vendor/jquery-validation/additional-methods.js" was not modified (f1f8d725)
+2018-09-13T15:35:38.0409156+07:00 0HLGPAFD7B90D:00000001 [INF] Request finished in 132.1988ms 304 application/javascript (791a596a)
+2018-09-13T15:35:38.0521218+07:00 0HLGPAFD7B909:00000003 [INF] Request finished in 219.597ms 304 text/css (791a596a)
+2018-09-13T15:35:38.0682335+07:00 0HLGPAFD7B90B:00000001 [INF] The file "/vendor/gentelella/build/css/custom.css" was not modified (f1f8d725)
+2018-09-13T15:35:38.0918614+07:00 0HLGPAFD7B90C:00000001 [INF] The file "/vendor/nprogress/nprogress.css" was not modified (f1f8d725)
+2018-09-13T15:35:38.1496733+07:00 0HLGPAFD7B90B:00000001 [INF] Request finished in 202.4149ms 304 text/css (791a596a)
+2018-09-13T15:35:38.1559334+07:00 0HLGPAFD7B90E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-13T15:35:38.1731783+07:00 0HLGPAFD7B90E:00000001 [INF] The file "/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-09-13T15:35:38.1885737+07:00 0HLGPAFD7B90C:00000001 [INF] Request finished in 235.9904ms 304 text/css (791a596a)
+2018-09-13T15:35:38.1923909+07:00 0HLGPAFD7B90A:00000002 [INF] Request finished in 444.3711ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:35:38.2287509+07:00 0HLGPAFD7B90G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-09-13T15:35:38.2514679+07:00 0HLGPAFD7B90E:00000001 [INF] Request finished in 121.5547ms 304 application/javascript (791a596a)
+2018-09-13T15:35:38.2638849+07:00 0HLGPAFD7B90F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js   (ca22a1cb)
+2018-09-13T15:35:38.3101082+07:00 0HLGPAFD7B90G:00000001 [INF] The file "/vendor/animate.css/animate.min.css" was not modified (f1f8d725)
+2018-09-13T15:35:38.3360270+07:00 0HLGPAFD7B90I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-09-13T15:35:38.3632816+07:00 0HLGPAFD7B90F:00000001 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-09-13T15:35:38.3782292+07:00 0HLGPAFD7B90H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-09-13T15:35:38.4044394+07:00 0HLGPAFD7B90G:00000001 [INF] Request finished in 112.3248ms 304 text/css (791a596a)
+2018-09-13T15:35:38.4169582+07:00 0HLGPAFD7B90J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/login/index.js   (ca22a1cb)
+2018-09-13T15:35:38.4383648+07:00 0HLGPAFD7B90I:00000001 [INF] The file "/vendor/jquery-validation/jquery.validate.js" was not modified (f1f8d725)
+2018-09-13T15:35:38.4671980+07:00 0HLGPAFD7B90H:00000001 [INF] The file "/vendor/notifyjs/notify.js" was not modified (f1f8d725)
+2018-09-13T15:35:38.4905601+07:00 0HLGPAFD7B90J:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-09-13T15:35:38.4963395+07:00 0HLGPAFD7B90F:00000001 [INF] Request finished in 222.3879ms 304 application/javascript (791a596a)
+2018-09-13T15:35:38.5531727+07:00 0HLGPAFD7B90I:00000001 [INF] Request finished in 165.183ms 304 application/javascript (791a596a)
+2018-09-13T15:35:38.5894665+07:00 0HLGPAFD7B90J:00000001 [INF] Request finished in 183.5513ms 200 application/javascript (791a596a)
+2018-09-13T15:35:38.6136821+07:00 0HLGPAFD7B90H:00000001 [INF] Request finished in 203.4366ms 304 application/javascript (791a596a)
+2018-09-13T15:35:39.8015001+07:00 0HLGPAFD7B909:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-13T15:35:39.8096562+07:00 0HLGPAFD7B909:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:35:39.9681500+07:00 0HLGPAFD7B909:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:35:40.0025867+07:00 0HLGPAFD7B909:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-09-13T15:35:40.1627601+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("79"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-13T15:35:40.3852153+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("72"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-13T15:35:40.4948181+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("37"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T15:35:40.5695129+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("35"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-13T15:35:40.6462670+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("32"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-13T15:35:40.7132933+07:00 0HLGPAFD7B909:00000004 [INF] Executed DbCommand ("40"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-13T15:35:40.7440795+07:00 0HLGPAFD7B909:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-13T15:35:40.7687989+07:00 0HLGPAFD7B909:00000004 [INF] User logged in. (fdce0db4)
+2018-09-13T15:35:40.7968363+07:00 0HLGPAFD7B909:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T15:35:40.8401562+07:00 0HLGPAFD7B909:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 973.0237ms (afa2e885)
+2018-09-13T15:35:40.8474831+07:00 0HLGPAFD7B909:00000004 [INF] Request finished in 1045.8613ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T15:35:40.8842363+07:00 0HLGPAFD7B90A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index   (ca22a1cb)
+2018-09-13T15:35:40.9047865+07:00 0HLGPAFD7B90A:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-09-13T15:35:40.9410159+07:00 0HLGPAFD7B90A:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-09-13T15:35:40.9715976+07:00 0HLGPAFD7B90A:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T15:35:41.2085668+07:00 0HLGPAFD7B90A:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-13T15:35:41.6396519+07:00 0HLGPAFD7B90A:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 619.6318ms (afa2e885)
+2018-09-13T15:35:41.6828818+07:00 0HLGPAFD7B90A:00000003 [INF] Request finished in 774.0694ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-13T15:35:41.7517946+07:00 0HLGPAFD7B90B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-09-13T15:35:41.8432869+07:00 0HLGPAFD7B90A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-09-13T15:35:41.8601737+07:00 0HLGPAFD7B90B:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-09-13T15:35:41.8639221+07:00 0HLGPAFD7B90D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-09-13T15:35:41.8883614+07:00 0HLGPAFD7B90C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/production/img.jpg   (ca22a1cb)
+2018-09-13T15:35:41.8988390+07:00 0HLGPAFD7B90D:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-09-13T15:35:41.9073124+07:00 0HLGPAFD7B90C:00000002 [INF] Sending file. Request path: '"/vendor/gentelella/production/img.jpg"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\img.jpg"' (27b0a520)
+2018-09-13T15:35:41.9284324+07:00 0HLGPAFD7B90B:00000002 [INF] Request finished in 277.9471ms 200 text/css (791a596a)
+2018-09-13T15:35:41.9361818+07:00 0HLGPAFD7B90F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-09-13T15:35:41.9415460+07:00 0HLGPAFD7B90E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-09-13T15:35:41.9598682+07:00 0HLGPAFD7B90A:00000004 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-09-13T15:35:41.9817625+07:00 0HLGPAFD7B90A:00000004 [INF] Request finished in 160.9956ms 200 application/javascript (791a596a)
+2018-09-13T15:35:42.0062714+07:00 0HLGPAFD7B90G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-09-13T15:35:42.0140834+07:00 0HLGPAFD7B90C:00000002 [INF] Request finished in 193.9664ms 200 image/jpeg (791a596a)
+2018-09-13T15:35:42.0189899+07:00 0HLGPAFD7B90F:00000002 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-09-13T15:35:42.0371986+07:00 0HLGPAFD7B90E:00000002 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-09-13T15:35:42.0594696+07:00 0HLGPAFD7B90B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-09-13T15:35:42.0888645+07:00 0HLGPAFD7B90G:00000002 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-09-13T15:35:42.1383234+07:00 0HLGPAFD7B90B:00000003 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-09-13T15:35:42.1626897+07:00 0HLGPAFD7B90G:00000002 [INF] Request finished in 106.0531ms 200 application/javascript (791a596a)
+2018-09-13T15:35:42.1829456+07:00 0HLGPAFD7B90E:00000002 [INF] Request finished in 319.4324ms 200 application/javascript (791a596a)
+2018-09-13T15:35:42.1868113+07:00 0HLGPAFD7B90I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-09-13T15:35:42.1907769+07:00 0HLGPAFD7B90C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-09-13T15:35:42.2088309+07:00 0HLGPAFD7B90I:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-09-13T15:35:42.2132090+07:00 0HLGPAFD7B90B:00000003 [INF] Request finished in 149.5916ms 200 application/javascript (791a596a)
+2018-09-13T15:35:42.4291993+07:00 0HLGPAFD7B90C:00000003 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-09-13T15:35:42.5192580+07:00 0HLGPAFD7B90H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-09-13T15:35:42.5251714+07:00 0HLGPAFD7B90J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-09-13T15:35:42.6265035+07:00 0HLGPAFD7B909:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-09-13T15:35:42.6431743+07:00 0HLGPAFD7B90K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-09-13T15:35:42.7518726+07:00 0HLGPAFD7B90B:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-09-13T15:35:42.7813748+07:00 0HLGPAFD7B90F:00000002 [INF] Request finished in 480.4524ms 200 application/javascript (791a596a)
+2018-09-13T15:35:42.7969434+07:00 0HLGPAFD7B90G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-09-13T15:35:42.8070122+07:00 0HLGPAFD7B90J:00000002 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-09-13T15:35:42.8525965+07:00 0HLGPAFD7B90K:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-09-13T15:35:42.8601324+07:00 0HLGPAFD7B90E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/datejs/date.js   (ca22a1cb)
+2018-09-13T15:35:42.9157475+07:00 0HLGPAFD7B90H:00000002 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-09-13T15:35:42.9237681+07:00 0HLGPAFD7B90B:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-09-13T15:35:42.9603001+07:00 0HLGPAFD7B90A:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-09-13T15:35:42.9921388+07:00 0HLGPAFD7B909:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-09-13T15:35:43.0065795+07:00 0HLGPAFD7B90I:00000002 [INF] Request finished in 360.8415ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.0419192+07:00 0HLGPAFD7B90J:00000002 [INF] Request finished in 585.7027ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.0682414+07:00 0HLGPAFD7B90K:00000001 [INF] Request finished in 581.602ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.0833181+07:00 0HLGPAFD7B90G:00000003 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-09-13T15:35:43.0867699+07:00 0HLGPAFD7B90F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-09-13T15:35:43.2299393+07:00 0HLGPAFD7B90A:00000005 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-09-13T15:35:43.2366869+07:00 0HLGPAFD7B90E:00000003 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-09-13T15:35:43.2683102+07:00 0HLGPAFD7B90F:00000003 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-09-13T15:35:43.3372444+07:00 0HLGPAFD7B90B:00000004 [INF] Request finished in 519.2575ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.3798734+07:00 0HLGPAFD7B90G:00000003 [INF] Request finished in 753.9886ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.3873379+07:00 0HLGPAFD7B90I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/js/custom.js   (ca22a1cb)
+2018-09-13T15:35:43.4210691+07:00 0HLGPAFD7B909:00000005 [INF] Request finished in 876.9021ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.4266378+07:00 0HLGPAFD7B90F:00000003 [INF] Request finished in 422.8949ms 200 font/woff2 (791a596a)
+2018-09-13T15:35:43.4363704+07:00 0HLGPAFD7B90H:00000002 [INF] Request finished in 951.3336ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.4618008+07:00 0HLGPAFD7B90D:00000002 [INF] Request finished in 927.2372ms 200 text/css (791a596a)
+2018-09-13T15:35:43.4913205+07:00 0HLGPAFD7B90C:00000003 [INF] Request finished in 510.6344ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.5074985+07:00 0HLGPAFD7B90A:00000005 [INF] Request finished in 877.4264ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.5150545+07:00 0HLGPAFD7B90I:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/build/js/custom.js"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\js\custom.js"' (27b0a520)
+2018-09-13T15:35:43.5265974+07:00 0HLGPAFD7B90E:00000003 [INF] Request finished in 905.9633ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.5996758+07:00 0HLGPAFD7B90I:00000003 [INF] Request finished in 387.7413ms 200 application/javascript (791a596a)
+2018-09-13T15:35:43.6174919+07:00 0HLGPAFD7B90C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-13T15:35:43.6392846+07:00 0HLGPAFD7B90C:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\Net Core\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-13T15:35:43.6627232+07:00 0HLGPAFD7B90C:00000004 [INF] Request finished in 84.6659ms 200 font/woff2 (791a596a)

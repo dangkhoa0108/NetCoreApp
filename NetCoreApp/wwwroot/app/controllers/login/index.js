@@ -37,7 +37,7 @@
             success: function(res) {
                 if (res.Success) {
                     app.notify('Login success', 'success');
-                    //window.location.href = "/admin/home/index";
+                    window.location.href = "/admin/home/index";
                 } else {
                     app.notify('Login Error', 'error');
                 }
