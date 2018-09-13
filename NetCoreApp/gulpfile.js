@@ -56,6 +56,9 @@ var nodeLibs = {
     },
     "bootbox": {
         "*.js":""
+    },
+    "animate.css": {
+        "*.css":""
     }
 };
 var templates = {

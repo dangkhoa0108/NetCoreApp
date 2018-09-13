@@ -23,6 +23,7 @@
     "datejs": "1.0.0-rc3",
     "moment": "2.4.0",
     "notifyjs": "3.0.0",
-    "bootbox": "4.4.0"
+    "bootbox": "4.4.0",
+    "animate.css": "3.7.0"
   }
 }
