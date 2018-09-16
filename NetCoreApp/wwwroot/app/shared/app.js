@@ -57,9 +57,9 @@
         });
     },
     dateFormatJson: function (date) {
-        if (datetime == null || datetime == '')
+        if (date == null || date == '')
             return '';
-        var newdate = new Date(parseInt(datetime.substr(6)));
+        var newdate = new Date(parseInt(date.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -76,9 +76,9 @@
         return day + "/" + month + "/" + year;
     },
     dataTimeFormatJson: function (dateTime) {
-        if (datetime == null || datetime == '')
+        if (dateTime == null || dateTime == '')
             return '';
-        var newdate = new Date(parseInt(datetime.substr(6)));
+        var newdate = new Date(parseInt(dateTime.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -106,7 +106,7 @@
             $('.dv-loading')
                 .addClass('hide');
     },
-    getStatus: function () {
+    getStatus: function (status) {
         if (status == 1)
             return '<span class="badge bg-green">Kích hoạt</span>';
         else

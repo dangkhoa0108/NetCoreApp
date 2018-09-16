@@ -9,8 +9,9 @@ namespace CoreApp.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<ProductCategory, ProductViewModel>();
+            CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Function, FunctionViewModel>();
+            CreateMap<Product, ProductViewModel>();
         }
     }
 }
