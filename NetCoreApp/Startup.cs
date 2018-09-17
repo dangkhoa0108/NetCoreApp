@@ -6,6 +6,7 @@ using CoreApp.Data.EF;
 using CoreApp.Data.EF.Repositories;
 using CoreApp.Data.Entities;
 using CoreApp.Data.IRepositories;
+using CoreApp.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -68,7 +69,8 @@ namespace NetCoreApp
             services.AddTransient<DbInitialize>();
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
-
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
             //Auto Mapper
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));

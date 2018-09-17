@@ -1,5 +1,6 @@
 ﻿var productController = function () {
     this.initialize = function () {
+        getCategories();
         loadData();
         registerEvent();
     };
@@ -11,6 +12,39 @@
             app.configs.pageIndex = 1;
             loadData(true);
         });
+        $('#btnSearch').on('click', function() {
+            loadData();
+        });
+        $('#txtKeyword').on('keypress',
+            function(e) {
+                if (e.which === 13) {
+                    loadData();
+                }
+            });
+    }
+
+    function getCategories() {
+        var render = "<option value=''>--Select Category--</option>";
+        $.ajax({
+            type: 'GET',
+            url: '/admin/product/GetCategories',
+            data: 'json',
+            success: function (response) {
+                if (response.length === 0) {
+                    app.notify('No Data', 'success');
+                } else {
+                    $.each(response,
+                        function (i, item) {
+                            render += "<option value='" + item.Id + "'>" + item.Name + "</option>";
+                        });
+                    $('#ddlCategorySearch').html(render);
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                app.notify(error, 'error');
+            }
+        });
     }
 
     function loadData(isPageChanged) {
@@ -20,14 +54,14 @@
             type: 'GET',
             url: '/admin/product/GetAllPaging',
             data: {
-                categoryId: null,
+                categoryId: $('#ddlCategorySearch').val(),
                 keyword: $('#txtKeyword').val(),
                 page: app.configs.pageIndex,
                 pageSize: app.configs.pageSize
             },
             dataType: 'json',
             success: function (response) {
-                if (response.length == 0) {
+                if (response.length === 0) {
                     app.notify('No data', 'error');
                 } else {
                     $.each(response.Results,
