@@ -5,7 +5,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
-        private IProductService _productService;
+        private readonly IProductService _productService;
 
         public ProductController(IProductService productService)
         {
@@ -22,6 +22,21 @@ namespace NetCoreApp.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             var model = _productService.GetAll();
+            return new OkObjectResult(model);
+        }
+
+        /// <summary>
+        /// Return Model Paging API
+        /// </summary>
+        /// <param name="categoryId">Category ID (Optional)</param>
+        /// <param name="keyword">Keyword</param>
+        /// <param name="pageSize">Total record in page</param>
+        /// <param name="page">Current page</param>
+        /// <returns>List record</returns>
+        [HttpGet]
+        public IActionResult GetAllPaging(int?categoryId, string keyword, int pageSize, int page)
+        {
+            var model = _productService.GetAllPaging(categoryId, keyword, pageSize, page);
             return new OkObjectResult(model);
         }
 
