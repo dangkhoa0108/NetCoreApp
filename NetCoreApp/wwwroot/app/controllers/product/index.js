@@ -61,8 +61,8 @@
             },
             dataType: 'json',
             success: function (response) {
-                if (response.length === 0) {
-                    app.notify('No data', 'error');
+                if (response.Results.length === 0) {
+                    app.notify('No data', 'warn');
                 } else {
                     $.each(response.Results,
                         function (i, item) {
