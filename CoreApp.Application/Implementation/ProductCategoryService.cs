@@ -70,12 +70,31 @@ namespace CoreApp.Application.Implementation
 
         public void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
         {
-            throw new NotImplementedException();
+            //Get Source Category
+            var sourceCategory = _productCategory.FindById(sourceId);
+            //Assign Target Id to source Category
+            sourceCategory.ParentId = targetId;
+            //Update
+            _productCategory.Update(sourceCategory);
+
+            //Get all sibling
+            var listSibling = _productCategory.FindAll(x => items.ContainsKey(x.Id));
+            foreach (var productCategory in listSibling)
+            {
+                productCategory.SortOrder = items[productCategory.Id];
+                _productCategory.Update(productCategory);
+            }
         }
 
         public void ReOrder(int sourceId, int targetId)
         {
-            throw new NotImplementedException();
+            var source = _productCategory.FindById(sourceId);
+            var target = _productCategory.FindById(targetId);
+            var temp = source.SortOrder;
+            source.SortOrder = target.SortOrder;
+            target.SortOrder = temp;
+            _productCategory.Update(source);
+            _productCategory.Update(target);
         }
 
         public List<ProductCategoryViewModel> GetHomeCategories(int top)
