@@ -16,7 +16,7 @@
             // arrow size in pixels
             arrowSize: 5,
             // position defines the notification position though uses the defaults below
-            position: '...',
+            position: 'top right',
             // default positions
             elementPosition: 'top right',
             globalPosition: 'top right',
@@ -108,9 +108,9 @@
     },
     getStatus: function (status) {
         if (status == 1)
-            return '<span class="badge bg-green">Kích hoạt</span>';
+            return '<span class="badge bg-green">Active</span>';
         else
-            return '<span class="badge bg-red">Khoá</span>';
+            return '<span class="badge bg-red">Block</span>';
     },
     formatNumber: function (number, precision) {
         if (!isFinite(number)) {
@@ -121,14 +121,14 @@
         a[0] = a[0].replace(/\d(?=(\d{3})+$)/g, '$&,');
         return a.join('.');
     },
-    unflattern: function (arr) {
+    unflattened: function (arr) {
         var map = {};
         var roots = [];
         for (var i = 0; i < arr.length; i += 1) {
             var node = arr[i];
             node.children = [];
-            map[node.Id] = i; // use map to look-up the parents
-            if (node.ParentId !== null) {
+            map[node.id] = i; // use map to look-up the parents
+            if (node.parentId !== null) {
                 arr[map[node.ParentId]].children.push(node);
             } else {
                 roots.push(node);

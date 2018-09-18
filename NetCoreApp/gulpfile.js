@@ -68,6 +68,12 @@ var nodeLibs = {
     },
     "mustache": {
         "*.js":""
+    },
+    "twbs-pagination": {
+        "*.js":""
+    },
+    "centit.easyui": {
+        "**/*":""
     }
 };
 var templates = {
