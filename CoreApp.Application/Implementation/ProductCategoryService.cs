@@ -32,7 +32,8 @@ namespace CoreApp.Application.Implementation
 
         public void Update(ProductCategoryViewModel productCategoryViewModel)
         {
-            throw new NotImplementedException();
+            var productCategory = Mapper.Map<ProductCategoryViewModel, ProductCategory>(productCategoryViewModel);
+            _productCategory.Update(productCategory);
         }
 
         public void Delete(int id)
