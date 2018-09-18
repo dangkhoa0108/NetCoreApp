@@ -15,7 +15,6 @@ namespace NetCoreApp.Helpers
         {
             _userManager = userManager;
         }
-
         public async override Task<ClaimsPrincipal> CreateAsync(AppUser appUser)
         {
             var principal = await base.CreateAsync(appUser);

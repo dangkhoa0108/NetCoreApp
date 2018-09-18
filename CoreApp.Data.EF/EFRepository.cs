@@ -70,7 +70,8 @@ namespace CoreApp.Data.EF
 
         public void Remove(K id)
         {
-            _context.Remove(FindById(id));
+            var item = FindById(id);
+            Remove(item);
         }
 
         public void RemoveMultiple(List<T> entities)
