@@ -9,7 +9,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
     {
         private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(SignInManager<AppUser> signInManager)
+        public AccountController(SignInManager<AppUser> signInManager) : base()
         {
             _signInManager = signInManager;
         }

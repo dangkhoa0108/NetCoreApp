@@ -4,18 +4,18 @@ using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using CoreApp.Application.Interfaces;
 using CoreApp.Application.ViewModels.System;
-using CoreApp.Data.IRepositories;
+using CoreApp.Data.EF.Registration;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoreApp.Application.Implementation
 {
     public class FunctionService : IFunctionService
     {
-        private readonly IFunctionRepository _functionRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public FunctionService(IFunctionRepository functionRepository)
+        public FunctionService(IUnitOfWork unitOfWork)
         {
-            _functionRepository = functionRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public void Dispose()
@@ -25,7 +25,7 @@ namespace CoreApp.Application.Implementation
 
         public Task<List<FunctionViewModel>> GetAll()
         {
-            return _functionRepository.FindAll().ProjectTo<FunctionViewModel>().ToListAsync();
+            return _unitOfWork.FunctionRepository.FindAll().ProjectTo<FunctionViewModel>().ToListAsync();
         }
 
         public Task<List<FunctionViewModel>> GetByPermission(Guid userId)

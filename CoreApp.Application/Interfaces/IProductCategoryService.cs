@@ -15,6 +15,5 @@ namespace CoreApp.Application.Interfaces
         void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items);
         void ReOrder(int sourceId, int targetId);
         List<ProductCategoryViewModel> GetHomeCategories(int top);
-        void Save();
     }
 }
