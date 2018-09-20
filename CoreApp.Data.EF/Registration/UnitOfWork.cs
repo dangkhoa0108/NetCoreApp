@@ -23,7 +23,8 @@ namespace CoreApp.Data.EF.Registration
         {
             if (_context == null)
             {
-                
+                var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
+                _context= new AppDbContext(new DbContextOptionsBuilder<AppDbContext>().UseSqlServer(configuration.GetConnectionString("DefaultConnection")).Options);
             }
         }
         public IProductRepository ProductRepository =>

@@ -5,13 +5,6 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
-        private readonly IServiceRegistration _serviceRegistration;
-
-        public ProductController(IServiceRegistration serviceRegistration)
-        {
-            _serviceRegistration = serviceRegistration;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -21,7 +14,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var model = _serviceRegistration.ProductService.GetAll();
+            var model = ServiceRegistration.ProductService.GetAll();
             return new OkObjectResult(model);
         }
 
@@ -36,14 +29,14 @@ namespace NetCoreApp.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAllPaging(int?categoryId, string keyword, int pageSize, int page)
         {
-            var model = _serviceRegistration.ProductService.GetAllPaging(categoryId, keyword, pageSize, page);
+            var model = ServiceRegistration.ProductService.GetAllPaging(categoryId, keyword, pageSize, page);
             return new OkObjectResult(model);
         }
 
         [HttpGet]
         public IActionResult GetCategories()
         {
-            var model = _serviceRegistration.ProductCategoryService.GetAll();
+            var model = ServiceRegistration.ProductCategoryService.GetAll();
             return new OkObjectResult(model);
         }
         #endregion
