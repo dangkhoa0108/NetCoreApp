@@ -111,7 +111,7 @@ namespace CoreApp.Application.Implementation
                 foreach (var tag in tags)
                 {
                     var tagId = TextHelper.ToUnsignString(tag);
-                    if (_unitOfWork.TagRepository.FindAll(x => x.Id.Equals(tagId)).Any())
+                    if (!_unitOfWork.TagRepository.FindAll(x => x.Id.Equals(tagId)).Any())
                     {
                         var tagItem = new Tag
                         {
@@ -122,7 +122,7 @@ namespace CoreApp.Application.Implementation
                         _unitOfWork.TagRepository.Add(tagItem);
                     }
                     //Remove all tag for product
-                    _unitOfWork.ProductTagRepository.RemoveMultiple(_unitOfWork.ProductTagRepository.FindAll(x=>x.Id.Equals(productViewModel.Id)).ToList());
+                    _unitOfWork.ProductTagRepository.RemoveMultiple(_unitOfWork.ProductTagRepository.FindAll(x=>x.Id == productViewModel.Id).ToList());
                     var productTag = new ProductTag
                     {
                         TagId = tagId

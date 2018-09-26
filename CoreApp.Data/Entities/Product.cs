@@ -41,15 +41,15 @@ namespace CoreApp.Data.Entities
             SeoAlias = seoAlias;
             SeoKeywords = seoMetaKeyword;
             SeoDescription = seoMetaDescription;
-
+            ProductTags = new List<ProductTag>();
         }
 
         public Product(int id, string name, int categoryId, string thumbnailImage,
-             decimal price, decimal originalPrice, decimal? promotionPrice,
-             string description, string content, bool? homeFlag, bool? hotFlag,
-             string tags, string unit, Status status, string seoPageTitle,
-             string seoAlias, string seoMetaKeyword,
-             string seoMetaDescription)
+            decimal price, decimal originalPrice, decimal? promotionPrice,
+            string description, string content, bool? homeFlag, bool? hotFlag,
+            string tags, string unit, Status status, string seoPageTitle,
+            string seoAlias, string seoMetaKeyword,
+            string seoMetaDescription)
         {
             Id = id;
             Name = name;
@@ -69,7 +69,7 @@ namespace CoreApp.Data.Entities
             SeoAlias = seoAlias;
             SeoKeywords = seoMetaKeyword;
             SeoDescription = seoMetaDescription;
-
+            ProductTags = new List<ProductTag>();
         }
         /// <summary>
         /// Implement interface

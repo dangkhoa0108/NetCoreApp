@@ -16,6 +16,10 @@
                 txtPriceM: {
                     required: true,
                     number: true
+                },
+                txtOriginalPriceM: {
+                    required:true,
+                    number:true
                 }
             }
         });
