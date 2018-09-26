@@ -2,6 +2,7 @@
 using System.IO;
 using CoreApp.Data.EF.Repositories;
 using CoreApp.Data.IRepositories;
+using CoreApp.Utilities.Constants;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -25,8 +26,8 @@ namespace CoreApp.Data.EF.Registration
         {
             if (_context == null)
             {
-                var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
-                _context= new AppDbContext(new DbContextOptionsBuilder<AppDbContext>().UseSqlServer(configuration.GetConnectionString("DefaultConnection")).Options);
+                var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(CommonConstants.DefaultAppConfig).Build();
+                _context= new AppDbContext(new DbContextOptionsBuilder<AppDbContext>().UseSqlServer(configuration.GetConnectionString(CommonConstants.DefaultConnectionString)).Options);
             }
         }
         public IProductRepository ProductRepository =>
