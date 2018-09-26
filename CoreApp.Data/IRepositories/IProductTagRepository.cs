@@ -3,7 +3,7 @@ using CoreApp.Infrastructure.Interfaces;
 
 namespace CoreApp.Data.IRepositories
 {
-    public interface IFunctionRepository: IRepository<Function, string>
+    public interface IProductTagRepository:IRepository<ProductTag, int>
     {
     }
 }

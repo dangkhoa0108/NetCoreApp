@@ -1,13 +1,9 @@
 ﻿using System;
 using AutoMapper;
-using CoreApp.Application.Implementation;
-using CoreApp.Application.Interfaces;
 using CoreApp.Application.Singleton;
 using CoreApp.Data.EF;
 using CoreApp.Data.EF.Registration;
-using CoreApp.Data.EF.Repositories;
 using CoreApp.Data.Entities;
-using CoreApp.Data.IRepositories;
 using CoreApp.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;

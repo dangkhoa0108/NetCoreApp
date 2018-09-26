@@ -2,12 +2,19 @@
 @{
     ViewData["Title"] = "Product";
 }
+@section Style
+    {
+    <link href="~/vendor/centit.easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/vendor/centit.easyui/themes/icon.css" rel="stylesheet" />
+    <link href="~/vendor/centit.easyui/themes/mobile.css" rel="stylesheet" />
+}
+}
 
 @section Script{
-
-    <script src="~/app/controllers/product/index.js"></script>
+    <script src="~/vendor/centit.easyui/jquery.easyui.min.js"></script>
+    <script src="~/app/controllers/product/index.js" asp-append-version="true"></script>
     <script>
-        var product= new productController();
+        var product = new productController();
         product.initialize();
     </script>
 }
@@ -29,6 +36,9 @@
             <select class="form-control" id="ddlCategorySearch">
                 <option>--Select category--</option>
             </select>
+        </div>
+        <div class="col-md-2 col-sm-12  form-group pull-right">
+            <button id="btnCreate" class="btn btn-success">Create</button>
         </div>
     </div>
 </div>
@@ -81,8 +91,8 @@
 <script id="table-template-product" type="x-tmpl-mustache">
     <tr>
         <th scope="row">
-            <button class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></button>
-            <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-warning btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
         </th>
         <td>{{Name}}</td>
         <td>{{Category}}</td>
@@ -92,3 +102,4 @@
         <td>{{{Status}}}</td>
     </tr>
 </script>
+@Html.Partial("_AddEditModal")

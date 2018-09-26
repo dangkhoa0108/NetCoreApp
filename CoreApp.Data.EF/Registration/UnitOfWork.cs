@@ -13,6 +13,8 @@ namespace CoreApp.Data.EF.Registration
         private IProductRepository _productRepository;
         private IFunctionRepository _functionRepository;
         private IProductCategoryRepository _productCategoryRepository;
+        private ITagRepository _tagRepository;
+        private IProductTagRepository _productTagRepository;
 
         public UnitOfWork(AppDbContext context)
         {
@@ -35,6 +37,12 @@ namespace CoreApp.Data.EF.Registration
 
         public IFunctionRepository FunctionRepository =>
             _functionRepository ?? (_functionRepository = new FunctionRepository(_context));
+
+        public ITagRepository TagRepository => _tagRepository ?? (_tagRepository = new TagRepository(_context));
+
+        public IProductTagRepository ProductTagRepository =>
+            _productTagRepository ?? (_productTagRepository = new ProductTagRepository(_context));
+
         public void Commit()
         {
             _context.SaveChanges();
