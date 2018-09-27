@@ -12,8 +12,8 @@ using System;
 namespace CoreApp.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20180911151945_Initial")]
-    partial class Initial
+    [Migration("20180927052003_ChangeDate")]
+    partial class ChangeDate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -564,7 +564,7 @@ namespace CoreApp.Data.EF.Migrations
 
                     b.Property<decimal>("Price");
 
-                    b.Property<decimal>("PromotionPrice");
+                    b.Property<decimal?>("PromotionPrice");
 
                     b.Property<string>("SeoAlias")
                         .HasColumnType("varchar(255)")
@@ -1006,7 +1006,7 @@ namespace CoreApp.Data.EF.Migrations
             modelBuilder.Entity("CoreApp.Data.Entities.ProductTag", b =>
                 {
                     b.HasOne("CoreApp.Data.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTags")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
 

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CoreApp.Application.Interfaces;
 using CoreApp.Application.ViewModels.Product;
 using CoreApp.Utilities.Helpers;
 using Microsoft.AspNetCore.Mvc;
@@ -10,13 +9,6 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductCategoryController : BaseController
     {
-        private readonly IProductCategoryService _productCategoryService;
-
-        public ProductCategoryController(IProductCategoryService productCategoryService)
-        {
-            _productCategoryService = productCategoryService;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -26,7 +18,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
 
         public IActionResult GetProductCategory()
         {
-            var model = _productCategoryService.GetAll();
+            var model = ServiceRegistration.ProductCategoryService.GetAll();
             return new OkObjectResult(model);
         }
         /// <summary>
@@ -47,8 +39,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             {
                 return new BadRequestResult();
             }
-            _productCategoryService.UpdateParentId(sourceId, targetId, items);
-            _productCategoryService.Save();
+            ServiceRegistration.ProductCategoryService.UpdateParentId(sourceId, targetId, items);
             return new OkResult();
         }
 
@@ -69,14 +60,13 @@ namespace NetCoreApp.Areas.Admin.Controllers
             {
                 return new BadRequestResult();
             }
-            _productCategoryService.ReOrder(sourceId, targetId);
-            _productCategoryService.Save();
+            ServiceRegistration.ProductCategoryService.ReOrder(sourceId, targetId);
             return new OkResult();
         }
         [HttpGet]
         public IActionResult GetById(int id)
         {
-            return new ObjectResult(_productCategoryService.GetById(id));
+            return new ObjectResult(ServiceRegistration.ProductCategoryService.GetById(id));
         }
 
         [HttpPost]
@@ -91,13 +81,12 @@ namespace NetCoreApp.Areas.Admin.Controllers
             productCategoryViewModel.SeoAlias = TextHelper.ToUnsignString(productCategoryViewModel.Name);
             if (productCategoryViewModel.Id == 0)
             {
-                _productCategoryService.Add(productCategoryViewModel);
+                ServiceRegistration.ProductCategoryService.Add(productCategoryViewModel);
             }
             else
             {
-                _productCategoryService.Update(productCategoryViewModel);
+                ServiceRegistration.ProductCategoryService.Update(productCategoryViewModel);
             }
-            _productCategoryService.Save();
             return new OkObjectResult(productCategoryViewModel);
         }
 
@@ -108,8 +97,7 @@ namespace NetCoreApp.Areas.Admin.Controllers
             {
                 return new BadRequestResult();
             }
-            _productCategoryService.Delete(id);
-            _productCategoryService.Save();
+            ServiceRegistration.ProductCategoryService.Delete(id);
             return new OkResult();
         }
         #endregion

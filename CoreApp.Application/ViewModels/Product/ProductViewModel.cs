@@ -38,7 +38,7 @@ namespace CoreApp.Application.ViewModels.Product
         [DefaultValue(0)]
         public decimal Price { get; set; }
         
-        public decimal PromotionPrice { get; set; }
+        public decimal? PromotionPrice { get; set; }
         
         [Required]
         public decimal OriginalPrice { get; set; }

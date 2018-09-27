@@ -1,11 +1,9 @@
 ﻿using System;
 using AutoMapper;
-using CoreApp.Application.Implementation;
-using CoreApp.Application.Interfaces;
+using CoreApp.Application.Singleton;
 using CoreApp.Data.EF;
-using CoreApp.Data.EF.Repositories;
+using CoreApp.Data.EF.Registration;
 using CoreApp.Data.Entities;
-using CoreApp.Data.IRepositories;
 using CoreApp.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -69,20 +67,14 @@ namespace NetCoreApp
             services.AddTransient<DbInitialize>();
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
-            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
             //Auto Mapper
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
 
-            //Repository
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            services.AddTransient<IFunctionRepository, FunctionRepository>();
-            services.AddTransient<IProductRepository, ProductRepository>();
-            //Service
-            services.AddTransient<IProductCategoryService, ProductCategoryService>();
-            services.AddTransient<IFunctionService, FunctionService>();
-            services.AddTransient<IProductService, ProductService>();
+            //
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IServiceRegistration, ServiceRegistration>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

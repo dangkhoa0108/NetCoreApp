@@ -22,4 +22,10 @@
     <ProjectReference Include="..\CoreApp.Utilities\CoreApp.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Repositories\FunctionRepository.cs">
+      <Generator>1</Generator>
+    </Compile>
+  </ItemGroup>
+
 </Project>

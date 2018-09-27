@@ -59,7 +59,7 @@
     dateFormatJson: function (date) {
         if (date == null || date == '')
             return '';
-        var newdate = new Date(parseInt(date.substr(6)));
+        var newdate = new Date(date);
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -78,7 +78,7 @@
     dataTimeFormatJson: function (dateTime) {
         if (dateTime == null || dateTime == '')
             return '';
-        var newdate = new Date(parseInt(dateTime.substr(6)));
+        var newdate = new Date(dateTime);
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
