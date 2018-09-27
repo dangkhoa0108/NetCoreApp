@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace CoreApp.Data.EF.Migrations
 {
-    public partial class Initial : Migration
+    public partial class ChangeDate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -485,7 +485,7 @@ namespace CoreApp.Data.EF.Migrations
                     Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     OriginalPrice = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
-                    PromotionPrice = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    PromotionPrice = table.Column<decimal>(type: "decimal(18, 2)", nullable: true),
                     SeoAlias = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
                     SeoDescription = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     SeoKeywords = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),

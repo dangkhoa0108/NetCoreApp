@@ -18,8 +18,8 @@
                     number: true
                 },
                 txtOriginalPriceM: {
-                    required:true,
-                    number:true
+                    required: true,
+                    number: true
                 }
             }
         });
@@ -41,32 +41,32 @@
         $('#btnCreate').off('click').on('click', function () {
             resetFormMaintenance();
             initTreeDropDownCategory();
-            $('#modal-add-edit').show();
+            $('#modal-add-edit').modal('show');
         });
-    }
 
-    $('#btnSave').on('click', function(e) {
-        if ($('#frmMaintenance').valid()) {
+
+        $('#btnSave').on('click', function (e) {
+            if ($('#frmMaintenance').valid()) {
                 e.preventDefault();
                 var id = $('#hidIdM').val();
                 var name = $('#txtNameM').val();
                 var categoryId = $('#ddlCategoryIdM').combotree('getValue');
-                 var description = $('#txtDescM').val();
+                var description = $('#txtDescM').val();
                 var unit = $('#txtUnitM').val();
-                 var price = $('#txtPriceM').val();
+                var price = $('#txtPriceM').val();
                 var originalPrice = $('#txtOriginalPriceM').val();
                 var promotionPrice = $('#txtPromotionPriceM').val();
-                 //var image = $('#txtImageM').val();
-                 var tags = $('#txtTagM').val();
+                //var image = $('#txtImageM').val();
+                var tags = $('#txtTagM').val();
                 var seoKeyword = $('#txtMetakeywordM').val();
                 var seoMetaDescription = $('#txtMetaDescriptionM').val();
                 var seoPageTitle = $('#txtSeoPageTitleM').val();
                 var seoAlias = $('#txtSeoAliasM').val();
-                 //var content = CKEDITOR.instances.txtContentM.getData();
+                //var content = CKEDITOR.instances.txtContentM.getData();
                 var status = $('#ckStatusM').prop('checked') === true ? 1 : 0;
                 var hot = $('#ckHotM').prop('checked');
                 var showHome = $('#ckShowHomeM').prop('checked');
-                 $.ajax({
+                $.ajax({
                     type: "POST",
                     url: "/Admin/Product/SaveEntity",
                     data: {
@@ -97,7 +97,7 @@
                         app.notify('Update product successful', 'success');
                         $('#modal-add-edit').modal('hide');
                         resetFormMaintenance();
-                         app.stopLoading();
+                        app.stopLoading();
                         loadData(true);
                     },
                     error: function () {
@@ -107,77 +107,81 @@
                 });
                 return false;
             }
-    });
-
-    $('body').on('click', '.btn-edit', function (e) {
-        e.preventDefault();
-        var that = $(this).data('id');
-        $.ajax({
-            type: 'GET',
-            data: {
-                id: that
-            },
-            dataType: 'json',
-            url: '/Admin/Product/GetProductById',
-            beforeSend: function () {
-                app.startLoading();
-            },
-            success: function (response) {
-                var data = response;
-                $('#hidIdM').val(data.Id);
-                $('#txtNameM').val(data.Name);
-                initTreeDropDownCategory(data.CategoryId);
-                $('#txtDescM').val(data.Description);
-                $('#txtUnitM').val(data.Unit);
-                $('#txtPriceM').val(data.Price);
-                $('#txtOriginalPriceM').val(data.OriginalPrice);
-                $('#txtPromotionPriceM').val(data.PromotionPrice);
-                // $('#txtImageM').val(data.ThumbnailImage);
-                $('#txtTagM').val(data.Tags);
-                $('#txtMetakeywordM').val(data.SeoKeywords);
-                $('#txtMetaDescriptionM').val(data.SeoDescription);
-                $('#txtSeoPageTitleM').val(data.SeoPageTitle);
-                $('#txtSeoAliasM').val(data.SeoAlias);
-                //CKEDITOR.instances.txtContentM.setData(data.Content);
-                $('#ckStatusM').prop('checked', data.Status == 1);
-                $('#ckHotM').prop('checked', data.HotFlag);
-                $('#ckShowHomeM').prop('checked', data.HomeFlag);
-                $('#modal-add-edit').modal('show');
-                app.stopLoading();
-            },
-            error: function (error) {
-                app.notify('Has an Error', 'error');
-                app.stopLoading();
-            }
         });
-    });
 
-    $('body').on('click', '.btn-delete', function(e) {
-        e.preventDefault();
-        var that = $(this).data('id');
-        app.confirm('Are you sure', function() {
+        $('body').on('click', '.btn-edit', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
             $.ajax({
-                type:'POST', 
-                url:'/Admin/Product/Delete',
-                dataType:'json',
+                type: 'GET',
                 data: {
-                    id:that
+                    id: that
                 },
-                beforeSend: function() {
+                dataType: 'json',
+                url: '/Admin/Product/GetProductById',
+                beforeSend: function () {
                     app.startLoading();
                 },
-                success: function(response) {
-                    app.notify('Delete success', 'success');
+                success: function (response) {
+                    var data = response;
+                    $('#hidIdM').val(data.Id);
+                    $('#txtNameM').val(data.Name);
+                    initTreeDropDownCategory(data.CategoryId);
+                    $('#txtDescM').val(data.Description);
+                    $('#txtUnitM').val(data.Unit);
+                    $('#txtPriceM').val(data.Price);
+                    $('#txtOriginalPriceM').val(data.OriginalPrice);
+                    $('#txtPromotionPriceM').val(data.PromotionPrice);
+                    // $('#txtImageM').val(data.ThumbnailImage);
+                    $('#txtTagM').val(data.Tags);
+                    $('#txtMetakeywordM').val(data.SeoKeywords);
+                    $('#txtMetaDescriptionM').val(data.SeoDescription);
+                    $('#txtSeoPageTitleM').val(data.SeoPageTitle);
+                    $('#txtSeoAliasM').val(data.SeoAlias);
+                    //CKEDITOR.instances.txtContentM.setData(data.Content);
+                    $('#ckStatusM').prop('checked', data.Status === 1);
+                    $('#ckHotM').prop('checked', data.HotFlag);
+                    $('#ckShowHomeM').prop('checked', data.HomeFlag);
+                    $('#modal-add-edit').modal('show');
                     app.stopLoading();
-                    loadData();
                 },
-                error: function() {
-                    app.notify('Has an error', 'error');
+                error: function (error) {
+                    app.notify('Has an Error', 'error');
                     app.stopLoading();
                 }
             });
         });
-    });
+
+        $('body').on('click', '.btn-delete', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            app.confirm('Are you sure', function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/Admin/Product/Delete',
+                    dataType: 'json',
+                    data: {
+                        id: that
+                    },
+                    beforeSend: function () {
+                        app.startLoading();
+                    },
+                    success: function (response) {
+                        app.notify('Delete success', 'success');
+                        app.stopLoading();
+                        //location.reload();
+                        loadData(true);
+                    },
+                    error: function () {
+                        app.notify('Has an error', 'error');
+                        app.stopLoading();
+                    }
+                });
+            });
+        });
+    }
+
+
 
     function getCategories() {
         var render = "<option value=''>--Select Category--</option>";
@@ -216,7 +220,7 @@
                 pageSize: app.configs.pageSize
             },
             dataType: 'json',
-            success: function (response) {
+            success: function (response) { 
                 if (response.Results.length === 0) {
                     app.notify('No data', 'warn');
                 } else {
@@ -232,7 +236,8 @@
                                     Image: item.Image = '<img src="/vendor/gentelella/production/user.png" width = "25px"></img>',
                                     //? '<img src="' + item.Image + '"width="25px"></img>'
                                     //: '<img src="~/vendor/gentelella/production/user.png"></img>',
-                                    CreateDay: app.dateFormatJson(item.DateCreated),
+                                    CreateDay: app.dataTimeFormatJson(item.DateCreated),
+                                    UpdateDay: app.dataTimeFormatJson(item.DateModified),
                                     Status: app.getStatus(item.Status)
                                 });
                             if (render !== "") {
@@ -286,8 +291,8 @@
         $('#txtDescM').val('');
         $('#txtUnitM').val('');
         $('#txtPriceM').val('0');
-        $('#txtOriginalPriceM').val('');
-        $('#txtPromotionPriceM').val('');
+        $('#txtOriginalPriceM').val('0');
+        $('#txtPromotionPriceM').val('0');
         //$('#txtImageM').val('');
         $('#txtTagM').val('');
         $('#txtMetakeywordM').val('');

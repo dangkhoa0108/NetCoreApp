@@ -563,7 +563,7 @@ namespace CoreApp.Data.EF.Migrations
 
                     b.Property<decimal>("Price");
 
-                    b.Property<decimal>("PromotionPrice");
+                    b.Property<decimal?>("PromotionPrice");
 
                     b.Property<string>("SeoAlias")
                         .HasColumnType("varchar(255)")
@@ -1005,7 +1005,7 @@ namespace CoreApp.Data.EF.Migrations
             modelBuilder.Entity("CoreApp.Data.Entities.ProductTag", b =>
                 {
                     b.HasOne("CoreApp.Data.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTags")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
 

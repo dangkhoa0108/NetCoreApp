@@ -11,6 +11,7 @@ using CoreApp.Data.Enums;
 using CoreApp.Utilities.Constants;
 using CoreApp.Utilities.DTOs;
 using CoreApp.Utilities.Helpers;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreApp.Application.Implementation
 {
@@ -31,7 +32,11 @@ namespace CoreApp.Application.Implementation
         public PageResult<ProductViewModel> GetAllPaging(int? categoryId, string keyword, int pageSize, int page)
         {
             // Execute Query to Get Data
-            var query = _unitOfWork.ProductRepository.FindAll(x => x.Status.Equals(Status.Active));
+            //Show All have status active
+            //var query = _unitOfWork.ProductRepository.FindAll(x => x.Status.Equals(Status.Active));
+
+            //Show All
+            var query = _unitOfWork.ProductRepository.FindAll();
             if (!string.IsNullOrWhiteSpace(keyword))
             {
                 query = query.Where(x => x.Name.Contains(keyword));
@@ -97,6 +102,7 @@ namespace CoreApp.Application.Implementation
             {
                 product.ProductTags.Add(productTag);
             }
+            product.DateCreated=DateTime.Now;
             _unitOfWork.ProductRepository.Add(product);
             _unitOfWork.Commit();
             return productViewModel;
@@ -122,7 +128,7 @@ namespace CoreApp.Application.Implementation
                         _unitOfWork.TagRepository.Add(tagItem);
                     }
                     //Remove all tag for product
-                    _unitOfWork.ProductTagRepository.RemoveMultiple(_unitOfWork.ProductTagRepository.FindAll(x=>x.Id == productViewModel.Id).ToList());
+                    _unitOfWork.ProductTagRepository.RemoveMultiple(_unitOfWork.ProductTagRepository.FindAll(x=>x.Id.Equals(productViewModel.Id)).ToList());
                     var productTag = new ProductTag
                     {
                         TagId = tagId
@@ -135,6 +141,11 @@ namespace CoreApp.Application.Implementation
             {
                 product.ProductTags.Add(productTag);
             }
+
+            //No tracking Id
+            var temp = _unitOfWork.ProductRepository.FindAll(x => x.Id == productViewModel.Id).AsNoTracking().First();
+            product.DateModified=DateTime.Now;
+            if (temp != null) product.DateCreated = temp.DateCreated;
             _unitOfWork.ProductRepository.Update(product);
             _unitOfWork.Commit();
         }
