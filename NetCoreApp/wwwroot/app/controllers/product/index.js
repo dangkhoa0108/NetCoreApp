@@ -110,6 +110,33 @@
             }
         });
 
+        $('#btnSelectImg').on('click',function() {
+            $('#fileInputImage').click();
+        });
+
+        $('#fileInputImage').on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/Admin/Upload/UploadImage',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    app.notify('Upload Success', 'success');
+                },
+                error: function () {
+                    app.notify('Upload Error', 'error');
+                }
+            });
+        });
+
         $('body').on('click', '.btn-edit', function (e) {
             e.preventDefault();
             var that = $(this).data('id');
