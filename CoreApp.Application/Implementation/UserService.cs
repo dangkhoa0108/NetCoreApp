@@ -1,10 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using CoreApp.Application.Interfaces;
 using CoreApp.Application.ViewModels.System;
 using CoreApp.Data.Entities;
 using CoreApp.Utilities.DTOs;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreApp.Application.Implementation
 {
@@ -38,29 +42,76 @@ namespace CoreApp.Application.Implementation
             return true;
         }
 
-        public Task DeleteAsync(string id)
+        public async Task DeleteAsync(string id)
         {
-            throw new System.NotImplementedException();
+            var user = await _userManager.FindByIdAsync(id);
+            await _userManager.DeleteAsync(user);
         }
 
-        public Task<List<AppUserViewModel>> GetAllAsync()
+        public async Task<List<AppUserViewModel>> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            //Convent from appUser model to AppUserViewModel
+            return await _userManager.Users.ProjectTo<AppUserViewModel>().ToListAsync();
         }
 
         public PageResult<AppUserViewModel> GetAllPagingAsync(string keyword, int page, int pageSize)
         {
-            throw new System.NotImplementedException();
+            var query = _userManager.Users;
+            if (!string.IsNullOrWhiteSpace(keyword))
+                query = query.Where(x =>
+                    x.FullName.Contains(keyword) || x.UserName.Contains(keyword) || x.Email.Contains(keyword));
+            var totalRow = query.Count();
+            query = query.Skip((page - 1) * pageSize).Take(pageSize);
+            var data = query.Select(x => new AppUserViewModel
+            {
+                UserName = x.UserName,
+                Email = x.Email,
+                Avatar = x.Avatar,
+                BirthDay = x.Birthday.ToString(),
+                FullName = x.FullName,
+                Id = x.Id,
+                PhoneNumber = x.PhoneNumber,
+                Status = x.Status,
+                DateCreated = x.DateCreated
+            }).ToList();
+            var paginationSet= new PageResult<AppUserViewModel>
+            {
+                Results = data,
+                CurrentPage = page,
+                RowCount = totalRow,
+                PageSize = pageSize
+            };
+            return paginationSet;
         }
 
-        public Task<AppUserViewModel> GetByIdAsync(string id)
+        public async Task<AppUserViewModel> GetByIdAsync(string id)
         {
-            throw new System.NotImplementedException();
+            var user = await _userManager.FindByIdAsync(id);
+            var roles = await _userManager.GetRolesAsync(user);
+            var userViewModel = Mapper.Map<AppUser, AppUserViewModel>(user);
+            userViewModel.Roles = roles.ToList();
+            return userViewModel;
         }
 
-        public Task UpdateAsync(AppUserViewModel appUserViewModel)
+        public async Task UpdateAsync(AppUserViewModel appUserViewModel)
         {
-            throw new System.NotImplementedException();
+            var user = await _userManager.FindByIdAsync(appUserViewModel.Id.ToString());
+            //Remove current roles in db
+            var currentRoles = await _userManager.GetRolesAsync(user);
+            var result =
+                await _userManager.AddToRolesAsync(user, appUserViewModel.Roles.Except(currentRoles).ToArray());
+            if (result.Succeeded)
+            {
+                string[] needRemoveRoles = currentRoles.Except(appUserViewModel.Roles).ToArray();
+                await _userManager.RemoveFromRolesAsync(user, needRemoveRoles);
+                 
+                //Update user Detail
+                user.FullName = appUserViewModel.FullName;
+                user.Status = appUserViewModel.Status;
+                user.Email = appUserViewModel.Email;
+                user.PhoneNumber = appUserViewModel.PhoneNumber;
+                await _userManager.UpdateAsync(user);
+            }
         }
     }
 }

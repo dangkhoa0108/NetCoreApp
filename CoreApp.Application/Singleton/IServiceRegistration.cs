@@ -8,5 +8,7 @@ namespace CoreApp.Application.Singleton
         IFunctionService FunctionService { get; }
         IProductCategoryService ProductCategoryService { get; }
         IProductService ProductService { get; }
+        //IUserService UserService { get; }
+        //IRoleService RoleService { get; }
     }
 }

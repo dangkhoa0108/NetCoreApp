@@ -16,7 +16,7 @@ namespace CoreApp.Data.EF.Registration
         private IProductCategoryRepository _productCategoryRepository;
         private ITagRepository _tagRepository;
         private IProductTagRepository _productTagRepository;
-
+        private IPermissionRepository _permissionRepository;
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
@@ -44,6 +44,10 @@ namespace CoreApp.Data.EF.Registration
         public IProductTagRepository ProductTagRepository =>
             _productTagRepository ?? (_productTagRepository = new ProductTagRepository(_context));
 
+        public IPermissionRepository PermissionRepository =>
+            _permissionRepository ?? (_permissionRepository = new PermissionRepository(_context));
+        
+        
         public void Commit()
         {
             _context.SaveChanges();
