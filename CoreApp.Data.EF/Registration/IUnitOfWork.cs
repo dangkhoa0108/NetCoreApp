@@ -9,6 +9,7 @@ namespace CoreApp.Data.EF.Registration
         IFunctionRepository FunctionRepository { get; }
         ITagRepository TagRepository { get; }
         IProductTagRepository ProductTagRepository { get; }
+        IPermissionRepository PermissionRepository { get; }
         void Commit();
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using AutoMapper;
+using CoreApp.Application.Implementation;
+using CoreApp.Application.Interfaces;
 using CoreApp.Application.Singleton;
 using CoreApp.Data.EF;
 using CoreApp.Data.EF.Registration;
@@ -65,6 +67,8 @@ namespace NetCoreApp
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<DbInitialize>();
+            services.AddTransient<IRoleService, RoleService>();
+            services.AddTransient<IUserService, UserService>();
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
