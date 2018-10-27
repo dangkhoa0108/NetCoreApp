@@ -51,7 +51,7 @@ namespace CoreApp.Application.Implementation
             var query = _roleManager.Roles;
             if (!string.IsNullOrWhiteSpace(keyword))
                 query = query.Where(x => x.Description.Contains(keyword) || x.Name.Contains(keyword));
-            int totalRow = query.Count();
+            var totalRow = query.Count();
             query = query.Skip((page - 1) * pageSize).Take(pageSize);
             var data = query.ProjectTo<AppRoleViewModel>().ToList();
             var paginationSet = new PageResult<AppRoleViewModel>
@@ -71,7 +71,7 @@ namespace CoreApp.Application.Implementation
 
         public async Task UpdateAsync(AppRoleViewModel appRoleViewModel)
         {
-            var role = await _roleManager.FindByIdAsync(appRoleViewModel.Id);
+            var role = await _roleManager.FindByIdAsync(appRoleViewModel.Id.ToString());
             if (role != null)
             {
                 role.Description = appRoleViewModel.Description;
@@ -92,10 +92,10 @@ namespace CoreApp.Application.Implementation
                         {
                             RoleId = roleId,
                             FunctionId = f.Id,
-                            CanCreate = p != null ? p.CanCreate : false,
-                            CanDelete = p != null ? p.CanDelete : false,
-                            CanRead = p != null ? p.CanRead : false,
-                            CanUpdate = p != null ? p.CanUpdate : false
+                            CanCreate = p != null && p.CanCreate,
+                            CanDelete = p != null && p.CanDelete,
+                            CanRead = p != null && p.CanRead,
+                            CanUpdate = p != null && p.CanUpdate
                         };
             return query.ToList();
         }
@@ -120,15 +120,14 @@ namespace CoreApp.Application.Implementation
             var functions = _unitOfWork.FunctionRepository.FindAll();
             var permissions = _unitOfWork.PermissionRepository.FindAll();
             var query = from f in functions
-                        join p in permissions on f.Id equals p.FunctionId
-                        join r in _roleManager.Roles on p.RoleId equals r.Id
-                        where roles.Contains(r.Name) && f.Id == functionId
-                                                     && ((p.CanCreate && action == "Create") || (p.CanUpdate &&
-                                                                                                 action == "Update")
-                                                                                             || (p.CanDelete &&
-                                                                                                 action == "Delete")
-                                                                                             || (p.CanRead && action == "Read"))
-                        select p;
+                join p in permissions on f.Id equals p.FunctionId
+                join r in _roleManager.Roles on p.RoleId equals r.Id
+                where roles.Contains(r.Name) && f.Id == functionId
+                                             && (p.CanCreate && action == "Create"
+                                                 || p.CanUpdate && action == "Update"
+                                                 || p.CanDelete && action == "Delete"
+                                                 || p.CanRead && action == "Read")
+                select p;
             return query.AnyAsync();
         }
     }

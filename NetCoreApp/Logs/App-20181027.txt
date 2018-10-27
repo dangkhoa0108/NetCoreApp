@@ -1,0 +1,973 @@
+2018-10-27T16:01:51.5478677+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:01:51.9648035+07:00  [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:51.9985521+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.0116833+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.0612217+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-27T16:01:52.0708221+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.0847532+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.0952463+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.1041782+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.1122355+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.1230570+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.1305145+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.1381828+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-27T16:01:52.5128115+07:00 0HLHRTBB5KO94:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-10-27T16:01:52.7733030+07:00 0HLHRTBB5KO94:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:01:57.2797019+07:00 0HLHRTBB5KO94:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-27T16:01:58.1340699+07:00 0HLHRTBB5KO94:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 5368.0522ms (afa2e885)
+2018-10-27T16:01:58.2063598+07:00 0HLHRTBB5KO94:00000001 [INF] Request finished in 5707.0401ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-27T16:01:58.3296898+07:00 0HLHRTBB5KO94:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-27T16:01:58.3361966+07:00 0HLHRTBB5KO95:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner2.svg   (ca22a1cb)
+2018-10-27T16:01:58.3371180+07:00 0HLHRTBB5KO94:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-27T16:01:58.3374979+07:00 0HLHRTBB5KO95:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-10-27T16:01:58.3380351+07:00 0HLHRTBB5KO96:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/css/site.css   (ca22a1cb)
+2018-10-27T16:01:58.3423520+07:00 0HLHRTBB5KO96:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-10-27T16:01:58.3516449+07:00 0HLHRTBB5KO97:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner1.svg   (ca22a1cb)
+2018-10-27T16:01:58.3534415+07:00 0HLHRTBB5KO97:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-10-27T16:01:58.3543546+07:00 0HLHRTBB5KO94:00000002 [INF] Request finished in 24.856ms 200 text/css (791a596a)
+2018-10-27T16:01:58.3556980+07:00 0HLHRTBB5KO97:00000001 [INF] Request finished in 11.4171ms 200 image/svg+xml (791a596a)
+2018-10-27T16:01:58.3556942+07:00 0HLHRTBB5KO95:00000001 [INF] Request finished in 19.6842ms 200 image/svg+xml (791a596a)
+2018-10-27T16:01:58.3579513+07:00 0HLHRTBB5KO96:00000001 [INF] Request finished in 20.0973ms 200 text/css (791a596a)
+2018-10-27T16:01:58.8649004+07:00 0HLHRTBB5KO96:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner3.svg   (ca22a1cb)
+2018-10-27T16:01:58.8662990+07:00 0HLHRTBB5KO96:00000002 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-10-27T16:01:58.8757987+07:00 0HLHRTBB5KO96:00000002 [INF] Request finished in 10.9926ms 200 image/svg+xml (791a596a)
+2018-10-27T16:01:58.8777386+07:00 0HLHRTBB5KO95:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner4.svg   (ca22a1cb)
+2018-10-27T16:01:58.8793366+07:00 0HLHRTBB5KO95:00000002 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-10-27T16:01:58.8849224+07:00 0HLHRTBB5KO95:00000002 [INF] Request finished in 7.2586ms 200 image/svg+xml (791a596a)
+2018-10-27T16:01:58.9851746+07:00 0HLHRTBB5KO97:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-27T16:01:58.9861443+07:00 0HLHRTBB5KO97:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-27T16:01:58.9864014+07:00 0HLHRTBB5KO94:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-10-27T16:01:58.9864018+07:00 0HLHRTBB5KO96:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-27T16:01:58.9876148+07:00 0HLHRTBB5KO94:00000003 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-10-27T16:01:58.9899150+07:00 0HLHRTBB5KO97:00000002 [INF] Request finished in 4.6467ms 200 application/javascript (791a596a)
+2018-10-27T16:01:58.9917730+07:00 0HLHRTBB5KO96:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-27T16:01:58.9945267+07:00 0HLHRTBB5KO94:00000003 [INF] Request finished in 8.0908ms 200 application/javascript (791a596a)
+2018-10-27T16:01:59.0018707+07:00 0HLHRTBB5KO96:00000003 [INF] Request finished in 15.4192ms 200 application/javascript (791a596a)
+2018-10-27T16:01:59.3017449+07:00 0HLHRTBB5KO95:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-27T16:01:59.3030389+07:00 0HLHRTBB5KO95:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-27T16:01:59.3057448+07:00 0HLHRTBB5KO95:00000003 [INF] Request finished in 4.0167ms 200 font/woff2 (791a596a)
+2018-10-27T16:01:59.7999609+07:00 0HLHRTBB5KO94:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-10-27T16:01:59.8010260+07:00 0HLHRTBB5KO94:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-27T16:01:59.8039873+07:00 0HLHRTBB5KO94:00000004 [INF] Request finished in 4.0088ms 200 image/x-icon (791a596a)
+2018-10-27T16:02:19.1374136+07:00 0HLHRTBB5KO96:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin   (ca22a1cb)
+2018-10-27T16:02:19.1506066+07:00 0HLHRTBB5KO96:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:19.7686352+07:00 0HLHRTBB5KO96:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-27T16:02:19.8510079+07:00 0HLHRTBB5KO96:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 706.1274ms (afa2e885)
+2018-10-27T16:02:19.8547263+07:00 0HLHRTBB5KO96:00000004 [INF] Request finished in 717.3676ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-27T16:02:20.1418883+07:00 0HLHRTBB5KO94:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-10-27T16:02:20.1418884+07:00 0HLHRTBB5KO97:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-10-27T16:02:20.1429335+07:00 0HLHRTBB5KO94:00000005 [INF] Sending file. Request path: '"/vendor/jquery-validation/jquery.validate.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\jquery.validate.js"' (27b0a520)
+2018-10-27T16:02:20.1429541+07:00 0HLHRTBB5KO97:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/build/css/custom.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\css\custom.css"' (27b0a520)
+2018-10-27T16:02:20.1452984+07:00 0HLHRTBB5KO97:00000003 [INF] Request finished in 3.9796ms 200 text/css (791a596a)
+2018-10-27T16:02:20.1452981+07:00 0HLHRTBB5KO94:00000005 [INF] Request finished in 3.6973ms 200 application/javascript (791a596a)
+2018-10-27T16:02:20.1457124+07:00 0HLHRTBB5KO96:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-10-27T16:02:20.1467432+07:00 0HLHRTBB5KO96:00000005 [INF] Sending file. Request path: '"/vendor/jquery-validation/additional-methods.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\additional-methods.js"' (27b0a520)
+2018-10-27T16:02:20.1485740+07:00 0HLHRTBB5KO96:00000005 [INF] Request finished in 2.8226ms 200 application/javascript (791a596a)
+2018-10-27T16:02:20.1490590+07:00 0HLHRTBB5KO9B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-10-27T16:02:20.1502682+07:00 0HLHRTBB5KO9B:00000001 [INF] Sending file. Request path: '"/vendor/animate.css/animate.min.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.min.css"' (27b0a520)
+2018-10-27T16:02:20.1531978+07:00 0HLHRTBB5KO9B:00000001 [INF] Request finished in 4.1329ms 200 text/css (791a596a)
+2018-10-27T16:02:20.1536478+07:00 0HLHRTBB5KO9A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js   (ca22a1cb)
+2018-10-27T16:02:20.1549118+07:00 0HLHRTBB5KO9A:00000001 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-10-27T16:02:20.1565303+07:00 0HLHRTBB5KO9A:00000001 [INF] Request finished in 2.885ms 200 application/javascript (791a596a)
+2018-10-27T16:02:20.1569723+07:00 0HLHRTBB5KO99:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-27T16:02:20.1591415+07:00 0HLHRTBB5KO99:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-27T16:02:20.1610771+07:00 0HLHRTBB5KO99:00000001 [INF] Request finished in 4.053ms 200 application/javascript (791a596a)
+2018-10-27T16:02:20.1615316+07:00 0HLHRTBB5KO98:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-27T16:02:20.1700461+07:00 0HLHRTBB5KO98:00000001 [INF] Sending file. Request path: '"/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-27T16:02:20.1862930+07:00 0HLHRTBB5KO9C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-27T16:02:20.1863737+07:00 0HLHRTBB5KO95:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-27T16:02:20.1885906+07:00 0HLHRTBB5KO9C:00000001 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-27T16:02:20.2013834+07:00 0HLHRTBB5KO9C:00000001 [INF] Request finished in 15.6114ms 200 text/css (791a596a)
+2018-10-27T16:02:20.2263439+07:00 0HLHRTBB5KO9D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/login/index.js   (ca22a1cb)
+2018-10-27T16:02:20.2292418+07:00 0HLHRTBB5KO95:00000004 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-27T16:02:20.2387476+07:00 0HLHRTBB5KO98:00000001 [INF] Request finished in 77.1799ms 200 application/javascript (791a596a)
+2018-10-27T16:02:20.2400044+07:00 0HLHRTBB5KO9D:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-10-27T16:02:20.2495718+07:00 0HLHRTBB5KO95:00000004 [INF] Request finished in 108.0358ms 200 text/css (791a596a)
+2018-10-27T16:02:20.2656359+07:00 0HLHRTBB5KO9D:00000001 [INF] Request finished in 39.2587ms 200 application/javascript (791a596a)
+2018-10-27T16:02:24.1020185+07:00 0HLHRTBB5KO9C:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-27T16:02:24.3195846+07:00 0HLHRTBB5KO9C:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:24.3308330+07:00 0HLHRTBB5KO9C:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:24.5568236+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("149"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:02:24.7896317+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-27T16:02:24.8445015+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:02:24.8622671+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-27T16:02:24.8951053+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-27T16:02:24.9001234+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-27T16:02:24.9029657+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-27T16:02:24.9062118+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-27T16:02:24.9078745+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-27T16:02:24.9100449+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:02:24.9240309+07:00 0HLHRTBB5KO9C:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-27T16:02:24.9246879+07:00 0HLHRTBB5KO9C:00000002 [INF] User logged in. (fdce0db4)
+2018-10-27T16:02:24.9354294+07:00 0HLHRTBB5KO9C:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:25.0154821+07:00 0HLHRTBB5KO9C:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 808.9651ms (afa2e885)
+2018-10-27T16:02:25.0170843+07:00 0HLHRTBB5KO9C:00000002 [INF] Request finished in 915.1065ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:02:25.1045572+07:00 0HLHRTBB5KO9A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index   (ca22a1cb)
+2018-10-27T16:02:25.1110366+07:00 0HLHRTBB5KO9A:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:25.1279808+07:00 0HLHRTBB5KO9A:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:25.3188672+07:00 0HLHRTBB5KO9A:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:25.7077860+07:00 0HLHRTBB5KO9A:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-27T16:02:26.2460707+07:00 0HLHRTBB5KO9A:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:26.3076717+07:00 0HLHRTBB5KO9A:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-27T16:02:27.1070681+07:00 0HLHRTBB5KO9A:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 1992.3733ms (afa2e885)
+2018-10-27T16:02:27.1178154+07:00 0HLHRTBB5KO9A:00000002 [INF] Request finished in 2013.2177ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-27T16:02:27.3009033+07:00 0HLHRTBB5KO94:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-10-27T16:02:27.3009033+07:00 0HLHRTBB5KO99:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/production/img.jpg   (ca22a1cb)
+2018-10-27T16:02:27.3009033+07:00 0HLHRTBB5KO9D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-27T16:02:27.3019541+07:00 0HLHRTBB5KO9D:00000002 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-10-27T16:02:27.3019538+07:00 0HLHRTBB5KO99:00000002 [INF] Sending file. Request path: '"/vendor/gentelella/production/img.jpg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\img.jpg"' (27b0a520)
+2018-10-27T16:02:27.3030158+07:00 0HLHRTBB5KO98:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-27T16:02:27.3035719+07:00 0HLHRTBB5KO94:00000006 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-10-27T16:02:27.3038743+07:00 0HLHRTBB5KO98:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-10-27T16:02:27.3041695+07:00 0HLHRTBB5KO99:00000002 [INF] Request finished in 3.2946ms 200 image/jpeg (791a596a)
+2018-10-27T16:02:27.3044843+07:00 0HLHRTBB5KO9D:00000002 [INF] Request finished in 3.687ms 200 application/javascript (791a596a)
+2018-10-27T16:02:27.3045889+07:00 0HLHRTBB5KO95:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-27T16:02:27.3057066+07:00 0HLHRTBB5KO95:00000005 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-27T16:02:27.3059264+07:00 0HLHRTBB5KO94:00000006 [INF] Request finished in 5.0745ms 200 text/css (791a596a)
+2018-10-27T16:02:27.3152452+07:00 0HLHRTBB5KO95:00000005 [INF] Request finished in 10.5849ms 200 text/css (791a596a)
+2018-10-27T16:02:27.3307485+07:00 0HLHRTBB5KO98:00000002 [INF] Request finished in 27.7569ms 200 text/css (791a596a)
+2018-10-27T16:02:27.9293389+07:00 0HLHRTBB5KO96:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-27T16:02:27.9339113+07:00 0HLHRTBB5KO96:00000006 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-10-27T16:02:27.9537615+07:00 0HLHRTBB5KO9B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-27T16:02:27.9555654+07:00 0HLHRTBB5KO9B:00000002 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-10-27T16:02:27.9640508+07:00 0HLHRTBB5KO96:00000006 [INF] Request finished in 34.9745ms 200 application/javascript (791a596a)
+2018-10-27T16:02:27.9691608+07:00 0HLHRTBB5KO9B:00000002 [INF] Request finished in 16.0407ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.3446391+07:00 0HLHRTBB5KO97:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-27T16:02:28.3467488+07:00 0HLHRTBB5KO97:00000004 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-10-27T16:02:28.3475709+07:00 0HLHRTBB5KO9C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-27T16:02:28.3529906+07:00 0HLHRTBB5KO9C:00000003 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-10-27T16:02:28.3706756+07:00 0HLHRTBB5KO9A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-27T16:02:28.3753633+07:00 0HLHRTBB5KO9A:00000003 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-10-27T16:02:28.3852459+07:00 0HLHRTBB5KO97:00000004 [INF] Request finished in 40.8144ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.3869988+07:00 0HLHRTBB5KO9C:00000003 [INF] Request finished in 39.7174ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.3874879+07:00 0HLHRTBB5KO99:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/datejs/date.js   (ca22a1cb)
+2018-10-27T16:02:28.3885189+07:00 0HLHRTBB5KO99:00000003 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-10-27T16:02:28.3937853+07:00 0HLHRTBB5KO99:00000003 [INF] Request finished in 6.2888ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.3943059+07:00 0HLHRTBB5KO9D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-27T16:02:28.3954232+07:00 0HLHRTBB5KO9D:00000003 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-10-27T16:02:28.3973149+07:00 0HLHRTBB5KO9D:00000003 [INF] Request finished in 3.0293ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.3978220+07:00 0HLHRTBB5KO95:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js?v=nuKti2O0HgqtxmHvAJHJ4_fZW2zL85nyBWNDgXAAtUg   (ca22a1cb)
+2018-10-27T16:02:28.3991624+07:00 0HLHRTBB5KO95:00000006 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-10-27T16:02:28.4002673+07:00 0HLHRTBB5KO95:00000006 [INF] Request finished in 2.449ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4009860+07:00 0HLHRTBB5KO94:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-27T16:02:28.4023626+07:00 0HLHRTBB5KO94:00000007 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-10-27T16:02:28.4081752+07:00 0HLHRTBB5KO9A:00000003 [INF] Request finished in 37.6892ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4087429+07:00 0HLHRTBB5KO9B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-27T16:02:28.4098993+07:00 0HLHRTBB5KO9B:00000003 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-10-27T16:02:28.4115042+07:00 0HLHRTBB5KO9B:00000003 [INF] Request finished in 2.781ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4120475+07:00 0HLHRTBB5KO98:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-27T16:02:28.4140905+07:00 0HLHRTBB5KO98:00000003 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-27T16:02:28.4162440+07:00 0HLHRTBB5KO98:00000003 [INF] Request finished in 4.1795ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4178390+07:00 0HLHRTBB5KO9F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-27T16:02:28.4211479+07:00 0HLHRTBB5KO9G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootbox/bootbox.js   (ca22a1cb)
+2018-10-27T16:02:28.4226076+07:00 0HLHRTBB5KO9G:00000001 [INF] Sending file. Request path: '"/vendor/bootbox/bootbox.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootbox\bootbox.js"' (27b0a520)
+2018-10-27T16:02:28.4244431+07:00 0HLHRTBB5KO9E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-10-27T16:02:28.4259167+07:00 0HLHRTBB5KO9E:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-10-27T16:02:28.4279176+07:00 0HLHRTBB5KO9F:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-27T16:02:28.4451326+07:00 0HLHRTBB5KO9G:00000001 [INF] Request finished in 29.7316ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4458317+07:00 0HLHRTBB5KO9H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-10-27T16:02:28.4475481+07:00 0HLHRTBB5KO9H:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-10-27T16:02:28.4493853+07:00 0HLHRTBB5KO9H:00000001 [INF] Request finished in 3.5699ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4499211+07:00 0HLHRTBB5KO9I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-10-27T16:02:28.4514287+07:00 0HLHRTBB5KO9I:00000001 [INF] Sending file. Request path: '"/vendor/ckeditor/ckeditor.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\ckeditor.js"' (27b0a520)
+2018-10-27T16:02:28.4595470+07:00 0HLHRTBB5KO9I:00000001 [INF] Request finished in 8.2852ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4619294+07:00 0HLHRTBB5KO9J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/js/custom.js   (ca22a1cb)
+2018-10-27T16:02:28.4639554+07:00 0HLHRTBB5KO9J:00000001 [INF] Sending file. Request path: '"/vendor/gentelella/build/js/custom.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\js\custom.js"' (27b0a520)
+2018-10-27T16:02:28.4669571+07:00 0HLHRTBB5KO9J:00000001 [INF] Request finished in 6.1668ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4674544+07:00 0HLHRTBB5KO9L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-27T16:02:28.4685446+07:00 0HLHRTBB5KO9L:00000001 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-10-27T16:02:28.4717866+07:00 0HLHRTBB5KO9L:00000001 [INF] Request finished in 4.2567ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.4724635+07:00 0HLHRTBB5KO9K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-27T16:02:28.4761196+07:00 0HLHRTBB5KO9K:00000001 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-10-27T16:02:28.5010527+07:00 0HLHRTBB5KO94:00000007 [INF] Request finished in 100.2391ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5015274+07:00 0HLHRTBB5KO9M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-27T16:02:28.5027270+07:00 0HLHRTBB5KO9M:00000001 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-10-27T16:02:28.5041732+07:00 0HLHRTBB5KO9M:00000001 [INF] Request finished in 2.6433ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5048450+07:00 0HLHRTBB5KO9N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-27T16:02:28.5059774+07:00 0HLHRTBB5KO9N:00000001 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-27T16:02:28.5078054+07:00 0HLHRTBB5KO9N:00000001 [INF] Request finished in 3.0956ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5216863+07:00 0HLHRTBB5KO9E:00000001 [INF] Request finished in 97.5766ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5216863+07:00 0HLHRTBB5KO9F:00000001 [INF] Request finished in 104.0014ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5447388+07:00 0HLHRTBB5KO9K:00000001 [INF] Request finished in 72.311ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.5455049+07:00 0HLHRTBB5KO95:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-27T16:02:28.5464781+07:00 0HLHRTBB5KO95:00000007 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-10-27T16:02:28.5481153+07:00 0HLHRTBB5KO95:00000007 [INF] Request finished in 2.6964ms 200 application/javascript (791a596a)
+2018-10-27T16:02:28.8003653+07:00 0HLHRTBB5KO9D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-27T16:02:28.8105234+07:00 0HLHRTBB5KO9D:00000004 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-10-27T16:02:28.8690469+07:00 0HLHRTBB5KO9D:00000004 [INF] Request finished in 68.9288ms 200 application/javascript (791a596a)
+2018-10-27T16:02:29.0681347+07:00 0HLHRTBB5KO9N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-27T16:02:29.0706462+07:00 0HLHRTBB5KO9N:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-27T16:02:29.0804858+07:00 0HLHRTBB5KO9B:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-27T16:02:29.0816230+07:00 0HLHRTBB5KO9B:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-27T16:02:29.0849971+07:00 0HLHRTBB5KO9B:00000004 [INF] Request finished in 4.5893ms 200 font/woff2 (791a596a)
+2018-10-27T16:02:29.0866270+07:00 0HLHRTBB5KO9N:00000002 [INF] Request finished in 19.4604ms 200 font/woff2 (791a596a)
+2018-10-27T16:02:40.2015819+07:00 0HLHRTBB5KO9M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/index   (ca22a1cb)
+2018-10-27T16:02:40.2036543+07:00 0HLHRTBB5KO9M:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:40.2095174+07:00 0HLHRTBB5KO9M:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:40.2164573+07:00 0HLHRTBB5KO9M:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:40.8583888+07:00 0HLHRTBB5KO9M:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-10-27T16:02:41.2162676+07:00 0HLHRTBB5KO9M:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:41.2260619+07:00 0HLHRTBB5KO9M:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-27T16:02:41.2491457+07:00 0HLHRTBB5KO9M:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.Index (NetCoreApp)" in 1041.2561ms (afa2e885)
+2018-10-27T16:02:41.2561376+07:00 0HLHRTBB5KO9M:00000002 [INF] Request finished in 1054.6656ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-27T16:02:41.8174372+07:00 0HLHRTBB5KO94:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/user/index.js?v=Ctt7QhUOf1tNjb12odszKakp7mhMaL4N5SXwW0YMjmw   (ca22a1cb)
+2018-10-27T16:02:41.8186538+07:00 0HLHRTBB5KO94:00000008 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2018-10-27T16:02:41.8215843+07:00 0HLHRTBB5KO94:00000008 [INF] Request finished in 4.0081ms 200 application/javascript (791a596a)
+2018-10-27T16:02:42.1790657+07:00 0HLHRTBB5KO95:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:02:42.1806951+07:00 0HLHRTBB5KO95:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:42.1901077+07:00 0HLHRTBB5KO95:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:42.2052890+07:00 0HLHRTBB5KO95:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:42.2185715+07:00 0HLHRTBB5KO95:00000008 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:42.2357709+07:00 0HLHRTBB5KO95:00000008 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-10-27T16:02:42.2658986+07:00 0HLHRTBB5KO95:00000008 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-10-27T16:02:42.3245781+07:00 0HLHRTBB5KO95:00000008 [INF] Executed DbCommand ("28"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-10-27T16:02:42.3310370+07:00 0HLHRTBB5KO95:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:42.4032013+07:00 0HLHRTBB5KO95:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 212.9517ms (afa2e885)
+2018-10-27T16:02:42.4035416+07:00 0HLHRTBB5KO95:00000008 [INF] Request finished in 224.5597ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:02:42.7678329+07:00 0HLHRTBB5KO9G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:02:42.7694780+07:00 0HLHRTBB5KO9G:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:42.7708747+07:00 0HLHRTBB5KO9G:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:42.7764638+07:00 0HLHRTBB5KO9A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:02:42.7806471+07:00 0HLHRTBB5KO9A:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:42.7852808+07:00 0HLHRTBB5KO9A:00000004 [INF] Request finished in 9.0548ms 404  (791a596a)
+2018-10-27T16:02:42.7915720+07:00 0HLHRTBB5KO9G:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:42.7928874+07:00 0HLHRTBB5KO9G:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:42.8300754+07:00 0HLHRTBB5KO9G:00000002 [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-10-27T16:02:42.8840953+07:00 0HLHRTBB5KO9G:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-10-27T16:02:42.8849764+07:00 0HLHRTBB5KO9G:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:42.8854781+07:00 0HLHRTBB5KO9G:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 115.0199ms (afa2e885)
+2018-10-27T16:02:42.8858406+07:00 0HLHRTBB5KO9G:00000002 [INF] Request finished in 118.0443ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:02:43.0507321+07:00 0HLHRTBB5KO9K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:02:43.0549887+07:00 0HLHRTBB5KO9K:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:43.0554185+07:00 0HLHRTBB5KO9K:00000002 [INF] Request finished in 5.9556ms 404  (791a596a)
+2018-10-27T16:02:49.9103468+07:00 0HLHRTBB5KO9F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:02:49.9123977+07:00 0HLHRTBB5KO9F:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:49.9132007+07:00 0HLHRTBB5KO9F:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:49.9212831+07:00 0HLHRTBB5KO9F:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:49.9218340+07:00 0HLHRTBB5KO9F:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:49.9412060+07:00 0HLHRTBB5KO9F:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:02:49.9454502+07:00 0HLHRTBB5KO9F:00000002 [WRN] Query: '"(from AppUser x in DbSet<AppUser> where bool [x].FullName.Contains(__keyword_0) || bool [x].UserName..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-10-27T16:02:49.9620175+07:00 0HLHRTBB5KO9F:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:02:49.9626087+07:00 0HLHRTBB5KO9F:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:49.9630169+07:00 0HLHRTBB5KO9F:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 50.121ms (afa2e885)
+2018-10-27T16:02:49.9633288+07:00 0HLHRTBB5KO9F:00000002 [INF] Request finished in 53.1136ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:02:49.9975748+07:00 0HLHRTBB5KO9H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:02:49.9990059+07:00 0HLHRTBB5KO9H:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:49.9993177+07:00 0HLHRTBB5KO9H:00000002 [INF] Request finished in 1.9001ms 404  (791a596a)
+2018-10-27T16:02:53.2135888+07:00 0HLHRTBB5KO9E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=aaaaaa&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:02:53.2166651+07:00 0HLHRTBB5KO9E:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:53.2175322+07:00 0HLHRTBB5KO9E:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:53.2231634+07:00 0HLHRTBB5KO9E:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["aaaaaa", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:53.2238944+07:00 0HLHRTBB5KO9E:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:53.2274250+07:00 0HLHRTBB5KO9E:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:02:53.2294633+07:00 0HLHRTBB5KO9E:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:02:53.2318301+07:00 0HLHRTBB5KO9E:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:53.2326194+07:00 0HLHRTBB5KO9E:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 14.9903ms (afa2e885)
+2018-10-27T16:02:53.2330051+07:00 0HLHRTBB5KO9E:00000002 [INF] Request finished in 19.4054ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:02:59.8200730+07:00 0HLHRTBB5KO97:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=1&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:02:59.8215902+07:00 0HLHRTBB5KO97:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:02:59.8221108+07:00 0HLHRTBB5KO97:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:02:59.8287112+07:00 0HLHRTBB5KO97:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["1", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:02:59.8294161+07:00 0HLHRTBB5KO97:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:02:59.8309641+07:00 0HLHRTBB5KO97:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:02:59.8359433+07:00 0HLHRTBB5KO97:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:02:59.8362534+07:00 0HLHRTBB5KO97:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:02:59.8366117+07:00 0HLHRTBB5KO97:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 14.5953ms (afa2e885)
+2018-10-27T16:02:59.8369015+07:00 0HLHRTBB5KO97:00000005 [INF] Request finished in 16.9095ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:02.8882063+07:00 0HLHRTBB5KO99:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:02.8899235+07:00 0HLHRTBB5KO99:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:02.8903661+07:00 0HLHRTBB5KO99:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:02.8985446+07:00 0HLHRTBB5KO99:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:02.9026775+07:00 0HLHRTBB5KO99:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:02.9060416+07:00 0HLHRTBB5KO99:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:02.9087199+07:00 0HLHRTBB5KO99:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:02.9091247+07:00 0HLHRTBB5KO99:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:02.9094704+07:00 0HLHRTBB5KO99:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 19.162ms (afa2e885)
+2018-10-27T16:03:02.9097604+07:00 0HLHRTBB5KO99:00000004 [INF] Request finished in 21.6972ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:02.9885433+07:00 0HLHRTBB5KO98:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:02.9904981+07:00 0HLHRTBB5KO98:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:02.9912976+07:00 0HLHRTBB5KO98:00000004 [INF] Request finished in 3.7511ms 404  (791a596a)
+2018-10-27T16:03:04.6702321+07:00 0HLHRTBB5KO9L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/User/GetById?id=152718da-250f-48a9-badf-08d617fd7fd6   (ca22a1cb)
+2018-10-27T16:03:04.6716718+07:00 0HLHRTBB5KO9L:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:04.6786969+07:00 0HLHRTBB5KO9L:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:04.6838172+07:00 0HLHRTBB5KO9L:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["152718da-250f-48a9-badf-08d617fd7fd6"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:04.6916857+07:00 0HLHRTBB5KO9L:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:04.7107061+07:00 0HLHRTBB5KO9L:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:04.7248390+07:00 0HLHRTBB5KO9L:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:04.7512845+07:00 0HLHRTBB5KO9L:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:04.7516249+07:00 0HLHRTBB5KO9L:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 73.0123ms (afa2e885)
+2018-10-27T16:03:04.7518673+07:00 0HLHRTBB5KO9L:00000002 [INF] Request finished in 81.7248ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:04.7682365+07:00 0HLHRTBB5KO9J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:04.7694832+07:00 0HLHRTBB5KO9J:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:04.7757512+07:00 0HLHRTBB5KO9J:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:04.7775281+07:00 0HLHRTBB5KO9J:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:04.7807989+07:00 0HLHRTBB5KO9J:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:04.7978921+07:00 0HLHRTBB5KO9J:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:04.8005577+07:00 0HLHRTBB5KO9J:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:04.8067616+07:00 0HLHRTBB5KO9J:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 31.0071ms (afa2e885)
+2018-10-27T16:03:04.8070608+07:00 0HLHRTBB5KO9J:00000002 [INF] Request finished in 38.8683ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:07.7378702+07:00 0HLHRTBB5KO9D:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 199 (ca22a1cb)
+2018-10-27T16:03:07.7392979+07:00 0HLHRTBB5KO9D:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:07.7658142+07:00 0HLHRTBB5KO9D:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:07.7788466+07:00 0HLHRTBB5KO9D:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" with arguments (["CoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:07.7835587+07:00 0HLHRTBB5KO9D:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:07.7860177+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:07.7896325+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:07.8015570+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:07.8200034+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:07.9580016+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("39"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:07.9713126+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:07.9730278+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:07.9760885+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:07.9791946+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:07.9808025+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:07.9844538+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:07.9856853+07:00 0HLHRTBB5KO9D:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:07.9861601+07:00 0HLHRTBB5KO9D:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" in 220.2466ms (afa2e885)
+2018-10-27T16:03:07.9864876+07:00 0HLHRTBB5KO9D:00000005 [INF] Request finished in 248.7577ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:08.0334375+07:00 0HLHRTBB5KO9N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:08.0348133+07:00 0HLHRTBB5KO9N:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:08.0352478+07:00 0HLHRTBB5KO9N:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:08.0419308+07:00 0HLHRTBB5KO9N:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:08.0429844+07:00 0HLHRTBB5KO9N:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:08.0478488+07:00 0HLHRTBB5KO9N:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:08.0482839+07:00 0HLHRTBB5KO9N:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:08.0485943+07:00 0HLHRTBB5KO9N:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 13.3672ms (afa2e885)
+2018-10-27T16:03:08.0488278+07:00 0HLHRTBB5KO9N:00000003 [INF] Request finished in 15.5205ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:08.1210363+07:00 0HLHRTBB5KO9C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:08.1230570+07:00 0HLHRTBB5KO9C:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:08.1269969+07:00 0HLHRTBB5KO9C:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:08.1373759+07:00 0HLHRTBB5KO9C:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:08.1383431+07:00 0HLHRTBB5KO9C:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:08.1665673+07:00 0HLHRTBB5KO9C:00000004 [INF] Executed DbCommand ("13"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:08.1941431+07:00 0HLHRTBB5KO9C:00000004 [INF] Executed DbCommand ("25"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:08.1945499+07:00 0HLHRTBB5KO9C:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:08.1950825+07:00 0HLHRTBB5KO9C:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 68.8711ms (afa2e885)
+2018-10-27T16:03:08.1953297+07:00 0HLHRTBB5KO9C:00000004 [INF] Request finished in 74.5525ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:08.3298074+07:00 0HLHRTBB5KO9B:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:08.3358295+07:00 0HLHRTBB5KO9B:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:08.3358068+07:00 0HLHRTBB5KO96:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:08.3371623+07:00 0HLHRTBB5KO9B:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:08.3378027+07:00 0HLHRTBB5KO96:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:08.3380868+07:00 0HLHRTBB5KO96:00000007 [INF] Request finished in 2.6666ms 404  (791a596a)
+2018-10-27T16:03:08.3415523+07:00 0HLHRTBB5KO9B:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:08.3432159+07:00 0HLHRTBB5KO9B:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:08.3581300+07:00 0HLHRTBB5KO9B:00000005 [INF] Executed DbCommand ("12"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:08.4619822+07:00 0HLHRTBB5KO9B:00000005 [INF] Executed DbCommand ("102"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:08.4623733+07:00 0HLHRTBB5KO9B:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:08.4626977+07:00 0HLHRTBB5KO9B:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 126.1304ms (afa2e885)
+2018-10-27T16:03:08.4629285+07:00 0HLHRTBB5KO9B:00000005 [INF] Request finished in 133.4142ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:08.5564237+07:00 0HLHRTBB5KO9I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:08.5625382+07:00 0HLHRTBB5KO9I:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:08.5648854+07:00 0HLHRTBB5KO9I:00000002 [INF] Request finished in 8.3245ms 404  (791a596a)
+2018-10-27T16:03:10.2386188+07:00 0HLHRTBB5KO9M:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/User/GetById?id=152718da-250f-48a9-badf-08d617fd7fd6   (ca22a1cb)
+2018-10-27T16:03:10.2404754+07:00 0HLHRTBB5KO9M:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:10.2408349+07:00 0HLHRTBB5KO9M:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:10.2424806+07:00 0HLHRTBB5KO9M:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["152718da-250f-48a9-badf-08d617fd7fd6"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:10.2430501+07:00 0HLHRTBB5KO9M:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:10.2462395+07:00 0HLHRTBB5KO9M:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:10.2489158+07:00 0HLHRTBB5KO9M:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:10.2505841+07:00 0HLHRTBB5KO9M:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:10.2508992+07:00 0HLHRTBB5KO9M:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 10.1093ms (afa2e885)
+2018-10-27T16:03:10.2512060+07:00 0HLHRTBB5KO9M:00000003 [INF] Request finished in 13.0833ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:10.2684417+07:00 0HLHRTBB5KO94:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:10.2696764+07:00 0HLHRTBB5KO94:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:10.2699885+07:00 0HLHRTBB5KO94:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:10.2717789+07:00 0HLHRTBB5KO94:00000009 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:10.2724790+07:00 0HLHRTBB5KO94:00000009 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:10.2750830+07:00 0HLHRTBB5KO94:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:10.2769161+07:00 0HLHRTBB5KO94:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:10.2775376+07:00 0HLHRTBB5KO94:00000009 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 7.4695ms (afa2e885)
+2018-10-27T16:03:10.2778254+07:00 0HLHRTBB5KO94:00000009 [INF] Request finished in 9.4656ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:12.6358687+07:00 0HLHRTBB5KO95:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 199 (ca22a1cb)
+2018-10-27T16:03:12.6393160+07:00 0HLHRTBB5KO95:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:12.6400438+07:00 0HLHRTBB5KO95:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:12.6440600+07:00 0HLHRTBB5KO95:00000009 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" with arguments (["CoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:12.6447631+07:00 0HLHRTBB5KO95:00000009 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:12.6479080+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:12.6507818+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:12.6560472+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:12.6576503+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:12.6602849+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:12.6621537+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:12.6640151+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:12.6672153+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:12.6699085+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:12.6725370+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:12.6746072+07:00 0HLHRTBB5KO95:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:12.6755075+07:00 0HLHRTBB5KO95:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:12.6757820+07:00 0HLHRTBB5KO95:00000009 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" in 36.1101ms (afa2e885)
+2018-10-27T16:03:12.6759996+07:00 0HLHRTBB5KO95:00000009 [INF] Request finished in 40.2902ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:12.6996727+07:00 0HLHRTBB5KO9A:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:12.7009077+07:00 0HLHRTBB5KO9A:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:12.7012375+07:00 0HLHRTBB5KO9A:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:12.7027624+07:00 0HLHRTBB5KO9A:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:12.7034709+07:00 0HLHRTBB5KO9A:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:12.7046097+07:00 0HLHRTBB5KO9A:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:12.7049559+07:00 0HLHRTBB5KO9A:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:12.7053746+07:00 0HLHRTBB5KO9A:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 4.0195ms (afa2e885)
+2018-10-27T16:03:12.7063597+07:00 0HLHRTBB5KO9A:00000005 [INF] Request finished in 6.4553ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:12.7483514+07:00 0HLHRTBB5KO9G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:12.7514060+07:00 0HLHRTBB5KO9G:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:12.7529187+07:00 0HLHRTBB5KO9G:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:12.7839149+07:00 0HLHRTBB5KO9G:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:12.7905413+07:00 0HLHRTBB5KO9G:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:12.8499896+07:00 0HLHRTBB5KO9G:00000003 [INF] Executed DbCommand ("55"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:12.8801266+07:00 0HLHRTBB5KO9G:00000003 [INF] Executed DbCommand ("28"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:12.8826576+07:00 0HLHRTBB5KO9G:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:12.8831965+07:00 0HLHRTBB5KO9G:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 130.6846ms (afa2e885)
+2018-10-27T16:03:12.8834944+07:00 0HLHRTBB5KO9G:00000003 [INF] Request finished in 138.8413ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:13.0645407+07:00 0HLHRTBB5KO9K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:13.0700527+07:00 0HLHRTBB5KO9K:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:13.0757942+07:00 0HLHRTBB5KO9K:00000003 [INF] Request finished in 9.6942ms 404  (791a596a)
+2018-10-27T16:03:13.0781382+07:00 0HLHRTBB5KO9F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:13.1011306+07:00 0HLHRTBB5KO9F:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:13.1028751+07:00 0HLHRTBB5KO9F:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:13.1532604+07:00 0HLHRTBB5KO9F:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:13.1593771+07:00 0HLHRTBB5KO9F:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:13.1966997+07:00 0HLHRTBB5KO9F:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:13.2311063+07:00 0HLHRTBB5KO9F:00000003 [INF] Executed DbCommand ("32"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:13.2314100+07:00 0HLHRTBB5KO9F:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:13.2317253+07:00 0HLHRTBB5KO9F:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 129.5812ms (afa2e885)
+2018-10-27T16:03:13.2319498+07:00 0HLHRTBB5KO9F:00000003 [INF] Request finished in 154.3857ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:13.2930719+07:00 0HLHRTBB5KO9H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:13.3000557+07:00 0HLHRTBB5KO9H:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:13.3003495+07:00 0HLHRTBB5KO9H:00000003 [INF] Request finished in 8.2036ms 404  (791a596a)
+2018-10-27T16:03:14.9033593+07:00 0HLHRTBB5KO9E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/User/GetById?id=152718da-250f-48a9-badf-08d617fd7fd6   (ca22a1cb)
+2018-10-27T16:03:14.9045430+07:00 0HLHRTBB5KO9E:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:14.9048881+07:00 0HLHRTBB5KO9E:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:14.9062595+07:00 0HLHRTBB5KO9E:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["152718da-250f-48a9-badf-08d617fd7fd6"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:14.9067711+07:00 0HLHRTBB5KO9E:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:14.9086377+07:00 0HLHRTBB5KO9E:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:14.9103449+07:00 0HLHRTBB5KO9E:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:14.9108808+07:00 0HLHRTBB5KO9E:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:14.9111895+07:00 0HLHRTBB5KO9E:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 6.3327ms (afa2e885)
+2018-10-27T16:03:14.9115013+07:00 0HLHRTBB5KO9E:00000003 [INF] Request finished in 8.1614ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:14.9373661+07:00 0HLHRTBB5KO97:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:14.9386602+07:00 0HLHRTBB5KO97:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:14.9390429+07:00 0HLHRTBB5KO97:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:14.9417972+07:00 0HLHRTBB5KO97:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:14.9426532+07:00 0HLHRTBB5KO97:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:14.9454235+07:00 0HLHRTBB5KO97:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:14.9465848+07:00 0HLHRTBB5KO97:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:14.9470592+07:00 0HLHRTBB5KO97:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 8.0686ms (afa2e885)
+2018-10-27T16:03:14.9473311+07:00 0HLHRTBB5KO97:00000006 [INF] Request finished in 10.1009ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:17.2644602+07:00 0HLHRTBB5KO99:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/User/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 160 (ca22a1cb)
+2018-10-27T16:03:17.2679694+07:00 0HLHRTBB5KO99:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.2683526+07:00 0HLHRTBB5KO99:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:17.2704303+07:00 0HLHRTBB5KO99:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" with arguments (["CoreApp.Application.ViewModels.System.AppUserViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:17.2724984+07:00 0HLHRTBB5KO99:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:17.2750242+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:17.2779488+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:17.2793087+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:17.2815443+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:17.2860766+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:17.3100136+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-10-27T16:03:17.3327499+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?', @__get_Item_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[RoleId], [e].[UserId]
+FROM [AppUserRoles] AS [e]
+WHERE ([e].[RoleId] = @__get_Item_0) AND ([e].[UserId] = @__get_Item_1)" (0723d8ff)
+2018-10-27T16:03:17.3374331+07:00 0HLHRTBB5KO99:00000005 [WRN] User "152718da-250f-48a9-badf-08d617fd7fd6" is not in role "Staff". (ef7b5e72)
+2018-10-27T16:03:17.3429041+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-27T16:03:17.3448129+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2018-10-27T16:03:17.3582407+07:00 0HLHRTBB5KO99:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@p21='?', @p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?', @p4='?' (Size = 4000), @p5='?', @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?', @p11='?', @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AppUsers] SET [AccessFailedCount] = @p0, [Avatar] = @p1, [Balance] = @p2, [Birthday] = @p3, [ConcurrencyStamp] = @p4, [DateCreated] = @p5, [DateModified] = @p6, [Email] = @p7, [EmailConfirmed] = @p8, [FullName] = @p9, [LockoutEnabled] = @p10, [LockoutEnd] = @p11, [NormalizedEmail] = @p12, [NormalizedUserName] = @p13, [PasswordHash] = @p14, [PhoneNumber] = @p15, [PhoneNumberConfirmed] = @p16, [SecurityStamp] = @p17, [Status] = @p18, [TwoFactorEnabled] = @p19, [UserName] = @p20
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-27T16:03:17.3640680+07:00 0HLHRTBB5KO99:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:17.3643664+07:00 0HLHRTBB5KO99:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.SaveEntity (NetCoreApp)" in 96.0876ms (afa2e885)
+2018-10-27T16:03:17.3645734+07:00 0HLHRTBB5KO99:00000005 [INF] Request finished in 100.2113ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:17.4109045+07:00 0HLHRTBB5KO98:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:17.4127110+07:00 0HLHRTBB5KO98:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.4133403+07:00 0HLHRTBB5KO98:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:17.4213444+07:00 0HLHRTBB5KO98:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:17.4220516+07:00 0HLHRTBB5KO98:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:17.4247000+07:00 0HLHRTBB5KO98:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:17.4255937+07:00 0HLHRTBB5KO98:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:17.4260117+07:00 0HLHRTBB5KO98:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 12.7497ms (afa2e885)
+2018-10-27T16:03:17.4292978+07:00 0HLHRTBB5KO98:00000005 [INF] Request finished in 15.6344ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:17.5575431+07:00 0HLHRTBB5KO9L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:17.5672072+07:00 0HLHRTBB5KO9L:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.5696907+07:00 0HLHRTBB5KO9L:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:17.5722944+07:00 0HLHRTBB5KO9L:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:17.5729045+07:00 0HLHRTBB5KO9L:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:17.5810598+07:00 0HLHRTBB5KO9L:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:17.5842626+07:00 0HLHRTBB5KO9L:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:17.5846594+07:00 0HLHRTBB5KO9L:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:17.5850260+07:00 0HLHRTBB5KO9L:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 15.7274ms (afa2e885)
+2018-10-27T16:03:17.5863255+07:00 0HLHRTBB5KO9L:00000003 [INF] Request finished in 28.0312ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:17.7029242+07:00 0HLHRTBB5KO9J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:17.7046555+07:00 0HLHRTBB5KO9J:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.7050077+07:00 0HLHRTBB5KO9J:00000003 [INF] Request finished in 2.1692ms 404  (791a596a)
+2018-10-27T16:03:17.7074151+07:00 0HLHRTBB5KO9D:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=10   (ca22a1cb)
+2018-10-27T16:03:17.7147173+07:00 0HLHRTBB5KO9D:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.7167519+07:00 0HLHRTBB5KO9D:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:17.7268044+07:00 0HLHRTBB5KO9D:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:17.7274634+07:00 0HLHRTBB5KO9D:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:17.7491571+07:00 0HLHRTBB5KO9D:00000006 [INF] Executed DbCommand ("20"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:17.7992925+07:00 0HLHRTBB5KO9D:00000006 [INF] Executed DbCommand ("44"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:17.7996975+07:00 0HLHRTBB5KO9D:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:17.8000932+07:00 0HLHRTBB5KO9D:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 84.0939ms (afa2e885)
+2018-10-27T16:03:17.8003442+07:00 0HLHRTBB5KO9D:00000006 [INF] Request finished in 93.0675ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:17.9410305+07:00 0HLHRTBB5KO9N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:17.9430109+07:00 0HLHRTBB5KO9N:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:17.9434265+07:00 0HLHRTBB5KO9N:00000004 [INF] Request finished in 2.4048ms 404  (791a596a)
+2018-10-27T16:03:19.2107005+07:00 0HLHRTBB5KO9C:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/User/GetById?id=152718da-250f-48a9-badf-08d617fd7fd6   (ca22a1cb)
+2018-10-27T16:03:19.2122334+07:00 0HLHRTBB5KO9C:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:19.2127127+07:00 0HLHRTBB5KO9C:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:19.2144203+07:00 0HLHRTBB5KO9C:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["152718da-250f-48a9-badf-08d617fd7fd6"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:19.2149310+07:00 0HLHRTBB5KO9C:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:19.2168735+07:00 0HLHRTBB5KO9C:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:19.2189543+07:00 0HLHRTBB5KO9C:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:19.2193388+07:00 0HLHRTBB5KO9C:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:19.2196712+07:00 0HLHRTBB5KO9C:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 6.9666ms (afa2e885)
+2018-10-27T16:03:19.2201178+07:00 0HLHRTBB5KO9C:00000005 [INF] Request finished in 9.3899ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:19.2359930+07:00 0HLHRTBB5KO96:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:19.2377427+07:00 0HLHRTBB5KO96:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:19.2383691+07:00 0HLHRTBB5KO96:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:19.2402039+07:00 0HLHRTBB5KO96:00000008 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:19.2415622+07:00 0HLHRTBB5KO96:00000008 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:19.2440832+07:00 0HLHRTBB5KO96:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:19.2444398+07:00 0HLHRTBB5KO96:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:19.2447367+07:00 0HLHRTBB5KO96:00000008 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 6.5675ms (afa2e885)
+2018-10-27T16:03:19.2450311+07:00 0HLHRTBB5KO96:00000008 [INF] Request finished in 9.1089ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:26.9853169+07:00 0HLHRTBB5KO9B:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:26.9868910+07:00 0HLHRTBB5KO9B:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:26.9873592+07:00 0HLHRTBB5KO9B:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:26.9894045+07:00 0HLHRTBB5KO9B:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:26.9904631+07:00 0HLHRTBB5KO9B:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:26.9953455+07:00 0HLHRTBB5KO9B:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:26.9958667+07:00 0HLHRTBB5KO9B:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:26.9964675+07:00 0HLHRTBB5KO9B:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 9.0175ms (afa2e885)
+2018-10-27T16:03:26.9969734+07:00 0HLHRTBB5KO9B:00000006 [INF] Request finished in 11.6119ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:27.0151730+07:00 0HLHRTBB5KO9I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:27.0164591+07:00 0HLHRTBB5KO9I:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:27.0168722+07:00 0HLHRTBB5KO9I:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:27.0236571+07:00 0HLHRTBB5KO9I:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:27.0246775+07:00 0HLHRTBB5KO9I:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:27.0286692+07:00 0HLHRTBB5KO9I:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:27.0290547+07:00 0HLHRTBB5KO9I:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:27.0293831+07:00 0HLHRTBB5KO9I:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 12.5596ms (afa2e885)
+2018-10-27T16:03:27.0297127+07:00 0HLHRTBB5KO9I:00000003 [INF] Request finished in 14.658ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:41.8813711+07:00 0HLHRTBB5KO9M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/User/GetById?id=152718da-250f-48a9-badf-08d617fd7fd6   (ca22a1cb)
+2018-10-27T16:03:41.8830902+07:00 0HLHRTBB5KO9M:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:41.8835337+07:00 0HLHRTBB5KO9M:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:41.8858727+07:00 0HLHRTBB5KO9M:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" with arguments (["152718da-250f-48a9-badf-08d617fd7fd6"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:41.8864388+07:00 0HLHRTBB5KO9M:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:41.8884137+07:00 0HLHRTBB5KO9M:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[Birthday], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-10-27T16:03:41.8901462+07:00 0HLHRTBB5KO9M:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-27T16:03:41.8905256+07:00 0HLHRTBB5KO9M:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:41.8908242+07:00 0HLHRTBB5KO9M:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetById (NetCoreApp)" in 7.3446ms (afa2e885)
+2018-10-27T16:03:41.8910775+07:00 0HLHRTBB5KO9M:00000004 [INF] Request finished in 9.9767ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:41.9102112+07:00 0HLHRTBB5KO94:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Role/GetAll   (ca22a1cb)
+2018-10-27T16:03:41.9121027+07:00 0HLHRTBB5KO94:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:41.9124422+07:00 0HLHRTBB5KO94:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:41.9162985+07:00 0HLHRTBB5KO94:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:41.9170431+07:00 0HLHRTBB5KO94:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:41.9188107+07:00 0HLHRTBB5KO94:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]" (0723d8ff)
+2018-10-27T16:03:41.9192088+07:00 0HLHRTBB5KO94:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:41.9213598+07:00 0HLHRTBB5KO94:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.RoleController.GetAll (NetCoreApp)" in 8.8428ms (afa2e885)
+2018-10-27T16:03:41.9218512+07:00 0HLHRTBB5KO94:0000000A [INF] Request finished in 11.7661ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:57.6490258+07:00 0HLHRTBB5KO95:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=20   (ca22a1cb)
+2018-10-27T16:03:57.6525873+07:00 0HLHRTBB5KO95:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:57.6531468+07:00 0HLHRTBB5KO95:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:57.6659150+07:00 0HLHRTBB5KO95:0000000A [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "20"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:57.6669577+07:00 0HLHRTBB5KO95:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:57.6738271+07:00 0HLHRTBB5KO95:0000000A [INF] Executed DbCommand ("4"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:57.6862709+07:00 0HLHRTBB5KO95:0000000A [INF] Executed DbCommand ("11"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:57.6865953+07:00 0HLHRTBB5KO95:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:57.6869214+07:00 0HLHRTBB5KO95:0000000A [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 33.9175ms (afa2e885)
+2018-10-27T16:03:57.6873121+07:00 0HLHRTBB5KO95:0000000A [INF] Request finished in 38.4007ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:57.7272394+07:00 0HLHRTBB5KO9A:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:57.7285138+07:00 0HLHRTBB5KO9A:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:57.7289010+07:00 0HLHRTBB5KO9A:00000006 [INF] Request finished in 1.9405ms 404  (791a596a)
+2018-10-27T16:03:57.7293919+07:00 0HLHRTBB5KO9G:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/GetAllPaging?keyword=a&page=1&pageSize=20   (ca22a1cb)
+2018-10-27T16:03:57.7310338+07:00 0HLHRTBB5KO9G:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:57.7315659+07:00 0HLHRTBB5KO9G:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-27T16:03:57.7400079+07:00 0HLHRTBB5KO9G:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" with arguments (["a", "1", "20"]) - ModelState is Valid (ba7f4ac2)
+2018-10-27T16:03:57.7405241+07:00 0HLHRTBB5KO9G:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-27T16:03:57.7565823+07:00 0HLHRTBB5KO9G:00000004 [INF] Executed DbCommand ("15"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))" (0723d8ff)
+2018-10-27T16:03:57.7672194+07:00 0HLHRTBB5KO9G:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@__keyword_0='?' (Size = 4000), @__keyword_1='?' (Size = 4000), @__keyword_2='?' (Size = 4000), @__p_3='?', @__p_4='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Email], [x].[Avatar], CONVERT(VARCHAR(100), [x].[Birthday]) AS [BirthDay], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+WHERE (((CHARINDEX(@__keyword_0, [x].[FullName]) > 0) OR (@__keyword_0 = N'')) OR ((CHARINDEX(@__keyword_1, [x].[UserName]) > 0) OR (@__keyword_1 = N''))) OR ((CHARINDEX(@__keyword_2, [x].[Email]) > 0) OR (@__keyword_2 = N''))
+ORDER BY (SELECT 1)
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY" (0723d8ff)
+2018-10-27T16:03:57.7675295+07:00 0HLHRTBB5KO9G:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-27T16:03:57.7678831+07:00 0HLHRTBB5KO9G:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (NetCoreApp)" in 36.4559ms (afa2e885)
+2018-10-27T16:03:57.7681344+07:00 0HLHRTBB5KO9G:00000004 [INF] Request finished in 38.8085ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-27T16:03:57.8097851+07:00 0HLHRTBB5KO9K:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/user/null   (ca22a1cb)
+2018-10-27T16:03:57.8123028+07:00 0HLHRTBB5KO9K:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:03:57.8126762+07:00 0HLHRTBB5KO9K:00000004 [INF] Request finished in 3.7998ms 404  (791a596a)
+2018-10-27T16:04:52.2792958+07:00 0HLHRTBB5KO95:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/function/index   (ca22a1cb)
+2018-10-27T16:04:52.2809525+07:00 0HLHRTBB5KO95:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-27T16:04:52.2813242+07:00 0HLHRTBB5KO95:0000000B [INF] Request finished in 2.3578ms 404  (791a596a)

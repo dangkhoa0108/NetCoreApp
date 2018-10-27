@@ -1,0 +1,757 @@
+2018-10-06T17:29:42.9953882+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:29:43.4635524+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5002666+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5137152+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5584528+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-06T17:29:43.5688991+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5768728+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5848423+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.5977827+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.6076085+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.6213425+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.6275406+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:43.6636979+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:29:44.9778828+07:00 0HLHBEQH3IR1C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-10-06T17:29:45.4764568+07:00 0HLHBEQH3IR1C:00000001 [INF] Executing action method "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:29:50.2600211+07:00 0HLHBEQH3IR1C:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-10-06T17:29:51.8958143+07:00 0HLHBEQH3IR1C:00000001 [INF] Executed action "NetCoreApp.Controllers.HomeController.Index (NetCoreApp)" in 6432.5721ms (afa2e885)
+2018-10-06T17:29:52.0136281+07:00 0HLHBEQH3IR1C:00000001 [INF] Request finished in 7072.3118ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:29:52.7908347+07:00 0HLHBEQH3IR1C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-06T17:29:52.7940609+07:00 0HLHBEQH3IR1D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/css/site.css   (ca22a1cb)
+2018-10-06T17:29:52.7968186+07:00 0HLHBEQH3IR1C:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-06T17:29:52.7977325+07:00 0HLHBEQH3IR1D:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-10-06T17:29:52.8052429+07:00 0HLHBEQH3IR1D:00000001 [INF] Request finished in 11.2223ms 200 text/css (791a596a)
+2018-10-06T17:29:52.8058343+07:00 0HLHBEQH3IR1C:00000002 [INF] Request finished in 15.1567ms 200 text/css (791a596a)
+2018-10-06T17:29:54.4682248+07:00 0HLHBEQH3IR1D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-06T17:29:54.4694614+07:00 0HLHBEQH3IR1D:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-06T17:29:54.4725998+07:00 0HLHBEQH3IR1D:00000002 [INF] Request finished in 4.4188ms 200 application/javascript (791a596a)
+2018-10-06T17:29:54.6330132+07:00 0HLHBEQH3IR1F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner1.svg   (ca22a1cb)
+2018-10-06T17:29:54.6330133+07:00 0HLHBEQH3IR1C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner2.svg   (ca22a1cb)
+2018-10-06T17:29:54.6343618+07:00 0HLHBEQH3IR1F:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-10-06T17:29:54.6344714+07:00 0HLHBEQH3IR1C:00000003 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-10-06T17:29:54.6357014+07:00 0HLHBEQH3IR1E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-10-06T17:29:54.6356999+07:00 0HLHBEQH3IR1H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-06T17:29:54.6370627+07:00 0HLHBEQH3IR1H:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-06T17:29:54.6373851+07:00 0HLHBEQH3IR1E:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-10-06T17:29:54.6390223+07:00 0HLHBEQH3IR1H:00000001 [INF] Request finished in 3.2601ms 200 application/javascript (791a596a)
+2018-10-06T17:29:54.6420480+07:00 0HLHBEQH3IR1E:00000001 [INF] Request finished in 5.8015ms 200 application/javascript (791a596a)
+2018-10-06T17:29:54.6521420+07:00 0HLHBEQH3IR1F:00000001 [INF] Request finished in 19.1393ms 200 image/svg+xml (791a596a)
+2018-10-06T17:29:54.6527816+07:00 0HLHBEQH3IR1G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner3.svg   (ca22a1cb)
+2018-10-06T17:29:54.6552012+07:00 0HLHBEQH3IR1G:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-10-06T17:29:54.6566524+07:00 0HLHBEQH3IR1G:00000001 [INF] Request finished in 3.9884ms 200 image/svg+xml (791a596a)
+2018-10-06T17:29:54.6566525+07:00 0HLHBEQH3IR1C:00000003 [INF] Request finished in 23.7038ms 200 image/svg+xml (791a596a)
+2018-10-06T17:29:54.6629865+07:00 0HLHBEQH3IR1I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/images/banner4.svg   (ca22a1cb)
+2018-10-06T17:29:54.6645463+07:00 0HLHBEQH3IR1I:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-10-06T17:29:54.6829469+07:00 0HLHBEQH3IR1I:00000001 [INF] Request finished in 19.8335ms 200 image/svg+xml (791a596a)
+2018-10-06T17:29:55.1822085+07:00 0HLHBEQH3IR1E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-06T17:29:55.1924982+07:00 0HLHBEQH3IR1E:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-06T17:29:55.2878252+07:00 0HLHBEQH3IR1E:00000002 [INF] Request finished in 106.0006ms 200 font/woff2 (791a596a)
+2018-10-06T17:29:56.8398814+07:00 0HLHBEQH3IR1C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin   (ca22a1cb)
+2018-10-06T17:29:56.8559661+07:00 0HLHBEQH3IR1C:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:29:57.7241025+07:00 0HLHBEQH3IR1C:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-06T17:29:57.8127129+07:00 0HLHBEQH3IR1C:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 958.5357ms (afa2e885)
+2018-10-06T17:29:57.8263202+07:00 0HLHBEQH3IR1C:00000004 [INF] Request finished in 986.7364ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:29:58.7384671+07:00 0HLHBEQH3IR1G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin   (ca22a1cb)
+2018-10-06T17:29:58.7404066+07:00 0HLHBEQH3IR1G:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:29:58.7410255+07:00 0HLHBEQH3IR1G:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-06T17:29:58.7629070+07:00 0HLHBEQH3IR1G:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 22.9779ms (afa2e885)
+2018-10-06T17:29:58.7919137+07:00 0HLHBEQH3IR1G:00000002 [INF] Request finished in 53.8996ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:29:59.1689280+07:00 0HLHBEQH3IR1F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/additional-methods.js   (ca22a1cb)
+2018-10-06T17:29:59.1706420+07:00 0HLHBEQH3IR1F:00000002 [INF] Sending file. Request path: '"/vendor/jquery-validation/additional-methods.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\additional-methods.js"' (27b0a520)
+2018-10-06T17:29:59.1722995+07:00 0HLHBEQH3IR1F:00000002 [INF] Request finished in 3.3939ms 200 application/javascript (791a596a)
+2018-10-06T17:29:59.1735213+07:00 0HLHBEQH3IR1I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-06T17:29:59.1778247+07:00 0HLHBEQH3IR1I:00000002 [INF] Sending file. Request path: '"/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-06T17:29:59.1786751+07:00 0HLHBEQH3IR1E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.css   (ca22a1cb)
+2018-10-06T17:29:59.1786906+07:00 0HLHBEQH3IR1H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-validation/jquery.validate.js   (ca22a1cb)
+2018-10-06T17:29:59.1810514+07:00 0HLHBEQH3IR1I:00000002 [INF] Request finished in 8.0592ms 200 application/javascript (791a596a)
+2018-10-06T17:29:59.1810419+07:00 0HLHBEQH3IR1H:00000002 [INF] Sending file. Request path: '"/vendor/jquery-validation/jquery.validate.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-validation\jquery.validate.js"' (27b0a520)
+2018-10-06T17:29:59.1819702+07:00 0HLHBEQH3IR1H:00000002 [INF] Request finished in 3.3196ms 200 application/javascript (791a596a)
+2018-10-06T17:29:59.1820477+07:00 0HLHBEQH3IR1C:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/css/custom.css   (ca22a1cb)
+2018-10-06T17:29:59.1823509+07:00 0HLHBEQH3IR1G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/login/index.js   (ca22a1cb)
+2018-10-06T17:29:59.1835292+07:00 0HLHBEQH3IR1G:00000003 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-10-06T17:29:59.1840485+07:00 0HLHBEQH3IR1G:00000003 [INF] Request finished in 1.6931ms 200 application/javascript (791a596a)
+2018-10-06T17:29:59.1844569+07:00 0HLHBEQH3IR1J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js   (ca22a1cb)
+2018-10-06T17:29:59.1846262+07:00 0HLHBEQH3IR1D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-06T17:29:59.1850325+07:00 0HLHBEQH3IR1C:00000005 [INF] Sending file. Request path: '"/vendor/gentelella/build/css/custom.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\css\custom.css"' (27b0a520)
+2018-10-06T17:29:59.1854041+07:00 0HLHBEQH3IR1J:00000001 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-10-06T17:29:59.1859361+07:00 0HLHBEQH3IR1J:00000001 [INF] Request finished in 1.4804ms 200 application/javascript (791a596a)
+2018-10-06T17:29:59.1863450+07:00 0HLHBEQH3IR1D:00000003 [INF] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-06T17:29:59.1863450+07:00 0HLHBEQH3IR1K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/notifyjs/notify.js   (ca22a1cb)
+2018-10-06T17:29:59.1889150+07:00 0HLHBEQH3IR1K:00000001 [INF] Sending file. Request path: '"/vendor/notifyjs/notify.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\notifyjs\notify.js"' (27b0a520)
+2018-10-06T17:29:59.1903807+07:00 0HLHBEQH3IR1D:00000003 [INF] Request finished in 5.7394ms 200 text/css (791a596a)
+2018-10-06T17:29:59.2073818+07:00 0HLHBEQH3IR1E:00000003 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.css"' (27b0a520)
+2018-10-06T17:29:59.2098929+07:00 0HLHBEQH3IR1L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/animate.css/animate.min.css   (ca22a1cb)
+2018-10-06T17:29:59.2109157+07:00 0HLHBEQH3IR1C:00000005 [INF] Request finished in 28.5393ms 200 text/css (791a596a)
+2018-10-06T17:29:59.2126259+07:00 0HLHBEQH3IR1L:00000001 [INF] Sending file. Request path: '"/vendor/animate.css/animate.min.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\animate.css\animate.min.css"' (27b0a520)
+2018-10-06T17:29:59.2523953+07:00 0HLHBEQH3IR1E:00000003 [INF] Request finished in 74.042ms 200 text/css (791a596a)
+2018-10-06T17:29:59.2553411+07:00 0HLHBEQH3IR1L:00000001 [INF] Request finished in 45.7607ms 200 text/css (791a596a)
+2018-10-06T17:29:59.2564396+07:00 0HLHBEQH3IR1K:00000001 [INF] Request finished in 70.0708ms 200 application/javascript (791a596a)
+2018-10-06T17:30:05.2271755+07:00 0HLHBEQH3IR1G:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-06T17:30:05.4787456+07:00 0HLHBEQH3IR1G:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:05.4981278+07:00 0HLHBEQH3IR1G:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:30:05.6472069+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-06T17:30:05.8108850+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-06T17:30:05.9054101+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("13"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-06T17:30:05.9292211+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:30:05.9642049+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:30:05.9678579+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:30:05.9701091+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:30:05.9721905+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:30:05.9741353+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:30:05.9770146+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-06T17:30:05.9845699+07:00 0HLHBEQH3IR1G:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-06T17:30:05.9852927+07:00 0HLHBEQH3IR1G:00000004 [INF] User logged in. (fdce0db4)
+2018-10-06T17:30:05.9918510+07:00 0HLHBEQH3IR1G:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:30:06.0887852+07:00 0HLHBEQH3IR1G:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 747.3455ms (afa2e885)
+2018-10-06T17:30:06.0912494+07:00 0HLHBEQH3IR1G:00000004 [INF] Request finished in 863.477ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:30:06.1727414+07:00 0HLHBEQH3IR1J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index   (ca22a1cb)
+2018-10-06T17:30:06.1875631+07:00 0HLHBEQH3IR1J:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:06.2202604+07:00 0HLHBEQH3IR1J:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:06.3231034+07:00 0HLHBEQH3IR1J:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:06.7963332+07:00 0HLHBEQH3IR1J:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-06T17:30:07.4079717+07:00 0HLHBEQH3IR1J:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:30:07.5015316+07:00 0HLHBEQH3IR1J:00000002 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:30:08.2939232+07:00 0HLHBEQH3IR1J:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 2101.7185ms (afa2e885)
+2018-10-06T17:30:08.3071519+07:00 0HLHBEQH3IR1J:00000002 [INF] Request finished in 2135.3703ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:30:08.4584099+07:00 0HLHBEQH3IR1E:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/css/bootstrap.css   (ca22a1cb)
+2018-10-06T17:30:08.4598294+07:00 0HLHBEQH3IR1I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/production/img.jpg   (ca22a1cb)
+2018-10-06T17:30:08.4620913+07:00 0HLHBEQH3IR1I:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/production/img.jpg"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\img.jpg"' (27b0a520)
+2018-10-06T17:30:08.4749315+07:00 0HLHBEQH3IR1D:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-06T17:30:08.4761853+07:00 0HLHBEQH3IR1D:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-06T17:30:08.4776213+07:00 0HLHBEQH3IR1E:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css"' (27b0a520)
+2018-10-06T17:30:08.4791812+07:00 0HLHBEQH3IR1I:00000003 [INF] Request finished in 19.7208ms 200 image/jpeg (791a596a)
+2018-10-06T17:30:08.5248101+07:00 0HLHBEQH3IR1D:00000004 [INF] Request finished in 50.468ms 200 text/css (791a596a)
+2018-10-06T17:30:08.5969974+07:00 0HLHBEQH3IR1F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-10-06T17:30:08.5989814+07:00 0HLHBEQH3IR1F:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono/editor.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-10-06T17:30:08.6007433+07:00 0HLHBEQH3IR1F:00000003 [INF] Request finished in 5.47ms 200 text/css (791a596a)
+2018-10-06T17:30:08.6550224+07:00 0HLHBEQH3IR1E:00000004 [INF] Request finished in 198.8596ms 200 text/css (791a596a)
+2018-10-06T17:30:09.0915767+07:00 0HLHBEQH3IR1K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-06T17:30:09.0929291+07:00 0HLHBEQH3IR1K:00000002 [INF] Sending file. Request path: '"/vendor/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-06T17:30:09.0934794+07:00 0HLHBEQH3IR1K:00000002 [INF] Request finished in 1.9962ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.0938798+07:00 0HLHBEQH3IR1H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/ckeditor.js   (ca22a1cb)
+2018-10-06T17:30:09.0945114+07:00 0HLHBEQH3IR1I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/moment.min.js   (ca22a1cb)
+2018-10-06T17:30:09.0945184+07:00 0HLHBEQH3IR1G:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-10-06T17:30:09.0945184+07:00 0HLHBEQH3IR1C:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/datejs/date.js   (ca22a1cb)
+2018-10-06T17:30:09.0949345+07:00 0HLHBEQH3IR1J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/mustache/mustache.js   (ca22a1cb)
+2018-10-06T17:30:09.0956033+07:00 0HLHBEQH3IR1I:00000004 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/moment.min.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\moment.min.js"' (27b0a520)
+2018-10-06T17:30:09.0960049+07:00 0HLHBEQH3IR1J:00000003 [INF] Sending file. Request path: '"/vendor/mustache/mustache.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\mustache\mustache.js"' (27b0a520)
+2018-10-06T17:30:09.0961466+07:00 0HLHBEQH3IR1C:00000006 [INF] Sending file. Request path: '"/vendor/datejs/date.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\datejs\date.js"' (27b0a520)
+2018-10-06T17:30:09.0963191+07:00 0HLHBEQH3IR1G:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-10-06T17:30:09.0970047+07:00 0HLHBEQH3IR1G:00000005 [INF] Request finished in 2.488ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.0972480+07:00 0HLHBEQH3IR1C:00000006 [INF] Request finished in 2.7919ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.0978862+07:00 0HLHBEQH3IR1L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-06T17:30:09.0982747+07:00 0HLHBEQH3IR1H:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/ckeditor.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\ckeditor.js"' (27b0a520)
+2018-10-06T17:30:09.1004108+07:00 0HLHBEQH3IR1L:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-06T17:30:09.1053629+07:00 0HLHBEQH3IR1L:00000002 [INF] Request finished in 7.5339ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1057270+07:00 0HLHBEQH3IR1H:00000003 [INF] Request finished in 11.9015ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1096667+07:00 0HLHBEQH3IR1D:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.time.js   (ca22a1cb)
+2018-10-06T17:30:09.1110901+07:00 0HLHBEQH3IR1I:00000004 [INF] Request finished in 16.5188ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1117139+07:00 0HLHBEQH3IR1F:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/jquery-sparkline/jquery.sparkline.js   (ca22a1cb)
+2018-10-06T17:30:09.1128467+07:00 0HLHBEQH3IR1F:00000004 [INF] Sending file. Request path: '"/vendor/jquery-sparkline/jquery.sparkline.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\jquery-sparkline\jquery.sparkline.js"' (27b0a520)
+2018-10-06T17:30:09.1140035+07:00 0HLHBEQH3IR1D:00000005 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.time.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.time.js"' (27b0a520)
+2018-10-06T17:30:09.1140235+07:00 0HLHBEQH3IR1F:00000004 [INF] Request finished in 2.4361ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1145022+07:00 0HLHBEQH3IR1T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/chart.js/Chart.js   (ca22a1cb)
+2018-10-06T17:30:09.1151649+07:00 0HLHBEQH3IR1D:00000005 [INF] Request finished in 5.7284ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1155838+07:00 0HLHBEQH3IR1T:00000001 [INF] Sending file. Request path: '"/vendor/chart.js/Chart.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\chart.js\Chart.js"' (27b0a520)
+2018-10-06T17:30:09.1156272+07:00 0HLHBEQH3IR1S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/nprogress/nprogress.js   (ca22a1cb)
+2018-10-06T17:30:09.1169056+07:00 0HLHBEQH3IR1S:00000001 [INF] Sending file. Request path: '"/vendor/nprogress/nprogress.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\nprogress\nprogress.js"' (27b0a520)
+2018-10-06T17:30:09.1189400+07:00 0HLHBEQH3IR1T:00000001 [INF] Request finished in 3.7974ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1201591+07:00 0HLHBEQH3IR1Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.resize.js   (ca22a1cb)
+2018-10-06T17:30:09.1206507+07:00 0HLHBEQH3IR1J:00000003 [INF] Request finished in 25.7802ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1209630+07:00 0HLHBEQH3IR1N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/fastclick/fastclick.js   (ca22a1cb)
+2018-10-06T17:30:09.1210943+07:00 0HLHBEQH3IR1O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.js   (ca22a1cb)
+2018-10-06T17:30:09.1211074+07:00 0HLHBEQH3IR1M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-spline/jquery.flot.spline.js   (ca22a1cb)
+2018-10-06T17:30:09.1214078+07:00 0HLHBEQH3IR1Q:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.resize.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.resize.js"' (27b0a520)
+2018-10-06T17:30:09.1218639+07:00 0HLHBEQH3IR1Q:00000001 [INF] Request finished in 2.0586ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1220320+07:00 0HLHBEQH3IR1M:00000001 [INF] Sending file. Request path: '"/vendor/flot-spline/jquery.flot.spline.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-spline\jquery.flot.spline.js"' (27b0a520)
+2018-10-06T17:30:09.1220936+07:00 0HLHBEQH3IR1N:00000001 [INF] Sending file. Request path: '"/vendor/fastclick/fastclick.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\fastclick\fastclick.js"' (27b0a520)
+2018-10-06T17:30:09.1223835+07:00 0HLHBEQH3IR1O:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.js"' (27b0a520)
+2018-10-06T17:30:09.1224826+07:00 0HLHBEQH3IR1M:00000001 [INF] Request finished in 1.7136ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1227894+07:00 0HLHBEQH3IR1R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.pie.js   (ca22a1cb)
+2018-10-06T17:30:09.1228206+07:00 0HLHBEQH3IR1P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot/jquery.flot.stack.js   (ca22a1cb)
+2018-10-06T17:30:09.1238583+07:00 0HLHBEQH3IR1P:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.stack.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.stack.js"' (27b0a520)
+2018-10-06T17:30:09.1238891+07:00 0HLHBEQH3IR1R:00000001 [INF] Sending file. Request path: '"/vendor/flot/jquery.flot.pie.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot\jquery.flot.pie.js"' (27b0a520)
+2018-10-06T17:30:09.1247568+07:00 0HLHBEQH3IR1O:00000001 [INF] Request finished in 4.8314ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1274936+07:00 0HLHBEQH3IR1R:00000001 [INF] Request finished in 6.9261ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1287567+07:00 0HLHBEQH3IR1P:00000001 [INF] Request finished in 5.8544ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1314755+07:00 0HLHBEQH3IR1U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot.curvedlines/curvedLines.js   (ca22a1cb)
+2018-10-06T17:30:09.1345984+07:00 0HLHBEQH3IR1U:00000001 [INF] Sending file. Request path: '"/vendor/flot.curvedlines/curvedLines.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot.curvedlines\curvedLines.js"' (27b0a520)
+2018-10-06T17:30:09.1554000+07:00 0HLHBEQH3IR1Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/build/js/custom.js   (ca22a1cb)
+2018-10-06T17:30:09.1568761+07:00 0HLHBEQH3IR1Q:00000002 [INF] Sending file. Request path: '"/vendor/gentelella/build/js/custom.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\build\js\custom.js"' (27b0a520)
+2018-10-06T17:30:09.1590113+07:00 0HLHBEQH3IR1Q:00000002 [INF] Request finished in 3.4257ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1609285+07:00 0HLHBEQH3IR1S:00000001 [INF] Request finished in 45.19ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1621984+07:00 0HLHBEQH3IR1N:00000001 [INF] Request finished in 41.4285ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1688638+07:00 0HLHBEQH3IR1U:00000001 [INF] Request finished in 31.0632ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.1696543+07:00 0HLHBEQH3IR1P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-10-06T17:30:09.1708294+07:00 0HLHBEQH3IR1P:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-10-06T17:30:09.1733739+07:00 0HLHBEQH3IR1P:00000002 [INF] Request finished in 3.7407ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.2295935+07:00 0HLHBEQH3IR1M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootbox/bootbox.js   (ca22a1cb)
+2018-10-06T17:30:09.2309747+07:00 0HLHBEQH3IR1M:00000002 [INF] Sending file. Request path: '"/vendor/bootbox/bootbox.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootbox\bootbox.js"' (27b0a520)
+2018-10-06T17:30:09.2313230+07:00 0HLHBEQH3IR1K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-06T17:30:09.2323439+07:00 0HLHBEQH3IR1K:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-06T17:30:09.2343241+07:00 0HLHBEQH3IR1K:00000003 [INF] Request finished in 3.1579ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.2349589+07:00 0HLHBEQH3IR1D:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/shared/app.js?v=nuKti2O0HgqtxmHvAJHJ4_fZW2zL85nyBWNDgXAAtUg   (ca22a1cb)
+2018-10-06T17:30:09.2367804+07:00 0HLHBEQH3IR1D:00000006 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-10-06T17:30:09.2413229+07:00 0HLHBEQH3IR1D:00000006 [INF] Request finished in 2.8049ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.2490862+07:00 0HLHBEQH3IR1M:00000002 [INF] Request finished in 19.5328ms 200 application/javascript (791a596a)
+2018-10-06T17:30:09.3387934+07:00 0HLHBEQH3IR1J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/flot-orderbars/jquery.flot.orderBars.js   (ca22a1cb)
+2018-10-06T17:30:09.3421276+07:00 0HLHBEQH3IR1J:00000004 [INF] Sending file. Request path: '"/vendor/flot-orderbars/jquery.flot.orderBars.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\flot-orderbars\jquery.flot.orderBars.js"' (27b0a520)
+2018-10-06T17:30:09.3431627+07:00 0HLHBEQH3IR1J:00000004 [INF] Request finished in 4.4474ms 200 application/javascript (791a596a)
+2018-10-06T17:30:10.0996195+07:00 0HLHBEQH3IR1R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-06T17:30:10.1007850+07:00 0HLHBEQH3IR1R:00000002 [INF] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-06T17:30:10.1354514+07:00 0HLHBEQH3IR1R:00000002 [INF] Request finished in 35.9159ms 200 font/woff2 (791a596a)
+2018-10-06T17:30:10.1423825+07:00 0HLHBEQH3IR1S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-06T17:30:10.1436999+07:00 0HLHBEQH3IR1S:00000002 [INF] Sending file. Request path: '"/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-06T17:30:10.1530153+07:00 0HLHBEQH3IR1S:00000002 [INF] Request finished in 10.669ms 200 font/woff2 (791a596a)
+2018-10-06T17:30:15.2466181+07:00 0HLHBEQH3IR1U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/index   (ca22a1cb)
+2018-10-06T17:30:15.2489766+07:00 0HLHBEQH3IR1U:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:15.2535894+07:00 0HLHBEQH3IR1U:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:15.2594700+07:00 0HLHBEQH3IR1U:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:15.5323762+07:00 0HLHBEQH3IR1U:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-06T17:30:15.8051597+07:00 0HLHBEQH3IR1U:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:30:15.8082254+07:00 0HLHBEQH3IR1U:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:30:15.8233216+07:00 0HLHBEQH3IR1U:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 570.9849ms (afa2e885)
+2018-10-06T17:30:15.8367710+07:00 0HLHBEQH3IR1U:00000002 [INF] Request finished in 590.1336ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:30:16.0311474+07:00 0HLHBEQH3IR1N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/centit.easyui/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-10-06T17:30:16.0323621+07:00 0HLHBEQH3IR1D:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/controllers/product/index.js?v=wekwpre06XtS3Tf5mu_cHrYEDYlgsOqgMjTveFMC0zw   (ca22a1cb)
+2018-10-06T17:30:16.0323621+07:00 0HLHBEQH3IR1G:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/centit.easyui/themes/icon.css   (ca22a1cb)
+2018-10-06T17:30:16.0324935+07:00 0HLHBEQH3IR1N:00000002 [INF] Sending file. Request path: '"/vendor/centit.easyui/themes/bootstrap/easyui.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\centit.easyui\themes\bootstrap\easyui.css"' (27b0a520)
+2018-10-06T17:30:16.0332967+07:00 0HLHBEQH3IR1D:00000007 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-10-06T17:30:16.0334758+07:00 0HLHBEQH3IR1G:00000006 [INF] Sending file. Request path: '"/vendor/centit.easyui/themes/icon.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\centit.easyui\themes\icon.css"' (27b0a520)
+2018-10-06T17:30:16.0340150+07:00 0HLHBEQH3IR1D:00000007 [INF] Request finished in 1.7039ms 200 application/javascript (791a596a)
+2018-10-06T17:30:16.0343722+07:00 0HLHBEQH3IR1N:00000002 [INF] Request finished in 3.489ms 200 text/css (791a596a)
+2018-10-06T17:30:16.0402600+07:00 0HLHBEQH3IR1J:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/centit.easyui/jquery.easyui.min.js   (ca22a1cb)
+2018-10-06T17:30:16.0407608+07:00 0HLHBEQH3IR1K:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/centit.easyui/themes/mobile.css   (ca22a1cb)
+2018-10-06T17:30:16.0428843+07:00 0HLHBEQH3IR1J:00000005 [INF] Sending file. Request path: '"/vendor/centit.easyui/jquery.easyui.min.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\centit.easyui\jquery.easyui.min.js"' (27b0a520)
+2018-10-06T17:30:16.0435912+07:00 0HLHBEQH3IR1K:00000004 [INF] Sending file. Request path: '"/vendor/centit.easyui/themes/mobile.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\centit.easyui\themes\mobile.css"' (27b0a520)
+2018-10-06T17:30:16.0476622+07:00 0HLHBEQH3IR1K:00000004 [INF] Request finished in 7.4434ms 200 text/css (791a596a)
+2018-10-06T17:30:16.0612807+07:00 0HLHBEQH3IR1G:00000006 [INF] Request finished in 16.5622ms 200 text/css (791a596a)
+2018-10-06T17:30:16.0645344+07:00 0HLHBEQH3IR1J:00000005 [INF] Request finished in 24.2834ms 200 application/javascript (791a596a)
+2018-10-06T17:30:16.9554478+07:00 0HLHBEQH3IR1E:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:30:16.9569506+07:00 0HLHBEQH3IR1E:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:16.9598140+07:00 0HLHBEQH3IR1E:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:16.9705516+07:00 0HLHBEQH3IR1E:00000005 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:16.9763428+07:00 0HLHBEQH3IR1P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-06T17:30:16.9788658+07:00 0HLHBEQH3IR1P:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:16.9830575+07:00 0HLHBEQH3IR1P:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:16.9977224+07:00 0HLHBEQH3IR1P:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "10", "1"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-06T17:30:17.3491988+07:00 0HLHBEQH3IR1I:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/config.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:17.3503449+07:00 0HLHBEQH3IR1I:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/config.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\config.js"' (27b0a520)
+2018-10-06T17:30:17.3548690+07:00 0HLHBEQH3IR1I:00000005 [INF] Request finished in 2.237ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.0839115+07:00 0HLHBEQH3IR1M:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/skins/moono-lisa/editor.css?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.0850359+07:00 0HLHBEQH3IR1M:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono-lisa/editor.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono-lisa\editor.css"' (27b0a520)
+2018-10-06T17:30:18.0865703+07:00 0HLHBEQH3IR1L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/lang/vi.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.0868794+07:00 0HLHBEQH3IR1M:00000003 [INF] Request finished in 3.5371ms 200 text/css (791a596a)
+2018-10-06T17:30:18.0884307+07:00 0HLHBEQH3IR1L:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/lang/vi.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\lang\vi.js"' (27b0a520)
+2018-10-06T17:30:18.0897193+07:00 0HLHBEQH3IR1L:00000003 [INF] Request finished in 3.12ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.3937890+07:00 0HLHBEQH3IR1O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/styles.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.3976084+07:00 0HLHBEQH3IR1O:00000002 [INF] Sending file. Request path: '"/vendor/ckeditor/styles.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\styles.js"' (27b0a520)
+2018-10-06T17:30:18.3982570+07:00 0HLHBEQH3IR1O:00000002 [INF] Request finished in 4.8121ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.4024257+07:00 0HLHBEQH3IR1E:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:30:18.4650141+07:00 0HLHBEQH3IR1E:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1505.2357ms (afa2e885)
+2018-10-06T17:30:18.4652391+07:00 0HLHBEQH3IR1E:00000005 [INF] Request finished in 1510.0565ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:30:18.4762604+07:00 0HLHBEQH3IR1C:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/colorbutton/plugin.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.4800671+07:00 0HLHBEQH3IR1C:00000007 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/colorbutton/plugin.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\colorbutton\plugin.js"' (27b0a520)
+2018-10-06T17:30:18.4806696+07:00 0HLHBEQH3IR1C:00000007 [INF] Request finished in 4.825ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.4974751+07:00 0HLHBEQH3IR1P:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:30:18.5094306+07:00 0HLHBEQH3IR1P:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1526.3851ms (afa2e885)
+2018-10-06T17:30:18.5096542+07:00 0HLHBEQH3IR1P:00000003 [INF] Request finished in 1533.4776ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:30:18.5674946+07:00 0HLHBEQH3IR1F:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/panelbutton/plugin.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.5685364+07:00 0HLHBEQH3IR1F:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/panelbutton/plugin.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\panelbutton\plugin.js"' (27b0a520)
+2018-10-06T17:30:18.5693540+07:00 0HLHBEQH3IR1F:00000005 [INF] Request finished in 2.2921ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.6059397+07:00 0HLHBEQH3IR1Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/gentelella/production/user.png   (ca22a1cb)
+2018-10-06T17:30:18.6074573+07:00 0HLHBEQH3IR1Q:00000003 [INF] Sending file. Request path: '"/vendor/gentelella/production/user.png"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\gentelella\production\user.png"' (27b0a520)
+2018-10-06T17:30:18.6103476+07:00 0HLHBEQH3IR1Q:00000003 [INF] Request finished in 4.6455ms 200 image/png (791a596a)
+2018-10-06T17:30:18.7181725+07:00 0HLHBEQH3IR1S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css   (ca22a1cb)
+2018-10-06T17:30:18.7187119+07:00 0HLHBEQH3IR1R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/colorbutton/lang/vi.js?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:18.7192913+07:00 0HLHBEQH3IR1S:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css"' (27b0a520)
+2018-10-06T17:30:18.7197121+07:00 0HLHBEQH3IR1R:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/colorbutton/lang/vi.js"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\colorbutton\lang\vi.js"' (27b0a520)
+2018-10-06T17:30:18.7202905+07:00 0HLHBEQH3IR1T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css   (ca22a1cb)
+2018-10-06T17:30:18.7202822+07:00 0HLHBEQH3IR1H:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/scayt/dialogs/dialog.css   (ca22a1cb)
+2018-10-06T17:30:18.7212815+07:00 0HLHBEQH3IR1T:00000002 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css"' (27b0a520)
+2018-10-06T17:30:18.7214565+07:00 0HLHBEQH3IR1R:00000003 [INF] Request finished in 3.0214ms 200 application/javascript (791a596a)
+2018-10-06T17:30:18.7223774+07:00 0HLHBEQH3IR1S:00000003 [INF] Request finished in 4.2697ms 200 text/css (791a596a)
+2018-10-06T17:30:18.7233970+07:00 0HLHBEQH3IR1T:00000002 [INF] Request finished in 3.0492ms 200 text/css (791a596a)
+2018-10-06T17:30:18.7271021+07:00 0HLHBEQH3IR1U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/plugins/tableselection/styles/tableselection.css   (ca22a1cb)
+2018-10-06T17:30:18.7294756+07:00 0HLHBEQH3IR1H:00000004 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/scayt/dialogs/dialog.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\scayt\dialogs\dialog.css"' (27b0a520)
+2018-10-06T17:30:18.7304176+07:00 0HLHBEQH3IR1U:00000003 [INF] Sending file. Request path: '"/vendor/ckeditor/plugins/tableselection/styles/tableselection.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\plugins\tableselection\styles\tableselection.css"' (27b0a520)
+2018-10-06T17:30:18.7419870+07:00 0HLHBEQH3IR1H:00000004 [INF] Request finished in 21.6728ms 200 text/css (791a596a)
+2018-10-06T17:30:18.7441182+07:00 0HLHBEQH3IR1U:00000003 [INF] Request finished in 17.1882ms 200 text/css (791a596a)
+2018-10-06T17:30:19.0596946+07:00 0HLHBEQH3IR1K:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/skins/moono-lisa/icons.png?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:19.0609128+07:00 0HLHBEQH3IR1K:00000005 [INF] Sending file. Request path: '"/vendor/ckeditor/skins/moono-lisa/icons.png"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\skins\moono-lisa\icons.png"' (27b0a520)
+2018-10-06T17:30:19.0628377+07:00 0HLHBEQH3IR1K:00000005 [INF] Request finished in 3.343ms 200 image/png (791a596a)
+2018-10-06T17:30:19.2059790+07:00 0HLHBEQH3IR1G:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/ckeditor/contents.css?t=I8BH   (ca22a1cb)
+2018-10-06T17:30:19.2073324+07:00 0HLHBEQH3IR1G:00000007 [INF] Sending file. Request path: '"/vendor/ckeditor/contents.css"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\ckeditor\contents.css"' (27b0a520)
+2018-10-06T17:30:19.2088517+07:00 0HLHBEQH3IR1G:00000007 [INF] Request finished in 3.2379ms 200 text/css (791a596a)
+2018-10-06T17:30:23.7637284+07:00 0HLHBEQH3IR1D:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/vendor/bootstrap/css/bootstrap.css.map   (ca22a1cb)
+2018-10-06T17:30:23.7654020+07:00 0HLHBEQH3IR1D:00000008 [INF] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css.map"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\vendor\bootstrap\css\bootstrap.css.map"' (27b0a520)
+2018-10-06T17:30:23.7707644+07:00 0HLHBEQH3IR1D:00000008 [INF] Request finished in 7.59ms 200 text/plain (791a596a)
+2018-10-06T17:30:29.6948272+07:00 0HLHBEQH3IR1N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/index   (ca22a1cb)
+2018-10-06T17:30:29.6967826+07:00 0HLHBEQH3IR1N:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:29.6972035+07:00 0HLHBEQH3IR1N:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:29.7467186+07:00 0HLHBEQH3IR1N:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:29.7472068+07:00 0HLHBEQH3IR1N:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-06T17:30:29.7496230+07:00 0HLHBEQH3IR1N:00000003 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:30:29.7649927+07:00 0HLHBEQH3IR1N:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:30:29.7763109+07:00 0HLHBEQH3IR1N:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 79.0469ms (afa2e885)
+2018-10-06T17:30:29.7968521+07:00 0HLHBEQH3IR1N:00000003 [INF] Request finished in 102.2829ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:30:33.2234395+07:00 0HLHBEQH3IR1J:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:30:33.2260016+07:00 0HLHBEQH3IR1J:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:33.2260485+07:00 0HLHBEQH3IR1I:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-06T17:30:33.2264788+07:00 0HLHBEQH3IR1J:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:33.2277141+07:00 0HLHBEQH3IR1I:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:30:33.2281538+07:00 0HLHBEQH3IR1I:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:30:33.2341865+07:00 0HLHBEQH3IR1J:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:30:33.2359138+07:00 0HLHBEQH3IR1I:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "10", "1"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-06T17:30:33.2638304+07:00 0HLHBEQH3IR1J:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:30:33.2647275+07:00 0HLHBEQH3IR1J:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 38.2717ms (afa2e885)
+2018-10-06T17:30:33.2649767+07:00 0HLHBEQH3IR1J:00000006 [INF] Request finished in 42.7423ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:30:33.2917614+07:00 0HLHBEQH3IR1I:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:30:33.2933959+07:00 0HLHBEQH3IR1I:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 65.252ms (afa2e885)
+2018-10-06T17:30:33.2936583+07:00 0HLHBEQH3IR1I:00000006 [INF] Request finished in 67.9883ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:31:53.6438643+07:00 0HLHBEQH3IR1V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:31:53.6451723+07:00 0HLHBEQH3IR1V:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:31:53.6484476+07:00 0HLHBEQH3IR1V:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:31:53.6518668+07:00 0HLHBEQH3IR1V:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:31:53.6617401+07:00 0HLHBEQH3IR1V:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:31:53.6619976+07:00 0HLHBEQH3IR1V:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 16.9847ms (afa2e885)
+2018-10-06T17:31:53.6643686+07:00 0HLHBEQH3IR1V:00000001 [INF] Request finished in 20.4402ms 302  (791a596a)
+2018-10-06T17:32:05.9697167+07:00 0HLHBEQH3IR1V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:32:05.9712176+07:00 0HLHBEQH3IR1V:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:32:05.9716571+07:00 0HLHBEQH3IR1V:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:32:05.9861520+07:00 0HLHBEQH3IR1V:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:32:06.2615825+07:00 0HLHBEQH3IR1V:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:32:06.2671493+07:00 0HLHBEQH3IR1V:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 294.5508ms (afa2e885)
+2018-10-06T17:32:06.2704348+07:00 0HLHBEQH3IR1V:00000002 [INF] Request finished in 298.7112ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:32:25.6138952+07:00 0HLHBEQH3IR1V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:32:25.6149963+07:00 0HLHBEQH3IR1V:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:32:25.6151729+07:00 0HLHBEQH3IR1V:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:32:25.6154132+07:00 0HLHBEQH3IR1V:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:32:25.6158724+07:00 0HLHBEQH3IR1V:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:32:25.6161750+07:00 0HLHBEQH3IR1V:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1.2292ms (afa2e885)
+2018-10-06T17:32:25.6164873+07:00 0HLHBEQH3IR1V:00000003 [INF] Request finished in 2.7006ms 302  (791a596a)
+2018-10-06T17:32:45.5868395+07:00 0HLHBEQH3IR1V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:32:45.5882993+07:00 0HLHBEQH3IR1V:00000004 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:32:45.5888040+07:00 0HLHBEQH3IR1V:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:32:45.5889553+07:00 0HLHBEQH3IR1V:00000004 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:32:45.5893146+07:00 0HLHBEQH3IR1V:00000004 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:32:45.5894569+07:00 0HLHBEQH3IR1V:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1.4248ms (afa2e885)
+2018-10-06T17:32:45.5902807+07:00 0HLHBEQH3IR1V:00000004 [INF] Request finished in 3.4225ms 302  (791a596a)
+2018-10-06T17:33:15.4174832+07:00 0HLHBEQH3IR1V:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:33:15.4196964+07:00 0HLHBEQH3IR1V:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:33:15.4202881+07:00 0HLHBEQH3IR1V:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:33:15.4208720+07:00 0HLHBEQH3IR1V:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:33:15.4212752+07:00 0HLHBEQH3IR1V:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:33:15.4214967+07:00 0HLHBEQH3IR1V:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 2.6084ms (afa2e885)
+2018-10-06T17:33:15.4219315+07:00 0HLHBEQH3IR1V:00000005 [INF] Request finished in 4.4609ms 302  (791a596a)
+2018-10-06T17:34:20.8429158+07:00 0HLHBEQH3IR20:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:34:20.8439710+07:00 0HLHBEQH3IR20:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:34:20.8440943+07:00 0HLHBEQH3IR20:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:34:20.8442177+07:00 0HLHBEQH3IR20:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:34:20.8443484+07:00 0HLHBEQH3IR20:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:34:20.8444584+07:00 0HLHBEQH3IR20:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 0.593ms (afa2e885)
+2018-10-06T17:34:20.8446849+07:00 0HLHBEQH3IR20:00000001 [INF] Request finished in 1.8055ms 302  (791a596a)
+2018-10-06T17:37:01.9756644+07:00 0HLHBEQH3IR21:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:37:01.9776637+07:00 0HLHBEQH3IR21:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:37:01.9780835+07:00 0HLHBEQH3IR21:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:37:01.9795425+07:00 0HLHBEQH3IR21:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:37:01.9932569+07:00 0HLHBEQH3IR21:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:37:01.9940148+07:00 0HLHBEQH3IR21:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 15.9413ms (afa2e885)
+2018-10-06T17:37:01.9942419+07:00 0HLHBEQH3IR21:00000001 [INF] Request finished in 19.7643ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:37:17.0430284+07:00 0HLHBEQH3IR21:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:37:17.0456211+07:00 0HLHBEQH3IR21:00000002 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:37:17.0458344+07:00 0HLHBEQH3IR21:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:37:17.0461745+07:00 0HLHBEQH3IR21:00000002 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:37:17.0463799+07:00 0HLHBEQH3IR21:00000002 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:37:17.0465190+07:00 0HLHBEQH3IR21:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1.0763ms (afa2e885)
+2018-10-06T17:37:17.0469809+07:00 0HLHBEQH3IR21:00000002 [INF] Request finished in 3.979ms 302  (791a596a)
+2018-10-06T17:37:55.4705011+07:00 0HLHBEQH3IR21:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:37:55.4723326+07:00 0HLHBEQH3IR21:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:37:55.4724921+07:00 0HLHBEQH3IR21:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:37:55.4726535+07:00 0HLHBEQH3IR21:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:37:55.4729989+07:00 0HLHBEQH3IR21:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:37:55.4731584+07:00 0HLHBEQH3IR21:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 0.9373ms (afa2e885)
+2018-10-06T17:37:55.4734034+07:00 0HLHBEQH3IR21:00000003 [INF] Request finished in 3.1387ms 302  (791a596a)
+2018-10-06T17:37:55.5258631+07:00 0HLHBEQH3IR21:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2Fadmin%2Fproduct%2FGetCategories   (ca22a1cb)
+2018-10-06T17:37:55.5655006+07:00 0HLHBEQH3IR21:00000004 [INF] Executing action method "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" with arguments (["/admin/product/GetCategories"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:37:55.5752945+07:00 0HLHBEQH3IR21:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-06T17:37:56.2727711+07:00 0HLHBEQH3IR21:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-10-06T17:37:56.4766548+07:00 0HLHBEQH3IR21:00000004 [INF] Executed action "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" in 920.9056ms (afa2e885)
+2018-10-06T17:37:56.4783196+07:00 0HLHBEQH3IR21:00000004 [INF] Request finished in 952.8432ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:38:21.0985407+07:00 0HLHBEQH3IR21:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:38:21.1009624+07:00 0HLHBEQH3IR21:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:38:21.1013875+07:00 0HLHBEQH3IR21:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:38:21.1017482+07:00 0HLHBEQH3IR21:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:38:21.1019707+07:00 0HLHBEQH3IR21:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:38:21.1023038+07:00 0HLHBEQH3IR21:00000005 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1.5009ms (afa2e885)
+2018-10-06T17:38:21.1028875+07:00 0HLHBEQH3IR21:00000005 [INF] Request finished in 4.3915ms 302  (791a596a)
+2018-10-06T17:38:21.1373715+07:00 0HLHBEQH3IR21:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2Fadmin%2Fproduct%2FGetCategories%3Fjson   (ca22a1cb)
+2018-10-06T17:38:21.1442412+07:00 0HLHBEQH3IR21:00000006 [INF] Executing action method "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" with arguments (["/admin/product/GetCategories?json"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:38:21.1459527+07:00 0HLHBEQH3IR21:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-06T17:38:21.1468147+07:00 0HLHBEQH3IR21:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-10-06T17:38:21.1687527+07:00 0HLHBEQH3IR21:00000006 [INF] Executed action "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" in 27.9345ms (afa2e885)
+2018-10-06T17:38:21.1767486+07:00 0HLHBEQH3IR21:00000006 [INF] Request finished in 39.5493ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:38:52.7776724+07:00 0HLHBEQH3IR21:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:38:52.7787748+07:00 0HLHBEQH3IR21:00000007 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:38:52.7789208+07:00 0HLHBEQH3IR21:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:38:52.7790705+07:00 0HLHBEQH3IR21:00000007 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:38:52.7792256+07:00 0HLHBEQH3IR21:00000007 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:38:52.7794293+07:00 0HLHBEQH3IR21:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 0.6923ms (afa2e885)
+2018-10-06T17:38:52.7797168+07:00 0HLHBEQH3IR21:00000007 [INF] Request finished in 2.129ms 302  (791a596a)
+2018-10-06T17:38:52.8102398+07:00 0HLHBEQH3IR21:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2Fadmin%2Fproduct%2FGetCategories   (ca22a1cb)
+2018-10-06T17:38:52.8133552+07:00 0HLHBEQH3IR21:00000008 [INF] Executing action method "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" with arguments (["/admin/product/GetCategories"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:38:52.8136053+07:00 0HLHBEQH3IR21:00000008 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-06T17:38:52.8137958+07:00 0HLHBEQH3IR21:00000008 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-10-06T17:38:52.8195419+07:00 0HLHBEQH3IR21:00000008 [INF] Executed action "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" in 8.1923ms (afa2e885)
+2018-10-06T17:38:52.8221343+07:00 0HLHBEQH3IR21:00000008 [INF] Request finished in 11.9765ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:40:06.2034316+07:00 0HLHBEQH3IR22:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:40:06.2045143+07:00 0HLHBEQH3IR22:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-06T17:40:06.2047194+07:00 0HLHBEQH3IR22:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-06T17:40:06.2049325+07:00 0HLHBEQH3IR22:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-06T17:40:06.2051033+07:00 0HLHBEQH3IR22:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-06T17:40:06.2052775+07:00 0HLHBEQH3IR22:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 0.8761ms (afa2e885)
+2018-10-06T17:40:06.2054742+07:00 0HLHBEQH3IR22:00000001 [INF] Request finished in 2.1255ms 302  (791a596a)
+2018-10-06T17:40:06.2316556+07:00 0HLHBEQH3IR22:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2Fadmin%2Fproduct%2FGetCategories   (ca22a1cb)
+2018-10-06T17:40:06.2333850+07:00 0HLHBEQH3IR22:00000002 [INF] Executing action method "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" with arguments (["/admin/product/GetCategories"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:40:06.2341892+07:00 0HLHBEQH3IR22:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-06T17:40:06.2350625+07:00 0HLHBEQH3IR22:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-10-06T17:40:06.2403402+07:00 0HLHBEQH3IR22:00000002 [INF] Executed action "NetCoreApp.Controllers.AccountController.Login (NetCoreApp)" in 7.4493ms (afa2e885)
+2018-10-06T17:40:06.2419492+07:00 0HLHBEQH3IR22:00000002 [INF] Request finished in 10.3495ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:40:28.3364630+07:00 0HLHBEQH3IR22:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-10-06T17:40:28.3380085+07:00 0HLHBEQH3IR22:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:40:28.3494249+07:00 0HLHBEQH3IR22:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:40:28.3550666+07:00 0HLHBEQH3IR22:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.AccountController.Logout (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:40:28.3684722+07:00 0HLHBEQH3IR22:00000003 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-10-06T17:40:28.3697941+07:00 0HLHBEQH3IR22:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-06T17:40:28.3703352+07:00 0HLHBEQH3IR22:00000003 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-10-06T17:40:28.3791937+07:00 0HLHBEQH3IR22:00000003 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-10-06T17:40:28.3801708+07:00 0HLHBEQH3IR22:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.AccountController.Logout (NetCoreApp)" in 30.2385ms (afa2e885)
+2018-10-06T17:40:28.3807918+07:00 0HLHBEQH3IR22:00000003 [INF] Request finished in 44.3561ms 302  (791a596a)
+2018-10-06T17:40:28.4173556+07:00 0HLHBEQH3IR22:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Login/Index   (ca22a1cb)
+2018-10-06T17:40:28.4199813+07:00 0HLHBEQH3IR22:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:40:28.4203597+07:00 0HLHBEQH3IR22:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-06T17:40:28.4334049+07:00 0HLHBEQH3IR22:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Index (NetCoreApp)" in 14.7589ms (afa2e885)
+2018-10-06T17:40:28.4481311+07:00 0HLHBEQH3IR22:00000004 [INF] Request finished in 31.0595ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:40:30.1926773+07:00 0HLHBEQH3IR22:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-10-06T17:40:30.1951213+07:00 0HLHBEQH3IR22:00000005 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"C:\Users\khoak\source\repos\NetCoreApp\NetCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-10-06T17:40:30.1993164+07:00 0HLHBEQH3IR22:00000005 [INF] Request finished in 7.0088ms 200 text/plain (791a596a)
+2018-10-06T17:40:39.1362941+07:00 0HLHBEQH3IR22:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-06T17:40:39.1424975+07:00 0HLHBEQH3IR22:00000006 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" with arguments (["NetCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:40:39.1432379+07:00 0HLHBEQH3IR22:00000006 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:40:39.1688745+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("22"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[Birthday], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-06T17:40:39.2139573+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-06T17:40:39.2241221+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-06T17:40:39.2293538+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:40:39.2349560+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:40:39.2378023+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:40:39.2435383+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:40:39.2461061+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-06T17:40:39.2500367+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-06T17:40:39.2538732+07:00 0HLHBEQH3IR22:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-06T17:40:39.2551952+07:00 0HLHBEQH3IR22:00000006 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-06T17:40:39.2556760+07:00 0HLHBEQH3IR22:00000006 [INF] User logged in. (fdce0db4)
+2018-10-06T17:40:39.2563032+07:00 0HLHBEQH3IR22:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:40:39.2570825+07:00 0HLHBEQH3IR22:00000006 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.LoginController.Authen (NetCoreApp)" in 119.1388ms (afa2e885)
+2018-10-06T17:40:39.2580833+07:00 0HLHBEQH3IR22:00000006 [INF] Request finished in 121.3444ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:40:39.4936708+07:00 0HLHBEQH3IR22:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index   (ca22a1cb)
+2018-10-06T17:40:39.4952136+07:00 0HLHBEQH3IR22:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:40:39.4956219+07:00 0HLHBEQH3IR22:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-06T17:40:39.5045779+07:00 0HLHBEQH3IR22:00000007 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:40:39.5054714+07:00 0HLHBEQH3IR22:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-06T17:40:39.5104004+07:00 0HLHBEQH3IR22:00000007 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:40:39.5343375+07:00 0HLHBEQH3IR22:00000007 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:40:39.5405440+07:00 0HLHBEQH3IR22:00000007 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 44.8373ms (afa2e885)
+2018-10-06T17:40:39.6057367+07:00 0HLHBEQH3IR22:00000007 [INF] Request finished in 112.5277ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:41:29.8844733+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:41:30.3945949+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.4481409+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.4604580+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.5166098+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-06T17:41:30.5303045+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Colors] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.5401855+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertisementPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.5520838+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.5631269+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Sizes] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.5827951+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.6180785+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.6351468+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:30.6499485+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-06T17:41:31.0349363+07:00 0HLHBF13I73S0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index   (ca22a1cb)
+2018-10-06T17:41:31.1033097+07:00 0HLHBF13I73S0:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:41:31.2748456+07:00 0HLHBF13I73S0:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:41:35.3277077+07:00 0HLHBF13I73S0:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-06T17:41:36.6754580+07:00 0HLHBF13I73S0:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:41:36.7883008+07:00 0HLHBF13I73S0:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:41:37.5823954+07:00 0HLHBF13I73S0:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.HomeController.Index (NetCoreApp)" in 6331.6818ms (afa2e885)
+2018-10-06T17:41:37.6004657+07:00 0HLHBF13I73S0:00000001 [INF] Request finished in 6587.5638ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:41:44.6389625+07:00 0HLHBF13I73S0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/index   (ca22a1cb)
+2018-10-06T17:41:44.6422896+07:00 0HLHBF13I73S0:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:41:44.6623815+07:00 0HLHBF13I73S0:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:41:44.9709296+07:00 0HLHBF13I73S0:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-06T17:41:45.2751951+07:00 0HLHBF13I73S0:00000002 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:41:45.2818652+07:00 0HLHBF13I73S0:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:41:45.3015549+07:00 0HLHBF13I73S0:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 649.0832ms (afa2e885)
+2018-10-06T17:41:45.3154733+07:00 0HLHBF13I73S0:00000002 [INF] Request finished in 676.6647ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:41:47.5288948+07:00 0HLHBF13I73S0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:41:47.5304002+07:00 0HLHBF13I73S0:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:41:47.5430333+07:00 0HLHBF13I73S0:00000003 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:41:47.5879644+07:00 0HLHBF13I73S1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-06T17:41:47.5892102+07:00 0HLHBF13I73S1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:41:47.7057497+07:00 0HLHBF13I73S1:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "10", "1"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-06T17:41:48.4666643+07:00 0HLHBF13I73S0:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:41:48.6675979+07:00 0HLHBF13I73S0:00000003 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 1128.0177ms (afa2e885)
+2018-10-06T17:41:48.6683370+07:00 0HLHBF13I73S0:00000003 [INF] Request finished in 1139.4891ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:41:48.7078121+07:00 0HLHBF13I73S1:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:41:48.7233412+07:00 0HLHBF13I73S1:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 1105.5308ms (afa2e885)
+2018-10-06T17:41:48.7257138+07:00 0HLHBF13I73S1:00000001 [INF] Request finished in 1139.6258ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:41:58.9658113+07:00 0HLHBF13I73S0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:41:58.9848126+07:00 0HLHBF13I73S0:00000004 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:41:59.0270321+07:00 0HLHBF13I73S0:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:41:59.0280984+07:00 0HLHBF13I73S0:00000004 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 60.5679ms (afa2e885)
+2018-10-06T17:41:59.0284387+07:00 0HLHBF13I73S0:00000004 [INF] Request finished in 63.107ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:45:20.0667413+07:00 0HLHBF13I73S2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories   (ca22a1cb)
+2018-10-06T17:45:20.0695401+07:00 0HLHBF13I73S2:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:45:20.0904216+07:00 0HLHBF13I73S2:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:45:20.0912693+07:00 0HLHBF13I73S2:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 23.1121ms (afa2e885)
+2018-10-06T17:45:20.0915436+07:00 0HLHBF13I73S2:00000001 [INF] Request finished in 25.1721ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:47:05.6626504+07:00 0HLHBF13I73S3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/index   (ca22a1cb)
+2018-10-06T17:47:05.6721645+07:00 0HLHBF13I73S3:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:47:05.6748829+07:00 0HLHBF13I73S3:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:47:05.6754692+07:00 0HLHBF13I73S3:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-10-06T17:47:05.6807461+07:00 0HLHBF13I73S3:00000001 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=CoreApp.Data.EF " (9958f5bb)
+2018-10-06T17:47:05.6884824+07:00 0HLHBF13I73S3:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Url], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-10-06T17:47:05.7009037+07:00 0HLHBF13I73S3:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.Index (NetCoreApp)" in 27.9751ms (afa2e885)
+2018-10-06T17:47:05.7280350+07:00 0HLHBF13I73S3:00000001 [INF] Request finished in 65.531ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-06T17:47:07.8622790+07:00 0HLHBF13I73S3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetCategories?json   (ca22a1cb)
+2018-10-06T17:47:07.8638413+07:00 0HLHBF13I73S3:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:47:07.8869052+07:00 0HLHBF13I73S3:00000002 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-06T17:47:07.9324201+07:00 0HLHBF13I73S4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/product/GetAllPaging?categoryId=--Select+category--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-10-06T17:47:07.9427945+07:00 0HLHBF13I73S4:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-10-06T17:47:07.9819603+07:00 0HLHBF13I73S4:00000001 [INF] Executing action method "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" with arguments (["", "", "10", "1"]) - ModelState is Invalid (ba7f4ac2)
+2018-10-06T17:47:08.0250068+07:00 0HLHBF13I73S3:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:47:08.0258462+07:00 0HLHBF13I73S3:00000002 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetCategories (NetCoreApp)" in 161.5528ms (afa2e885)
+2018-10-06T17:47:08.0261963+07:00 0HLHBF13I73S3:00000002 [INF] Request finished in 164.0566ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-06T17:47:08.0572534+07:00 0HLHBF13I73S4:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-06T17:47:08.0591856+07:00 0HLHBF13I73S4:00000001 [INF] Executed action "NetCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (NetCoreApp)" in 114.8866ms (afa2e885)
+2018-10-06T17:47:08.0597425+07:00 0HLHBF13I73S4:00000001 [INF] Request finished in 128.1106ms 200 application/json; charset=utf-8 (791a596a)

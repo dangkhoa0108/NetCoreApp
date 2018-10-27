@@ -7,7 +7,6 @@ using CoreApp.Application.Interfaces;
 using CoreApp.Application.ViewModels.Product;
 using CoreApp.Data.EF.Registration;
 using CoreApp.Data.Entities;
-using CoreApp.Data.Enums;
 using CoreApp.Utilities.Constants;
 using CoreApp.Utilities.DTOs;
 using CoreApp.Utilities.Helpers;
