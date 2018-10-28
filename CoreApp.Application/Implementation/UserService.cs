@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -29,8 +30,9 @@ namespace CoreApp.Application.Implementation
                 Avatar = appUserViewModel.Avatar,
                 Email = appUserViewModel.Email,
                 FullName = appUserViewModel.FullName,
-                DateCreated = appUserViewModel.DateCreated,
-                PhoneNumber = appUserViewModel.PhoneNumber
+                DateCreated = DateTime.Now,
+                PhoneNumber = appUserViewModel.PhoneNumber,
+                Status = appUserViewModel.Status
             };
             var result = await _userManager.CreateAsync(user, appUserViewModel.Password);
             if (!result.Succeeded || appUserViewModel.Roles.Count <= 0) return false;

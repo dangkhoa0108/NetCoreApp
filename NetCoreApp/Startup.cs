@@ -7,6 +7,7 @@ using CoreApp.Data.EF;
 using CoreApp.Data.EF.Registration;
 using CoreApp.Data.Entities;
 using CoreApp.Infrastructure.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using NetCoreApp.Authorization;
 using NetCoreApp.Helpers;
 using NetCoreApp.Services;
 using Newtonsoft.Json.Serialization;
@@ -63,6 +65,7 @@ namespace NetCoreApp
 
             // Add application services.
             //System
+            
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
@@ -72,6 +75,7 @@ namespace NetCoreApp
             services.AddMvc().AddJsonOptions(options=>options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimPrincipalFactory>();
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
             //Auto Mapper
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -22,13 +23,13 @@ namespace NetCoreApp.Areas.Admin.Components
         {
             var roles = ((ClaimsPrincipal) User).GetSpecificClaim("Roles");
             List<FunctionViewModel> function;
-            if (roles.Split(";").Contains(CommonConstants.Admin))
+            if (roles.Split(";").Contains(CommonConstants.AppRole.AdminRole))
             {
                 function = await _serviceRegistration.FunctionService.GetAll(string.Empty);
             }
             else
             {
-                function= new List<FunctionViewModel>();
+                function = await _serviceRegistration.FunctionService.GetAll(string.Empty);
             }
             return View(function);
         }
