@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "ckeditor@4.10.1",
+      "C:\\Users\\khoak\\source\\repos\\NetCoreApp\\NetCoreApp"
+    ]
+  ],
   "_from": "ckeditor@4.10.1",
   "_id": "ckeditor@4.10.1",
   "_inBundle": false,
@@ -19,9 +25,8 @@
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/ckeditor/-/ckeditor-4.10.1.tgz",
-  "_shasum": "e0230b05a5470ef070be9ab9ba444fea418ebc78",
-  "_spec": "ckeditor@4.10.1",
-  "_where": "D:\\Net Core\\NetCoreApp\\NetCoreApp",
+  "_spec": "4.10.1",
+  "_where": "C:\\Users\\khoak\\source\\repos\\NetCoreApp\\NetCoreApp",
   "author": {
     "name": "CKSource",
     "url": "http://cksource.com/"
@@ -29,8 +34,6 @@
   "bugs": {
     "url": "http://dev.ckeditor.com"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "JavaScript WYSIWYG web text editor.",
   "homepage": "http://ckeditor.com",
   "keywords": [

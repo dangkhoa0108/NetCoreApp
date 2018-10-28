@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "centit.easyui@1.5.3",
+      "C:\\Users\\khoak\\source\\repos\\NetCoreApp\\NetCoreApp"
+    ]
+  ],
   "_from": "centit.easyui@1.5.3",
   "_id": "centit.easyui@1.5.3",
   "_inBundle": false,
@@ -19,15 +25,12 @@
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/centit.easyui/-/centit.easyui-1.5.3.tgz",
-  "_shasum": "d9badde223f45b8b699d6cab5d46a726ec75d210",
-  "_spec": "centit.easyui@1.5.3",
-  "_where": "D:\\Net Core\\NetCoreApp\\NetCoreApp",
+  "_spec": "1.5.3",
+  "_where": "C:\\Users\\khoak\\source\\repos\\NetCoreApp\\NetCoreApp",
   "author": "",
-  "bundleDependencies": false,
   "dependencies": {
     "jquery": "^3.2.1"
   },
-  "deprecated": false,
   "description": "jQuery EasyUI framework helps you build your web pages easily.",
   "keywords": [],
   "license": "MIT",

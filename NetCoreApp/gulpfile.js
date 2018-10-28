@@ -77,6 +77,10 @@ var nodeLibs = {
     }, 
     "ckeditor": {
         "**/*": ""
+    },
+    "jquery-treegrid": {
+        "js/*":"",
+        "css/*":""
     }
 };
 var templates = {
