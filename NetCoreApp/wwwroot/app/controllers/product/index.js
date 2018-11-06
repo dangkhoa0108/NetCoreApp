@@ -47,7 +47,145 @@
 
 
         $('#btnSave').on('click', function (e) {
-            if ($('#frmMaintenance').valid()) {
+            saveProduct();
+        });
+
+        $('#btnSelectImg').on('click',function() {
+            $('#fileInputImage').click();
+        });
+
+        $('#fileInputImage').on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/Admin/Upload/UploadImage',
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    app.notify('Upload Success', 'success');
+                },
+                error: function () {
+                    app.notify('Upload Error', 'error');
+                }
+            });
+        });
+
+        $('body').on('click', '.btn-edit', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            loadDetail(that);
+        });
+
+        $('body').on('click', '.btn-delete', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            deleteProduct(that);
+        });
+        $('#btnImportExcel').on('click', function () {
+            var fileUpload = $("#fileInputExcel").get(0);
+            var files = fileUpload.files;
+            // Create FormData object  
+            var fileData = new FormData();
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < files.length; i++) {
+                fileData.append("files", files[i]);
+            }
+            // Adding one more key to FormData object  
+            fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
+            $.ajax({
+                url: '/Admin/Product/ImportExcel',
+                type: 'POST',
+                data: fileData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success: function (data) {
+                    $('#modal-import-excel').modal('hide');
+                    loadData();
+                }
+            });
+            return false;
+        });
+        $('#btn-import').on('click', function () {
+            initTreeDropDownCategory();
+            $('#modal-import-excel').modal('show');
+        });
+    }
+
+    function deleteProduct(that) {
+        app.confirm('Are you sure', function () {
+            $.ajax({
+                type: 'POST',
+                url: '/Admin/Product/Delete',
+                dataType: 'json',
+                data: {
+                    id: that
+                },
+                beforeSend: function () {
+                    app.startLoading();
+                },
+                success: function (response) {
+                    app.notify('Delete success', 'success');
+                    app.stopLoading();
+                    //location.reload();
+                    loadData(true);
+                },
+                error: function () {
+                    app.notify('Has an error', 'error');
+                    app.stopLoading();
+                }
+            });
+        });
+    }
+    function loadDetail(that) {
+        $.ajax({
+            type: 'GET',
+            data: {
+                id: that
+            },
+            dataType: 'json',
+            url: '/Admin/Product/GetProductById',
+            beforeSend: function () {
+                app.startLoading();
+            },
+            success: function (response) {
+                var data = response;
+                $('#hidIdM').val(data.Id);
+                $('#txtNameM').val(data.Name);
+                initTreeDropDownCategory(data.CategoryId);
+                $('#txtDescM').val(data.Description);
+                $('#txtUnitM').val(data.Unit);
+                $('#txtPriceM').val(data.Price);
+                $('#txtOriginalPriceM').val(data.OriginalPrice);
+                $('#txtPromotionPriceM').val(data.PromotionPrice);
+                // $('#txtImageM').val(data.ThumbnailImage);
+                $('#txtTagM').val(data.Tags);
+                $('#txtMetakeywordM').val(data.SeoKeywords);
+                $('#txtMetaDescriptionM').val(data.SeoDescription);
+                $('#txtSeoPageTitleM').val(data.SeoPageTitle);
+                $('#txtSeoAliasM').val(data.SeoAlias);
+                CKEDITOR.instances.txtContent.setData(data.Content);
+                $('#ckStatusM').prop('checked', data.Status === 1);
+                $('#ckHotM').prop('checked', data.HotFlag);
+                $('#ckShowHomeM').prop('checked', data.HomeFlag);
+                $('#modal-add-edit').modal('show');
+                app.stopLoading();
+            },
+            error: function (error) {
+                app.notify('Has an Error', 'error');
+                app.stopLoading();
+            }
+        });
+    }
+
+    function saveProduct() {
+        if ($('#frmMaintenance').valid()) {
                 e.preventDefault();
                 var id = $('#hidIdM').val();
                 var name = $('#txtNameM').val();
@@ -108,107 +246,7 @@
                 });
                 return false;
             }
-        });
-
-        $('#btnSelectImg').on('click',function() {
-            $('#fileInputImage').click();
-        });
-
-        $('#fileInputImage').on('change', function () {
-            var fileUpload = $(this).get(0);
-            var files = fileUpload.files;
-            var data = new FormData();
-            for (var i = 0; i < files.length; i++) {
-                data.append(files[i].name, files[i]);
-            }
-            $.ajax({
-                type: 'POST',
-                url: '/Admin/Upload/UploadImage',
-                contentType: false,
-                processData: false,
-                data: data,
-                success: function (path) {
-                    $('#txtImage').val(path);
-                    app.notify('Upload Success', 'success');
-                },
-                error: function () {
-                    app.notify('Upload Error', 'error');
-                }
-            });
-        });
-
-        $('body').on('click', '.btn-edit', function (e) {
-            e.preventDefault();
-            var that = $(this).data('id');
-            $.ajax({
-                type: 'GET',
-                data: {
-                    id: that
-                },
-                dataType: 'json',
-                url: '/Admin/Product/GetProductById',
-                beforeSend: function () {
-                    app.startLoading();
-                },
-                success: function (response) {
-                    var data = response;
-                    $('#hidIdM').val(data.Id);
-                    $('#txtNameM').val(data.Name);
-                    initTreeDropDownCategory(data.CategoryId);
-                    $('#txtDescM').val(data.Description);
-                    $('#txtUnitM').val(data.Unit);
-                    $('#txtPriceM').val(data.Price);
-                    $('#txtOriginalPriceM').val(data.OriginalPrice);
-                    $('#txtPromotionPriceM').val(data.PromotionPrice);
-                    // $('#txtImageM').val(data.ThumbnailImage);
-                    $('#txtTagM').val(data.Tags);
-                    $('#txtMetakeywordM').val(data.SeoKeywords);
-                    $('#txtMetaDescriptionM').val(data.SeoDescription);
-                    $('#txtSeoPageTitleM').val(data.SeoPageTitle);
-                    $('#txtSeoAliasM').val(data.SeoAlias);
-                    CKEDITOR.instances.txtContent.setData(data.Content);
-                    $('#ckStatusM').prop('checked', data.Status === 1);
-                    $('#ckHotM').prop('checked', data.HotFlag);
-                    $('#ckShowHomeM').prop('checked', data.HomeFlag);
-                    $('#modal-add-edit').modal('show');
-                    app.stopLoading();
-                },
-                error: function (error) {
-                    app.notify('Has an Error', 'error');
-                    app.stopLoading();
-                }
-            });
-        });
-
-        $('body').on('click', '.btn-delete', function (e) {
-            e.preventDefault();
-            var that = $(this).data('id');
-            app.confirm('Are you sure', function () {
-                $.ajax({
-                    type: 'POST',
-                    url: '/Admin/Product/Delete',
-                    dataType: 'json',
-                    data: {
-                        id: that
-                    },
-                    beforeSend: function () {
-                        app.startLoading();
-                    },
-                    success: function (response) {
-                        app.notify('Delete success', 'success');
-                        app.stopLoading();
-                        //location.reload();
-                        loadData(true);
-                    },
-                    error: function () {
-                        app.notify('Has an error', 'error');
-                        app.stopLoading();
-                    }
-                });
-            });
-        });
     }
-
     function registerControl() {
         CKEDITOR.replace('txtContent', {});
         //Fix: cannot click on element ck in modal
@@ -372,6 +410,9 @@
                 });
                 var arr = app.unflattened(data);
                 $('#ddlCategoryIdM').combotree({
+                    data: arr
+                });
+                $('#ddlCategoryIdImportExcel').combotree({
                     data: arr
                 });
                 if (selectedId !== undefined) {

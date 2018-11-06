@@ -1,7 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using CoreApp.Application.ViewModels.Product;
 using CoreApp.Utilities.Helpers;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
@@ -9,6 +13,13 @@ namespace NetCoreApp.Areas.Admin.Controllers
 {
     public class ProductController : BaseController
     {
+        private readonly IHostingEnvironment _hostingEnvironment;
+
+        public ProductController(IHostingEnvironment hostingEnvironment)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -80,6 +91,33 @@ namespace NetCoreApp.Areas.Admin.Controllers
             }
             ServiceRegistration.ProductService.Delete(id);
             return new OkObjectResult(id);
+        }
+
+        [HttpPost]
+        public IActionResult ImportExcel(IList<IFormFile> files, int categoryId)
+        {
+            if (files != null && files.Count > 0)
+            {
+                var file = files[0];
+                var filename = ContentDispositionHeaderValue
+                    .Parse(file.ContentDisposition)
+                    .FileName
+                    .Trim('"');
+                var folder = _hostingEnvironment.WebRootPath + $@"\uploaded\excels";
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                var filePath = Path.Combine(folder, filename);
+                using (FileStream fs = System.IO.File.Create(filePath))
+                {
+                    file.CopyTo(fs);
+                    fs.Flush();
+                }
+                ServiceRegistration.ProductService.ImportExcel(filePath, categoryId);
+                return new OkObjectResult(filePath);
+            }
+            return new NoContentResult();
         }
         #endregion
     }

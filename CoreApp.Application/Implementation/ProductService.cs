@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -7,10 +8,12 @@ using CoreApp.Application.Interfaces;
 using CoreApp.Application.ViewModels.Product;
 using CoreApp.Data.EF.Registration;
 using CoreApp.Data.Entities;
+using CoreApp.Data.Enums;
 using CoreApp.Utilities.Constants;
 using CoreApp.Utilities.DTOs;
 using CoreApp.Utilities.Helpers;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 
 namespace CoreApp.Application.Implementation
 {
@@ -153,6 +156,37 @@ namespace CoreApp.Application.Implementation
         {
             _unitOfWork.ProductRepository.Remove(id);
             _unitOfWork.Commit();
+        }
+
+        public void ImportExcel(string filePath, int categoryId)
+        {
+            using (var package= new ExcelPackage(new FileInfo(filePath)))
+            {
+                var worksheet = package.Workbook.Worksheets[1];
+                for (int i = worksheet.Dimension.Start.Row + 1; i <= worksheet.Dimension.End.Row; i++)
+                {
+                    var product = new Product();
+                    product.CategoryId = categoryId;
+                    product.Name = worksheet.Cells[i, 1].Value.ToString();
+                    product.Description = worksheet.Cells[i, 2].Value.ToString();
+                    decimal.TryParse(worksheet.Cells[i, 3].Value.ToString(), out var originalPrice);
+                    product.OriginalPrice = originalPrice;
+                    decimal.TryParse(worksheet.Cells[i, 4].Value.ToString(), out var price);
+                    product.Price = price;
+                    decimal.TryParse(worksheet.Cells[i, 5].Value.ToString(), out var promotionPrice);
+                    product.PromotionPrice = promotionPrice;
+                    product.Content = worksheet.Cells[i, 6].Value.ToString();
+                    product.SeoKeywords = worksheet.Cells[i, 7].Value.ToString();
+                    product.SeoDescription = worksheet.Cells[i, 8].Value.ToString();
+                    bool.TryParse(worksheet.Cells[i, 9].Value.ToString(), out var hotFlag);
+                    product.HotFlag = hotFlag;
+                    bool.TryParse(worksheet.Cells[i, 10].Value.ToString(), out var homeFlag);
+                    product.HomeFlag = homeFlag;
+                    product.Status = Status.Active;
+                    _unitOfWork.ProductRepository.Add(product);
+                    _unitOfWork.Commit();
+                }
+            }
         }
 
         public void Dispose()

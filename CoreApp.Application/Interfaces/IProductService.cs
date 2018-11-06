@@ -13,5 +13,6 @@ namespace CoreApp.Application.Interfaces
         ProductViewModel Add(ProductViewModel productViewModel);
         void Update(ProductViewModel productViewModel);
         void Delete(int id);
+        void ImportExcel(string filePath, int categoryId);
     }
 }

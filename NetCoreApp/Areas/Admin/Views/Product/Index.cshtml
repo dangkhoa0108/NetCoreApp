@@ -23,7 +23,7 @@
     </div>
 
     <div class="title_right">
-        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+        <div class="col-md-3 col-sm-5 col-xs-12 form-group pull-right">
             <div class="input-group">
                 <input type="text" id="txtKeyword" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
@@ -31,13 +31,15 @@
                 </span>
             </div>
         </div>
-        <div class="col-md-4 col-sm-12  form-group pull-right">
+        <div class="col-md-3 col-sm-12  form-group pull-right">
             <select class="form-control" id="ddlCategorySearch">
                 <option>--Select category--</option>
             </select>
         </div>
-        <div class="col-md-2 col-sm-12  form-group pull-right">
+        <div class="col-md-6 col-sm-12  form-group pull-right">
             <button id="btnCreate" class="btn btn-success">Create</button>
+            <a class="btn btn-danger" href="~/templates/ProductImportTemplate.xlsx">Template</a>
+            <button class="btn btn-primary" id="btn-import" type="button">Import</button>
         </div>
     </div>
 </div>
@@ -104,3 +106,4 @@
     </tr>
 </script>
 @Html.Partial("_AddEditModal")
+@Html.Partial("_ImportExcelModal")
